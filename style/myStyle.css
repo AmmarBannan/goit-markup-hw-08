@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+body{
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+    display: flex;
+    /* font-family: 'Yellowtail', cursive; */
+}
+wrapper{
+    width: 1200px;
+}
+
+header nav{
+    width: 100%;
+    display: flex;
+    border-bottom:1px solid #E5E5E5;;
+    align-items:center;
+    justify-content: space-around;
+
+}
+#WebStudio{
+    color: #2196F3;
+}
+nav div{
+    display: inline-flex;
+    justify-content: space-around;
+    width: 40%;
+}
+nav  ul{
+    align-items: center;
+    width: 50%;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none;
+
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    color: #2196F3;
+}
+
+
+/*      ############      main        ###########      */
+main div{
+    width: 100%;
+    justify-content: center;
+}
+.front{
+    background-color: #2F303A;
+    width: 100%;
+    height: 400px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.front div{
+    text-align: center;
+    width: 40%;
+    white-space: inherit;
+}
+.front h1{
+    color: white;
+    font-family: monospace;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    /* or 136% */
+
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.front button{
+    color: white;
+    background-color: #2196F3;
+    height: 40px;
+    border: #2F303A;
+    border-radius: 3px;
+
+}
+
+.activity{
+    display: flex;
+    align-content: center;
+    width: 100%;
+
+}
+.activity div{
+    margin: 0%;
+    padding: 0px;
+    width: 17%;
+    padding: 1%;
+    line-height: 1.5em;
+    box-sizing: 100px;
+
+}
+
+.activity p{
+    color: #757575;
+    font-size: 14px;
+}
+
+/*    image             */
+section{
+    display: block;
+    justify-items: center;
+    padding: 1% 5% 1% 5%;
+}
+section div{
+    display: flex;
+    justify-content:center ;
+    white-space: normal;
+    padding-bottom: 4%;
+    height:fit-content;
+}
+.do{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.do img{
+    display: inline-flex;
+    width: 25%;
+    margin: 3%;
+}
+
+.do h2{
+    display: block;
+}
+
+.team{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.team div{
+    background-color: white;
+    display: block;
+    width: 15%;
+    margin: 1%;
+    padding: 3%;
+}
+.team img{
+    width: 100%;
+}
+
+section  h2{
+    font-size: 36px;
+}
+
+
+
+/*                    footer                      */
+
+footer{
+    background: #2F303A;
+    height: 15%;
+    padding: 5% 5% 5% 10%;
+}
+footer div{
+    width: 17%;
+
+}
+footer p{
+    color: white;
+}
+footer a{
+    color: white;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
