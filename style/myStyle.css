@@ -63,6 +63,8 @@ main *{
 main section{
     margin-top: 6%;
 }
+
+/* ########front######*/
 .front{
     background-color: #2F303A;
     width: 100%;
@@ -99,7 +101,7 @@ main section{
     padding: 8px;;
     margin-top: 4%;
 }
-
+/* ########activity######*/
 .activity{
     display: flex;
     align-content: center;
@@ -138,8 +140,7 @@ main section{
     font-weight: 600;
 }
 
-/*    image             */
-
+/* ########What to Do######*/
 .do{
     display: block;
     width: 100%;
@@ -168,7 +169,7 @@ main section{
 }
 
 
-
+/* ########Our Team######*/
 .team{
     display: block;
     width: 100%;
@@ -215,7 +216,7 @@ main section{
 
 
 
-/*                    footer                      */
+/*  ################### footer #####################  */
 
 footer{
     background: #2F303A;
