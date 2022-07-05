@@ -3,31 +3,33 @@
 body{
     margin: 0%;
     padding: 0%;
-    justify-content: center;
-    display: flex;
-    /* font-family: 'Yellowtail', cursive; */
-}
-wrapper{
     width: 1200px;
+    /* font-family: 'Yellowtail', cursive; */
 }
 
 header nav{
-    width: 100%;
+    width: 90%;
     display: flex;
     border-bottom:1px solid #E5E5E5;;
     align-items:center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    padding: 0 2% 0 2%;
 
 }
-#WebStudio{
+#logo{
+    margin-top: 8px;
+    font-size:1.5rem ;
+    font-weight: 700;
     color: #2196F3;
+    font-family: math;
 }
-nav div{
+
+header nav div{
     display: inline-flex;
     justify-content: space-around;
-    width: 40%;
+    width: 50%;
 }
-nav  ul{
+header nav ul{
     align-items: center;
     width: 50%;
     display: inline-flex;
@@ -35,19 +37,31 @@ nav  ul{
     list-style-type: none;
 
 }
-nav a{
+header nav .contact{
+    width: 50%;
+}
+header nav a{
     text-decoration: none;
     color: black;
 }
-nav a:hover{
+header nav a:hover{
     color: #2196F3;
 }
 
 
 /*      ############      main        ###########      */
-main div{
+main{
     width: 100%;
     justify-content: center;
+    padding: 0%;
+    margin: 0px;
+}
+main *{
+    padding: 0%;
+    margin: 0%;
+}
+main section{
+    margin-top: 6%;
 }
 .front{
     background-color: #2F303A;
@@ -60,7 +74,7 @@ main div{
 }
 .front div{
     text-align: center;
-    width: 40%;
+    width: 60%;
     white-space: inherit;
 }
 .front h1{
@@ -82,76 +96,115 @@ main div{
     height: 40px;
     border: #2F303A;
     border-radius: 3px;
-
+    padding: 8px;;
+    margin-top: 4%;
 }
 
 .activity{
     display: flex;
     align-content: center;
     width: 100%;
+    justify-content: center;
 
 }
-.activity div{
-    margin: 0%;
-    padding: 0px;
-    width: 17%;
-    padding: 1%;
-    line-height: 1.5em;
-    box-sizing: 100px;
+.activity ul{
+    align-items: center;
+    width: 86%;
+    display: inline-flex;
+    justify-content: space-between;
+    list-style-type: none; 
+    align-items:flex-start ;
+}
 
+.activity li{
+    width: 25%;
+    line-height: 1.7em;
+    padding: 10px;
+}
+
+.activity h3{
+    float: top;
+    font-size: 15px;
+    font-weight: 900;
+    inset-inline-start: 10px;
+    word-spacing: .2rem;
 }
 
 .activity p{
-    color: #757575;
-    font-size: 14px;
+    color: #8e8b8b;
+    font-size: 10px;
+    word-spacing: .1em;
+    font-weight: 600;
 }
 
 /*    image             */
-section{
-    display: block;
-    justify-items: center;
-    padding: 1% 5% 1% 5%;
-}
-section div{
-    display: flex;
-    justify-content:center ;
-    white-space: normal;
-    padding-bottom: 4%;
-    height:fit-content;
-}
+
 .do{
-    display: flex;
+    display: block;
     width: 100%;
-    justify-content: center;
+   
 }
-.do img{
-    display: inline-flex;
-    width: 25%;
-    margin: 3%;
+.do div{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4%;
+}
+.do ul{
+    list-style-type: none; 
+    align-items: center;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+
+    
+}
+.do li{
+    width: 33%;
+}
+.do li img{
+    width: 100%;
 }
 
-.do h2{
-    display: block;
-}
+
 
 .team{
-    display: flex;
+    display: block;
     width: 100%;
-    justify-content: center;
+    background-color: #F5F4FA;
+    padding: 1% 0 7% 0;
 }
 .team div{
-    background-color: white;
-    display: block;
-    width: 15%;
-    margin: 1%;
-    padding: 3%;
-}
-.team img{
+    display: flex;
+    justify-content: center;
     width: 100%;
+    margin-top: 5%;
+    
+}
+.team ul{
+    width: 90%;
+    display: flex;
+    list-style-type: none; 
+    align-items: center;
+    justify-content: space-around;
+}
+.team li{
+    width: 21%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: white;
+    padding: 4px;
 }
 
-section  h2{
-    font-size: 36px;
+.team li img{
+    width: 98%;
+    margin-bottom:4px ;
+    
+}
+.team p{
+    text-indent: 32px;
+    font-size: 15px;
 }
 
 
@@ -162,16 +215,15 @@ footer{
     background: #2F303A;
     height: 15%;
     padding: 5% 5% 5% 10%;
+    line-height: 1.5rem;
+    
 }
-footer div{
-    width: 17%;
+footer *{ text-decoration: none;}
 
-}
-footer p{
-    color: white;
+footer address,footer address a{
+    color: rgba(255, 255, 255, 0.878);
 }
 footer a{
-    color: white;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.6);
+    color: rgba(255, 255, 255, 0.4);
 }

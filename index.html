@@ -12,76 +12,81 @@
     <script >
         var dir="./image/page1";
     </script>
-    <wrapper>
         <header>
-            <nav>
-                <div>
-                    <a href="./index.html"><h2 id="WebStudio">WebStudio</h2></a>
-                    <ul>
-                        <li><a href="/studio">Studio</a></li>
-                        <li><a href="/portfolio">Portfolio</a></li>
-                        <li><a href="/about">About</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <a target="_parent" href="#" title="email">info@devstudion.com</a>
-                    <a title="number" >+55 3231 32 32</a>
-                </div>
-            </nav>
+            <div>
+                <nav>
+                    <div>
+                        <a href="./index.html" id="logo">WebStudio</a>
+                        <ul>
+                            <li><a href="./index.html">Studio</a></li>
+                            <li><a href="./portfolio.html">Portfolio</a></li>
+                            <li><a href="/about">About</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="contact">
+                            <li><a target="_parent" href="mailto:info@devstudion.com" title="email">info@devstudion.com</a></li>
+                            <li><a title="number" href="tel:+55 3231 32 32" >+55 3231 32 32</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
         </header>
 
         <main>
             <div class="front">
                 <div>
-                    <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1>
+                    <h1>EFFECTIVE SOLUTIONS FOR YOUR BUSINESS</h1><a href="#"><button type="button">Request our service</button></a>
                 </div>
+            </div>
+            <section class="activity">
+                <ul>
+                    <li><h3>ATTENTION TO DETAILS</h3> <p>We go into all the details and processes of your business to develop a customized solution.</p></li>
+                    <li><h3>PUNCTUALITY</h3> <p>With us, you can feel safe and secure. An important principle of the company: respect your time and respect the agreed deadlines.</p> </li>
+                    <li><h3>PLANNING</h3> <p>You will be able to observe and participate in every phase of solution development and implementation.</p></li>
+                    <li><h3>MODERN TECHNOLOGIES</h3> <p>We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p></li>
+                </ul>
+            </section>
+
+            <section class="do">
+                <div><h1>What we do</h1></div>
                 <div>
-                    <a href="./store.html"><button>Request our service</button></a>
-                </div>
-            </div>
-            <div class="activity">
-                <div><h3>ATTENTION TO DETAILS</h3> <p>We go into all the details and processes of your business to develop a customized solution.</p></div>
-                <div><h3>PUNCTUALITY</h3> <p>With us, you can feel safe and secure. An important principle of the company: respect your time and respect the agreed deadlines.</p> </div>
-                <div><h3>PLANNING</h3> <p>You will be able to observe and participate in every phase of solution development and implementation.</p></div>
-                <div><h3>MODERN TECHNOLOGIES</h3> <p>We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p></div>
-            </div>
-            <section>
-                <div><h2>What we do</h2></div>
-                
-                <div class="do"> 
-                    <img src="./image/page1/1.png" />
-                    <img src="./image/page1/2.png" />
-                    <img src="./image/page1//3.png" />
-                    
+                    <ul > 
+                        <li><img src="./image/page1/1.png" /></li>
+                        <li><img src="./image/page1/2.png" /></li>
+                        <li><img src="./image/page1//3.png" /></li>
+                        
+                    </ul>
                 </div>
             </section>
             
             
-            <section style="background-color: #F5F4FA;">
+            <section class=" team">
                 <div><h2>Our Team</h2></div>
                 
-                <div class=" team">
-                    <div>
-                        
-                        <img src="./image/page1/p1.png" />
-                        <p>Игорь Демьяненко</p>
-                        <p>Product Designer</p>
-                    </div>
-                    <div>
-                        <img src="./image/page1/p2.png" />
-                        <p>Ольга Репина</p>
-                        <p>Frontend Developer</p>
-                    </div>
-                    <div>
-                        <img src="./image/page1/p3.png" />
-                        <p>Николай Тарасов</p>
-                        <p>Marketing</p>
-                    </div>
-                    <div>
-                        <img src="./image/page1/p4.png" />
-                        <p>Михаил Ермаков</p>
-                        <p>UI Designer</p>
-                    </div>
+                <div >
+                    <ul>
+                        <li>
+                            <img src="./image/page1/p1.png" />
+                            <p>Игорь Демьяненко</p>
+                            <p>Product Designer</p>
+                        </li>
+                        <li>
+                            <img src="./image/page1/p2.png" />
+                            <p>Ольга Репина</p>
+                            <p>Frontend Developer</p>
+                        </li>
+                        <li>
+                            <img src="./image/page1/p3.png" />
+                            <p>Николай Тарасов</p>
+                            <p>Marketing</p>
+                        </li>
+                        <li>
+                            <img src="./image/page1/p4.png" />
+                            <p>Михаил Ермаков</p>
+                            <p>UI Designer</p>
+                        </li>
+                    </ul>
                 </div>
                 
             </section>
@@ -90,13 +95,11 @@
         </main>
 
         <footer>
-            <h2 id="WebStudio">WebStudio</h2>
-            <div>
-                <p>695 Park Ave, New York, NY 10065, United States</p>
-                <p><a href="#" title="email">info@example.com</a></p>
-                <a href="#" title="phone">+1 212-772-4150</a>
-            </div>
+            <a id="logo" href="./index.html">WebStudio </a>
+            <address><br><a target="blank" href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7687275,-73.9673792,17z/data=!4m5!3m4!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7687275!4d-73.9651798">
+                695 Park Ave</a>, New York,<br> NY 10065, United States</address>
+            <a href="mailto:info@example.com">info@example.com</a><br>
+            <a href="tel:+1 212-772-4150">+1 212-772-4150</a>
         </footer>
-    </wrapper>
 </body>
 </html>
