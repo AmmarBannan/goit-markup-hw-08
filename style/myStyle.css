@@ -3,9 +3,13 @@
 body{
     margin: 0%;
     padding: 0%;
-    width: 1200px;
+    width: 100%;
+    max-width: 1700px;
     min-width: 1000px;
     /* font-family: 'Yellowtail', cursive; */
+}
+body {
+    max-width: 1400;
 }
 
 header nav{

@@ -61,25 +61,24 @@ tap.map((val,index)=>{
         // let background=()=>tap[index].active?button.setAttribute("style", "background-color:rgb(60, 60, 60,40%)"):button.setAttribute("style","background-color:rgb(60, 60, 60,10%)")
         tap[index].active?tap[index].active=false:(tap.forEach((val)=>val.active=false),tap[index].active=true)
         
-        
-        
         console.log(button.active);
         console.log(tap);
 
         const activeTapes=tap.filter((val)=>val.active).map((val)=>val.name)
         const categoryDisplay=categoryArray.filter((val)=>activeTapes.includes(val.type))
-
+        
 
         tap.map((val)=>console.log(val.active))
 
-        
-
+        if(categoryDisplay.length>0){
         itemList=categoryDisplay.map((value,index)=>
             `<figure>
-                <img src="${value.img}"></img>
+                <img src="${value.img}" alt="${value.title}"></img>
                 <figcaption><p class="type">${value.type}</p> <p class="title">${value.title}</p> </figcaption>
             </figure>`
-        ).join(" ");
+        ).join(" ");}
+        else{ itemList=`<div class="empty"><h1 >Nothing To Show</h1><pre><h3>Please Select category</h3></div>`}
+
         category.innerHTML=itemList ;
         
     });
