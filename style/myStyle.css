@@ -192,6 +192,7 @@ section h1{
     width: 100%;
     background-color: #F5F4FA;
     padding: 1% 0 7% 0;
+    margin-top:4%;
 }
 .team div{
     display: flex;
