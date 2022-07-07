@@ -66,7 +66,7 @@ tap.map((val,index)=>{
                 <figcaption><p class="type">${value.type}</p> <p class="category-title">${value.title}</p> </figcaption>
             </figure>`
         ).join(" ");}
-        else{ itemList=`<div class="empty"><h1 >Nothing To Show</h1><pre><h3>Please Select category</h3></div>`};
+        else{ itemList=`<div class="empty"><h1 >Nothing To Show!</h1><pre><h3>Please Select form tapes above</h3></div>`};
 
         category.innerHTML=itemList ;
         

@@ -5,7 +5,7 @@ body{
     padding: 0%;
     width: 100%;
     max-width: 2200px;
-    min-width: 1200px;
+    min-width: 1300px;
     /* font-family: 'Yellowtail', cursive; */
 }
 body *{
@@ -24,8 +24,8 @@ header nav{
 
 }
 #logo{
-    margin-top: 8px;
-    font-size:2.8rem ;
+   
+    font-size:2.8em ;
     font-weight: 700;
     color: #2196F3;
     font-family: math;
@@ -40,15 +40,16 @@ header nav ul{
     align-items: center;
     width: 50%;
     display: inline-flex;
-    justify-content: space-between;
+    justify-content: space-around;
     list-style-type: none;
 
 }
 header nav .contact{
-    width: 50%;
+    width: 70%;
+    display: flex;
 }
 header nav a{
-    font-size: 2em;
+    font-size: 1.5em;
     text-decoration: none;
     color: black;
 }
@@ -67,9 +68,6 @@ main{
 main *{
     padding: 0%;
     margin: 0%;
-}
-main section{
-    margin-top: 6%;
 }
 section h1{
     font-size: 3em;
@@ -120,7 +118,7 @@ section h1{
     align-content: center;
     width: 100%;
     justify-content: center;
-
+    margin-top: 3%;
 }
 .activity ul{
     align-items: center;
@@ -129,29 +127,37 @@ section h1{
     justify-content: space-between;
     list-style-type: none; 
     align-items:flex-start ;
+    white-space: normal;
 }
 
 .activity li{
     width: 25%;
-    line-height: 1.7em;
     padding: 10px;
+    display: block;
+    min-height:150px;
 }
 
 .activity h3{
+    height: 30%;
+    line-height: 1.2em;
     font-family: 'Roboto', sans-serif;
     float: top;
-    font-size: 1.8em;
+    font-size: 1.5rem;
     font-weight: 600;
     inset-inline-start: 10px;
-    word-spacing: .1rem;
+    word-spacing: .1em;
+    margin-bottom: 8px;
+    
 }
 
 .activity p{
+
+    float:right;
     color: #8e8b8b;
-    font-size: 1.5em;
+    font-size: 1.2em;
     word-spacing: .02em;
     font-weight: 600;
-    line-height: 2em;
+    line-height: 1em;
 }
 
 /* ########What to Do######*/
@@ -163,7 +169,7 @@ section h1{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 4%;
+    margin-top:2%;
 }
 .do ul{
     list-style-type: none; 
