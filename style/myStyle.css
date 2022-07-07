@@ -4,16 +4,18 @@ body{
     margin: 0%;
     padding: 0%;
     width: 100%;
-    max-width: 1700px;
-    min-width: 1000px;
+    max-width: 2200px;
+    min-width: 1200px;
     /* font-family: 'Yellowtail', cursive; */
 }
-body {
-    max-width: 1400;
+body *{
+    font-family: "Roboto";
 }
 
+/*  ###############    header  ####################   */
+
 header nav{
-    width: 90%;
+    width: 100%;
     display: flex;
     border-bottom:1px solid #E5E5E5;;
     align-items:center;
@@ -23,7 +25,7 @@ header nav{
 }
 #logo{
     margin-top: 8px;
-    font-size:1.5rem ;
+    font-size:2.8rem ;
     font-weight: 700;
     color: #2196F3;
     font-family: math;
@@ -46,6 +48,7 @@ header nav .contact{
     width: 50%;
 }
 header nav a{
+    font-size: 2em;
     text-decoration: none;
     color: black;
 }
@@ -68,7 +71,9 @@ main *{
 main section{
     margin-top: 6%;
 }
-
+section h1{
+    font-size: 3em;
+}
 /* ########front######*/
 .front{
     background-color: #2F303A;
@@ -89,10 +94,9 @@ main section{
     font-family: monospace;
     font-style: normal;
     font-weight: 900;
-    font-size: 44px;
+    font-size: 5em;
     line-height: 60px;
     /* or 136% */
-
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -100,12 +104,16 @@ main section{
 .front button{
     color: white;
     background-color: #2196F3;
-    height: 40px;
+    height:fit-content;
     border: #2F303A;
     border-radius: 3px;
     padding: 8px;;
     margin-top: 4%;
+    font-size: 2.5em;
+    border-radius: 5%;
 }
+
+
 /* ########activity######*/
 .activity{
     display: flex;
@@ -132,24 +140,24 @@ main section{
 .activity h3{
     font-family: 'Roboto', sans-serif;
     float: top;
-    font-size: 14px;
-    font-weight: 800;
+    font-size: 1.8em;
+    font-weight: 600;
     inset-inline-start: 10px;
-    word-spacing: .2rem;
+    word-spacing: .1rem;
 }
 
 .activity p{
     color: #8e8b8b;
-    font-size: 12px;
+    font-size: 1.5em;
     word-spacing: .02em;
     font-weight: 600;
+    line-height: 2em;
 }
 
 /* ########What to Do######*/
 .do{
     display: block;
     width: 100%;
-   
 }
 .do div{
     display: flex;
@@ -163,8 +171,6 @@ main section{
     width: 90%;
     display: flex;
     justify-content: space-between;
-
-    
 }
 .do li{
     width: 30%;
@@ -202,21 +208,23 @@ main section{
     justify-content: start;
     flex-direction: column;
     background-color: white;
-    height: 330px;
+    height: fit-content;
+    padding-bottom: 50px ;
     box-shadow: 1px 1px 2px 2px rgba(210, 210, 210, 0.955);
+    
 }
 
 .team li img{
     width: 100%;
     margin-bottom:40px ;
-    
 }
 .team .name{
-    font-size: 15px;
+    font-size: 1.9em;
     font-weight: 800;
+    white-space: 20px;
 }
 .team p{
-    font-size: 12px;
+    font-size: 1.5em;
 }
 
 
@@ -228,7 +236,6 @@ footer{
     height: 15%;
     padding: 5% 5% 5% 10%;
     line-height: 1.5rem;
-    
 }
 footer *{ text-decoration: none;}
 
@@ -236,6 +243,7 @@ footer address,footer address a{
     color: rgba(255, 255, 255, 0.878);
 }
 footer a{
+    font-size: 2em;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.4);
 }

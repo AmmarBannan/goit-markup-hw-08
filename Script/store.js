@@ -8,8 +8,6 @@ const categoryObject={
 
 const tap=[{name:"Web-site",active:true},{name:"Apps",active:true},{name:"Design",active:true},{name:"Marketing",active:true}];
 
-
-
 let categoryArray=[
     {title:"Technoduck",img:imgLocation.concat("1.jpg"),type:"Web-site"},
     {title:"Poster New Orlean vs Golden Star",img:imgLocation.concat("2.jpg"),type:"Design"},
@@ -21,7 +19,7 @@ let categoryArray=[
     {title:"Project LAB",img:imgLocation.concat("8.jpg"),type:"Marketing"},
     {title:"Growing Business",img:imgLocation.concat("9.jpg"),type:"Apps"}
 ];
-const category=document.querySelector(".tap");
+const category=document.querySelector(".category");
 let itemList=categoryArray.map((value,index)=>
         `<figure>
             <img src="${value.img}"></img>
@@ -33,8 +31,7 @@ category.innerHTML=itemList ;
 
 
 const tapList=tap.map((val,index)=>
-    // `<button value=${val.active} onclick=${val.setAttribute("value",!val.active)}}>${val.name}</button>`
-    `<button class="btn${index}">${val.name}</button>`
+    `<input type="button" class="button" value=${val.name}>`
 ).join("")
 
 
@@ -42,8 +39,7 @@ const tapes=document.querySelector(".tapes");
 tapes.innerHTML+=tapList;
 
 
-document.querySelector(".All").addEventListener("click",()=>{
-    tap.forEach((val)=>val.active=false);
+document.querySelector('[value=All]').addEventListener("click",()=>{
     itemList=categoryArray.map((value,index)=>
             `<figure>
                 <img src="${value.img}"></img>
@@ -54,30 +50,23 @@ document.querySelector(".All").addEventListener("click",()=>{
 })
 
 tap.map((val,index)=>{
-    const button = document.querySelector(`.btn${index}`);
+    const button = document.querySelector(`[value=${val.name}]`);
     button.addEventListener("click", () => {
 
-
-        // let background=()=>tap[index].active?button.setAttribute("style", "background-color:rgb(60, 60, 60,40%)"):button.setAttribute("style","background-color:rgb(60, 60, 60,10%)")
         tap[index].active?tap[index].active=false:(tap.forEach((val)=>val.active=false),tap[index].active=true)
-        
-        console.log(button.active);
-        console.log(tap);
 
-        const activeTapes=tap.filter((val)=>val.active).map((val)=>val.name)
-        const categoryDisplay=categoryArray.filter((val)=>activeTapes.includes(val.type))
-        
+        const activeTapes=tap.filter((val)=>val.active).map((val)=>val.name);
 
-        tap.map((val)=>console.log(val.active))
+        const categoryDisplay=categoryArray.filter((val)=>activeTapes.includes(val.type));
 
         if(categoryDisplay.length>0){
         itemList=categoryDisplay.map((value,index)=>
             `<figure>
                 <img src="${value.img}" alt="${value.title}"></img>
-                <figcaption><p class="type">${value.type}</p> <p class="title">${value.title}</p> </figcaption>
+                <figcaption><p class="type">${value.type}</p> <p class="category-title">${value.title}</p> </figcaption>
             </figure>`
         ).join(" ");}
-        else{ itemList=`<div class="empty"><h1 >Nothing To Show</h1><pre><h3>Please Select category</h3></div>`}
+        else{ itemList=`<div class="empty"><h1 >Nothing To Show</h1><pre><h3>Please Select category</h3></div>`};
 
         category.innerHTML=itemList ;
         

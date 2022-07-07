@@ -3,9 +3,8 @@
 body{
     margin: 0%;
     padding: 0%;
-    width: 100%;
-    max-width: 1700px;
-    min-width: 1200px;
+    width: 1200px;
+    min-width: 1000px;
     /* font-family: 'Yellowtail', cursive; */
 }
 
@@ -83,7 +82,7 @@ main nav button{
     padding:10px 25px 10px 25px;
 }
 
-.tap{
+.category{
     flex-wrap: wrap;
     height: fit-content;
     min-height: 700px;
@@ -101,14 +100,40 @@ main img{
 figure figcaption{
     padding: 2% 7% 2% 7%;
 }
+figure figcaption p:first-child{
+    font-size: 1.2em;
+    font-weight: 700;
 
-.type{
-    font-weight: 800;
 }
-.tapes button:focus{
+figure figcaption p{
+    font-size: 1em;
+}
+
+.button{
+    font-weight: 600;
+    font-size: 1.1em;
+    border: none;
+    padding: 5px 15px 5px 15px;
+    border-radius: 7%;
+}
+.button:focus{
     background-color: #2196F3;
     color: white;
 }
+.button:hover{
+    animation-name: hover;
+    animation-duration: 1s;
+}
+
+
+
+@keyframes hover {
+    from {background-color: gainsboro;}
+    to {background-color: #2196F3;;}
+    from {color: black;}
+    to {color: white;}
+  }
+  
 .empty{
     font-family: cursive;
     justify-content: flex-start ;
