@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
 
+h1,h2,h3,h4,h5,h6,p { margin: 0;}
+html { box-sizing: border-box;}
+*,*::after,*::before { box-sizing: inherit;}
+img { display: block; max-width: 100%; height: auto;}
+address { font-style: normal;}
+.link { text-decoration: none; color: inherit;}
+.list { list-style: none; padding: 0; margin: 0;} 
+
+/* ###################   body     #################### */
+
 body{
     margin: 0%;
     padding: 0%;
@@ -12,37 +22,48 @@ body *{
     font-family: "Roboto";
 }
 
+
+
 /*  ###############    header  ####################   */
 
-header nav{
+header div{
     width: 100%;
     display: flex;
-    border-bottom:1px solid #E5E5E5;;
-    align-items:center;
-    padding: 0 2% 0 2%;
+    align-items: center;
     justify-content: center;
+}
+header >div{
+    display: flex;
+    justify-content: center;
+    height: 80px;
+}
+header nav{
+    width: 80%;
+    display: grid;
+    align-items:center;
+    grid-template-columns: 1fr 4fr 2fr;
 
 }
+
 #logo{
-   
     font-size:2em ;
     font-weight: 700;
     color: #2196F3;
     font-family: math;
+    text-decoration: none;
 }
-
 
 header nav ul{
+    width:400px;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 2fr 3fr 3fr;
-    column-gap: 40px;
-    padding: 0%;
-    width: 80%;
-    justify-content: space-evenly;
-    align-items: center;
+    display: flex;
+    justify-content: space-around;
 }
-header nav a{
+nav>ul{
+    width: 300px;
+}
+
+header nav ul a{
     font-size: 1em;
     text-decoration: none;
     color: black;
@@ -64,22 +85,30 @@ main *{
     margin: 0%;
 }
 section{
-    padding-top: 36px;
-    padding-bottom: 36px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding-top: 60px;
     height: fit-content;
 }
-section h1{
-    font-size: 2.2em;
+section h2{
+    font-family: 'system-ui';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 /* ########front######*/
 .front{
-    background-color: #2F303A;
+    background-color:  #2F303A;
     width: 100%;
-    height: 700px;
+    height: 600px;
     align-items: center;
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-top: 0;
 }
 .front div{
     text-align: center;
@@ -102,26 +131,28 @@ section h1{
     color: white;
     background-color: #2196F3;
     height:fit-content;
-    border: #2F303A;
-    border-radius: 3px;
+    border:none;
     padding: 8px;;
     margin-top: 4%;
-    font-size: 2.5em;
-    border-radius: 5%;
+    font-size: 1.2em;
+    border-radius: 2%;
+    width: 200px;
+    height: 50px;
 }
 
 
 /* ########activity######*/
-.activity{
+.activity{padding-top: 0;}
+
+.activity div {
     display: flex;
     align-content: center;
     width: 100%;
     justify-content: center;
-    margin-top: 3%;
 }
 .activity ul{
     align-items: center;
-    width: 86%;
+    width: 72%;
     display: inline-flex;
     justify-content: space-between;
     list-style-type: none; 
@@ -130,89 +161,81 @@ section h1{
 }
 
 .activity li{
-    width: 25%;
+    width: 24%;
     padding: 10px;
     display: block;
 }
 
-.activity h3{
-    height: 30%;
-    line-height: 1.2em;
+.activity h4{
     font-family: 'Roboto', sans-serif;
     float: top;
-    font-size: 1.2rem;
-    font-weight: 600;
     inset-inline-start: 10px;
     word-spacing: .1em;
     margin-bottom: 8px;
     line-height: 1.7em;
-    
 }
 
 .activity p{
-
     float:right;
     color: #8e8b8b;
-    font-size: .9em;
     word-spacing: .02em;
-    font-weight: 600;
     line-height: 1.7em;
 }
 
-/* ########What to Do######*/
+/* ########What we Do######*/
 .do{
-    display: block;
-    width: 100%;
-    text-align: center;
-    
-}
-.do div{
-    
+    padding-top: 0;
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top:2%;
 }
+.do>div{
+    display: block;
+    text-align: center; 
+}
+
 .do ul{
+    margin-top:70px;
     list-style-type: none; 
     align-items: center;
-    width: 90%;
     display: flex;
     justify-content: space-between;
+    column-gap: 40px;
 }
 .do li{
-    width: 30%;
+    width: fit-content;
 }
 .do li img{
-    width: 100%;
+    width: 480px;
 }
 
 
 /* ########Our Team######*/
 .team{
-    display: block;
-    width: 100%;
-    background-color: #F5F4FA;
-    margin-top:4%;
-    text-align: center;
-    padding-bottom: 10%;
-}
-.team div{
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 5%;
-    
+    background-color:  #F5F4FA;;
+    padding-bottom: 100px;
+    margin-bottom: 0;
+}
+
+.team >div{
+    display: block;
+    width: fit-content;
+    text-align: center;
+    width: fit-content;
 }
 .team ul{
-    width: 92%;
+    margin-top:70px;
     display: flex;
     list-style-type: none; 
     align-items: center;
     justify-content: space-around;
+    column-gap: 35px;
 }
 .team li{
-    width: 22%;
+    width: 360px;
     display: flex;
     align-items: center;
     justify-content: start;
@@ -221,7 +244,7 @@ section h1{
     height: fit-content;
     padding-bottom: 50px ;
     box-shadow: 1px 1px 2px 2px rgba(210, 210, 210, 0.955);
-    
+    border-radius: 5px;
 }
 
 .team li img{
@@ -233,6 +256,7 @@ section h1{
     font-weight: 800;
     white-space: 20px;
 }
+
 .team p{
     font-size: 1.5em;
 }
@@ -243,18 +267,24 @@ section h1{
 
 footer{
     background: #2F303A;
-    height: 15%;
-    padding: 5% 5% 5% 10%;
-    line-height: 2rem;
-    
+    height: 260px;
+    padding: 50px 0px 0px 200px;
+    line-height: 1.8rem;
 }
-footer *{ text-decoration: none;}
+footer a{ 
+    text-decoration: none;
+    padding: 0;
+}
 
-footer address,footer address a{
+footer ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+footer address a{
     color: rgba(255, 255, 255, 0.878);
 }
-footer a,address{
-    font-size: 22px;
+footer a{
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.4);
+    color:  rgba(255, 255, 255, 0.6);
 }
