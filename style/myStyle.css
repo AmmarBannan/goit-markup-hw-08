@@ -20,55 +20,58 @@ body{
 }
 body *{
     font-family: "Roboto";
+    font-style: normal;
 }
+
 
 
 
 /*  ###############    header  ####################   */
 
-header div{
+header{
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-}
-header >div{
-    display: flex;
-    justify-content: center;
     height: 80px;
 }
+header div{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
 header nav{
-    width: 80%;
+    width: 50%;
     display: grid;
     align-items:center;
     grid-template-columns: 1fr 4fr 2fr;
-
 }
 
 #logo{
     font-size:2em ;
     font-weight: 700;
     color: #2196F3;
-    font-family: math;
     text-decoration: none;
 }
 
-header nav ul{
+header ul{
     width:400px;
     list-style-type: none;
     display: flex;
     justify-content: space-around;
 }
-nav>ul{
-    width: 300px;
-}
 
-header nav ul a{
-    font-size: 1em;
+
+header  a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    font-style: normal;
+    letter-spacing: 0.02em;
     text-decoration: none;
     color: black;
 }
-header nav a:hover{
+header a:hover{
     color: #2196F3;
 }
 
@@ -91,7 +94,6 @@ section{
     height: fit-content;
 }
 section h2{
-    font-family: 'system-ui';
     font-style: normal;
     font-weight: 800;
     font-size: 36px;
@@ -111,33 +113,41 @@ section h2{
     margin-top: 0;
 }
 .front div{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
     width: 47%;
-    white-space: inherit;
+
 }
 .front h1{
-    color: white;
-    font-family: monospace;
-    font-style: normal;
     font-weight: 900;
-    font-size: 3.5em;
+    font-size: 44px;
     line-height: 60px;
     /* or 136% */
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
+    color: #FFFFFF;
 }
 .front button{
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
     color: white;
     background-color: #2196F3;
     height:fit-content;
     border:none;
     padding: 8px;;
     margin-top: 4%;
-    font-size: 1.2em;
     border-radius: 2%;
-    width: 200px;
-    height: 50px;
+    width: fit-content;
 }
 
 
@@ -152,7 +162,7 @@ section h2{
 }
 .activity ul{
     align-items: center;
-    width: 72%;
+    width: 78%;
     display: inline-flex;
     justify-content: space-between;
     list-style-type: none; 
@@ -161,25 +171,29 @@ section h2{
 }
 
 .activity li{
-    width: 24%;
-    padding: 10px;
+    width: 270px;
     display: block;
 }
 
 .activity h4{
-    font-family: 'Roboto', sans-serif;
     float: top;
     inset-inline-start: 10px;
-    word-spacing: .1em;
     margin-bottom: 8px;
-    line-height: 1.7em;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
 }
 
 .activity p{
     float:right;
-    color: #8e8b8b;
-    word-spacing: .02em;
-    line-height: 1.7em;
+    color: #757575;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* or 171% */
+    letter-spacing: 0.03em;
 }
 
 /* ########What we Do######*/
@@ -206,7 +220,7 @@ section h2{
     width: fit-content;
 }
 .do li img{
-    width: 480px;
+    width: 370px;
 }
 
 
@@ -235,30 +249,42 @@ section h2{
     column-gap: 35px;
 }
 .team li{
-    width: 360px;
+    width: fit-content;
     display: flex;
     align-items: center;
     justify-content: start;
     flex-direction: column;
     background-color: white;
     height: fit-content;
-    padding-bottom: 50px ;
+    padding-bottom: 25px ;
     box-shadow: 1px 1px 2px 2px rgba(210, 210, 210, 0.955);
     border-radius: 5px;
+    row-gap: 12px;
 }
 
 .team li img{
-    width: 100%;
-    margin-bottom:40px ;
+    width: 270px;
+    margin-bottom: 15px;
 }
-.team .name{
-    font-size: 1.9em;
-    font-weight: 800;
-    white-space: 20px;
+.name{
+    white-space: 60px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    letter-spacing: 0.03em;
 }
 
 .team p{
-    font-size: 1.5em;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    /* identical to box height */
+
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #757575;
 }
 
 
@@ -282,9 +308,16 @@ footer ul{
 }
 
 footer address a{
-    color: rgba(255, 255, 255, 0.878);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:#ffffff;
 }
 footer a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
     letter-spacing: 0.03em;
     color:  rgba(255, 255, 255, 0.6);
 }
