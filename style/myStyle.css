@@ -64,6 +64,10 @@ header ul{
     justify-content: space-around;
 }
 
+header div>ul:nth-child(2) a{
+    color: #757575;
+}
+
 
 header  a{
     font-size: 14px;
