@@ -1,4 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+h1,h2,h3,h4,h5,h6,p { margin: 0;}
+html { box-sizing: border-box;}
+*,*::after,*::before { box-sizing: inherit;}
+img { display: block; max-width: 100%; height: auto;}
+address { font-style: normal;}
+.link { text-decoration: none; color: inherit;}
+.list { list-style: none; padding: 0; margin: 0;} 
+
+/* ###################   body     #################### */
+
 body{
     margin: 0%;
     padding: 0%;
@@ -9,6 +20,11 @@ body{
 }
 body *{
     font-family: "Roboto";
+    font-style: normal;
+}
+
+.container{
+    width:1536px
 }
 
 /*  ###############    header  ####################   */
@@ -16,39 +32,50 @@ body *{
 header{
     width: 100%;
     display: flex;
-    border-bottom:1px solid #E5E5E5;;
-    align-items:center;
-    padding: 0 2% 0 2%;
+    align-items: center;
     justify-content: center;
+    height: 80px;
+    border-bottom: solid .5px rgb(230, 230, 232);
 }
+header div{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+header nav{
+    width: 50%;
+    display: grid;
+    align-items:center;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
 #logo{
     font-size:2em ;
     font-weight: 700;
     color: #2196F3;
-    font-family: math;
+    text-decoration: none;
 }
 
-
-header nav ul{
+header ul{
+    width:400px;
     list-style-type: none;
-    display: grid;
-    grid-template-columns: 3fr 1fr 1fr 1fr 2fr 3fr 3fr;
-    column-gap: 40px;
-    padding: 0%;
-    width: 80%;
-    justify-content: space-evenly;
-    align-items: center;
-    background-color: #2196F3;
+    display: flex;
+    justify-content: space-around;
 }
-header a{
-    font-size: 1em;
+
+
+header  a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    font-style: normal;
+    letter-spacing: 0.02em;
     text-decoration: none;
     color: black;
 }
 header a:hover{
     color: #2196F3;
 }
-
 /*      ############      main        ###########      */
 main{
     width: 100%;
@@ -56,83 +83,79 @@ main{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 30px 0 30px 0;
 }
-main div{
-    justify-content: center;
-    display: flex ;
-    width: 96%;
-    margin-top: 2.6%;
-    
-}
-main nav{
-    width: 35%;
-    justify-content: space-between;
+
+.tapes{
+    list-style-type: none;
     display: flex;
-    align-items: center;
-    height: 30px;
-}
-
-main nav button{
-    border: none;
-    border-radius: 5%;
-    text-align: center;
-    width: fit-content;
-    background-color:rgb(60, 60, 60,10%);
-    font-size: 1.4em;
-}
-
-.category{
-    flex-wrap: wrap;
-    height: fit-content;
-    min-height: 700px;
-}
-
-main figure{
-    height: fit-content;
-    width:350px;
-    border: 2px solid rgb(60, 60, 60,10%);
-    margin: 1%;
-    }
-main img{
-    width: 100%;
-}
-figure figcaption{
-    padding: 2% 7% 2% 7%;
-}
-figure figcaption p:first-child{
-    font-size: 1.2em;
+    column-gap: 25px;
+    width:fit-content;
     font-weight: 700;
+}
+.tapes input{
+    border: none;
+    background-color: #F5F4FA;
+    width:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    width:fit-content;
+    padding: 0 20px 0 20px;
+    border-radius: 3px;
+    width: 100%;
+
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 0.03em;
+    color: #212121;
 
 }
-figure figcaption p{
+
+
+.tapes li:nth-child(n+2){
+    width: 130px;
     font-size: 1em;
 }
 
-.button{
-    font-weight: 600;
-    font-size: 1.1em;
-    border: none;
-    padding: 5px 15px 5px 15px;
-    border-radius: 7%;
+
+.category{
+    min-height: 700px;
+    padding-top: 50px;
+    width: 65%;
+    display:grid;
+    grid-template-columns: repeat(3,33%);
+    align-items: flex-start;
+    justify-content: center;
+    row-gap: 50px;
+    column-gap: 50px;
 }
-.button:focus{
+
+.item{
+    width:fit-content;
+    height:fit-content;
+    padding-bottom: 30px;
+    border: #ECECEC solid 1px;
+    line-height: 20px;
+}
+
+.item img{
+    width: 370px;
+}
+.item p{margin: 20px 0px 0 30px;}
+
+.tapes input:hover{
     background-color: #2196F3;
     color: white;
 }
-.button:hover{
-    animation-name: hover;
-    animation-duration: 1s;
+
+.tapes input:focus{
+    background-color: #2196F3;
+    color: white;
 }
 
 
-
-@keyframes hover {
-    from {background-color: gainsboro;}
-    to {background-color: #2196F3;;}
-    from {color: black;}
-    to {color: white;}
-  }
-  
 .empty{
     font-family: cursive;
     justify-content: flex-start ;
@@ -141,31 +164,52 @@ figure figcaption p{
     flex-direction: column;
 }
 
-.blur-up {
-    filter: blur(5px);
-    transition: filter 400ms;
-  }
-  
-  .blur-up.lazyloaded {
-    filter: blur(0);
-  }
+.type{
+    font-size: 18px;
+    line-height: 36px;
+    /* identical to box height, or 200% */
+    color: #212121;
+    font-weight: 600;
+}
+
+.category-title{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+    letter-spacing: 0.03em;
+    color: #757575;
+}
 
 /*  ################### footer #####################  */
 
 footer{
     background: #2F303A;
-    height: 15%;
-    padding: 5% 5% 5% 10%;
-    line-height: 2rem;
-    
+    height: 260px;
+    padding: 50px 0px 0px 200px;
+    line-height: 1.8rem;
 }
-footer *{ text-decoration: none;}
+footer a{ 
+    text-decoration: none;
+    padding: 0;
+}
 
-footer address,footer address a{
-    color: rgba(255, 255, 255, 0.878);
+footer ul{
+    padding: 0;
+    list-style-type: none;
 }
-footer a,address{
-    font-size: 22px;
+
+footer address a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
     letter-spacing: 0.03em;
-    color: rgba(255, 255, 255, 0.4);
+    color:#ffffff;
+}
+footer a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:  rgba(255, 255, 255, 0.6);
 }

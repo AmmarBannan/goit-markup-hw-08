@@ -23,7 +23,9 @@ body *{
     font-style: normal;
 }
 
-
+.container{
+    width:1536px
+}
 
 
 /*  ###############    header  ####################   */
@@ -34,6 +36,7 @@ header{
     align-items: center;
     justify-content: center;
     height: 80px;
+    border-bottom: solid .5px rgb(230, 230, 232);
 }
 header div{
     display: flex;
@@ -162,7 +165,7 @@ section h2{
 }
 .activity ul{
     align-items: center;
-    width: 78%;
+    width: 72%;
     display: inline-flex;
     justify-content: space-between;
     list-style-type: none; 

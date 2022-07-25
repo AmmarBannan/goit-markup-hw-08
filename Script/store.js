@@ -21,17 +21,17 @@ let categoryArray=[
 ];
 const category=document.querySelector(".category");
 let itemList=categoryArray.map((value,index)=>
-        `<figure>
+        `<div class="item">
             <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} LQIP"></img>
-            <figcaption><p class="type">${value.type}</p> <p class="title">${value.title}</p> </figcaption>
-        </figure>`
+            <p class="type">${value.title}</p> <p class="category-title">${value.type}</p>
+        </div>`
 ).join(" ");
 category.innerHTML=itemList ;
 
 
 
 const tapList=tap.map((val,index)=>
-    `<input type="button" class="button" value=${val.name}>`
+    `<li><input type="button" class="button" value=${val.name}></li>`
 ).join("")
 
 
@@ -41,10 +41,10 @@ tapes.innerHTML+=tapList;
 
 document.querySelector('[value=All]').addEventListener("click",()=>{
     itemList=categoryArray.map((value,index)=>
-            `<figure>
+            `<div class="item">
                 <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
-                <figcaption><p class="type">${value.type}</p> <p class="title">${value.title}</p> </figcaption>
-            </figure>`
+                <p class="type">${value.title}</p> <p class="category-title">${value.type}</p>
+            </div>`
     ).join(" ");
     category.innerHTML=itemList ;
 })
@@ -61,42 +61,14 @@ tap.map((val,index)=>{
 
         if(categoryDisplay.length>0){
         itemList=categoryDisplay.map((value,index)=>
-            `<figure>
+            `<div class="item">
                 <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
-                <figcaption><p class="type">${value.type}</p> <p class="category-title">${value.title}</p> </figcaption>
-            </figure>`
+                <p class="type">${value.title}</p> <p class="category-title">${value.type}</p>
+            </div>`
         ).join(" ");}
         else{ itemList=`<div class="empty"><h1 >Nothing To Show!</h1><pre><h3>Please Select form tapes above</h3></div>`};
 
         category.innerHTML=itemList ;
         
     });
-    
-    document.addEventListener(
-        "scroll",
-        _.throttle(() => {
-          console.log("Scroll handler call every 300ms");
-        }, 3)
-      );
-    })
-
-    document.addEventListener(
-        "scroll",
-        _.debounce(() => {
-        console.log("Scroll handler call after 1000ms pause");
-        }, 2000)
-    );
-
-    document.addEventListener(
-        "scroll",
-        _.debounce(
-          () => {
-            console.log("Scroll handler call on every event stream start testery");
-          },
-          300,
-          {
-            leading: true,
-            trailing: true,
-          }
-        )
-      );
+});
