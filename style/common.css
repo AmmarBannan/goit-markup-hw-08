@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Yellowtail&display=swap');
+
+h1,h2,h3,h4,h5,h6,p { margin: 0;}
+html { box-sizing: border-box;}
+*,*::after,*::before { box-sizing: inherit;}
+img { display: block; max-width: 100%; height: auto;}
+address { font-style: normal;}
+.link { text-decoration: none; color: inherit;}
+.list { list-style: none; padding: 0; margin: 0;} 
+
+/* ###################   body     #################### */
+
+body{
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    max-width: 2200px;
+    min-width: 1300px;
+    /* font-family: 'Yellowtail', cursive; */
+}
+body *{
+    font-family: "Roboto";
+    font-style: normal;
+}
+
+.container{
+    width:1536px
+}
+
+
+/*  ###############    header  ####################   */
+
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    border-bottom: solid .5px rgb(230, 230, 232);
+}
+header div{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+}
+header nav{
+    width: 50%;
+    display: grid;
+    align-items:center;
+    grid-template-columns: 1fr 4fr 2fr;
+}
+
+#logo{
+    font-size:2em ;
+    font-weight: 700;
+    color: #2196F3;
+    text-decoration: none;
+}
+
+header ul{
+    width:400px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+header div>ul:nth-child(2) a{
+    color: #757575;
+}
+
+
+header  a{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.41px;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    text-decoration: none;
+    color: black;
+}
+header a:hover{
+    color: #2196F3;
+}
+
+/*  ################### footer #####################  */
+
+footer{
+    background: #2F303A;
+    height: 260px;
+    padding: 50px 0px 0px 200px;
+    line-height: 1.8rem;
+}
+footer a{ 
+    text-decoration: none;
+    padding: 0;
+}
+
+footer ul{
+    padding: 0;
+    list-style-type: none;
+}
+
+footer address a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:#ffffff;
+}
+footer a{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color:  rgba(255, 255, 255, 0.6);
+}
