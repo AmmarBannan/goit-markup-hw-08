@@ -28,13 +28,12 @@ section{
 .tapes{
     list-style-type: none;
     display: flex;
+    padding: 0;
 }
 .filter{
     border: none;
     background-color: var(--button-backgroundcolor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
     padding: 6px 25px;
     border-radius: 4px;
     font-weight: 700;
