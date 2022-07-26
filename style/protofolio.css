@@ -6,7 +6,7 @@
 :root {
     --font-hover-focus-backgroundcolor:#2196F3;
     --font-hover-focus-color:white;
-    --buuton-backgroundcolor:#F5F4FA;
+    --button-backgroundcolor:#F5F4FA;
     --category-title:#757575;
   }
 
@@ -32,9 +32,9 @@ section{
     width:fit-content;
     font-weight: 700;
 }
-.tapes button{
+.filter{
     border: none;
-    background-color: var(--buuton-backgroundcolor);
+    background-color: var(--button-backgroundcolor);
     width:100px;
     display: flex;
     justify-content: center;
@@ -69,27 +69,37 @@ section{
     justify-content: center;
     row-gap: 50px;
     column-gap: 50px;
+    list-style-type: none;
 }
 
 .item{
     width:fit-content;
     height:fit-content;
-    padding-bottom: 30px;
     border: #ECECEC solid 1px;
     line-height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .item img{
     width: 370px;
 }
-.item p{margin: 20px 0px 0 30px;}
+.item div{
+    padding: 20px;
+    display: block;
+    align-items: flex-start;
+}
+.item h3{font-size: 18px;font-weight: 700;line-height: 36px;}
+.item p{font-weight: 400;font-size: 16px;line-height: 30px;}
 
-.tapes button:hover{
+
+.filter:hover{
     background-color: var(--font-hover-focus-backgroundcolor);
     color: var(--font-hover-focus-color);
 }
 
-.tapes button:focus{
+.filter:focus{
     background-color: var(--font-hover-focus-backgroundcolor);
     color: var(--font-hover-focus-color);
 }

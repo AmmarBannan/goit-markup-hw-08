@@ -21,17 +21,17 @@ let categoryArray=[
 ];
 const category=document.querySelector(".category");
 let itemList=categoryArray.map((value,index)=>
-        `<div class="item">
+        `<li class="item">
             <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} LQIP"></img>
-            <p class="type">${value.title}</p> <p class="category-title">${value.type}</p>
-        </div>`
+            <div><h3 class="type">${value.title}</h3> <p class="category-title">${value.type}</p></div>
+        </li>`
 ).join(" ");
 category.innerHTML=itemList ;
 
 
 
 const tapList=tap.map((val,index)=>
-    `<li><button class="button" value=${val.name}>${val.name}</button></li>`
+    `<li><button class="filter" value=${val.name}>${val.name}</button></li>`
 ).join("")
 
 
@@ -41,10 +41,10 @@ tapes.innerHTML+=tapList;
 
 document.querySelector('[value=All]').addEventListener("click",()=>{
     itemList=categoryArray.map((value,index)=>
-            `<div class="item">
+            `<li class="item">
                 <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
-                <p class="type">${value.title}</p> <p class="category-title">${value.type}</p>
-            </div>`
+                <div><h3 class="type">${value.title}</h3> <p class="category-title">${value.type}</p></div>
+            </li>`
     ).join(" ");
     category.innerHTML=itemList ;
 })
@@ -61,10 +61,10 @@ tap.map((val,index)=>{
 
         if(categoryDisplay.length>0){
         itemList=categoryDisplay.map((value,index)=>
-            `<div class="item">
+            `<li class="item">
                 <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
-                <p class="type">${value.title}</p> <p class="category-title">${value.type}</p>
-            </div>`
+                <div><h3 class="type">${value.title}</h3> <p class="category-title">${value.type}</p></div>
+            </li>`
         ).join(" ");}
         else{ itemList=`<div class="empty"><h1 >Nothing To Show!</h1><pre><h3>Please Select form tapes above</h3></div>`};
 
