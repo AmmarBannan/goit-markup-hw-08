@@ -1,6 +1,22 @@
+/* header nav ul:nth-child(2) li:nth-child(2) a{
+    color: #2196F3;
+} */
+/* ###############variable#################### */
+
+:root {
+    --font-hover-focus-backgroundcolor:#2196F3;
+    --font-hover-focus-color:white;
+    --buuton-backgroundcolor:#F5F4FA;
+    --category-title:#757575;
+  }
 
 /*      ############      main        ###########      */
 main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+section{
     width: 100%;
     margin: 2% 0 4% 0;
     display: flex;
@@ -16,9 +32,9 @@ main{
     width:fit-content;
     font-weight: 700;
 }
-.tapes input{
+.tapes button{
     border: none;
-    background-color: #F5F4FA;
+    background-color: var(--buuton-backgroundcolor);
     width:100px;
     display: flex;
     justify-content: center;
@@ -68,14 +84,14 @@ main{
 }
 .item p{margin: 20px 0px 0 30px;}
 
-.tapes input:hover{
-    background-color: #2196F3;
-    color: white;
+.tapes button:hover{
+    background-color: var(--font-hover-focus-backgroundcolor);
+    color: var(--font-hover-focus-color);
 }
 
-.tapes input:focus{
-    background-color: #2196F3;
-    color: white;
+.tapes button:focus{
+    background-color: var(--font-hover-focus-backgroundcolor);
+    color: var(--font-hover-focus-color);
 }
 
 
@@ -101,5 +117,5 @@ main{
     line-height: 30px;
     /* identical to box height, or 188% */
     letter-spacing: 0.03em;
-    color: #757575;
+    color: var(--category-title);
 }

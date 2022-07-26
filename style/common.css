@@ -7,6 +7,12 @@ img { display: block; max-width: 100%; height: auto;}
 address { font-style: normal;}
 .link { text-decoration: none; color: inherit;}
 .list { list-style: none; padding: 0; margin: 0;} 
+/* ###############variable#################### */
+:root {
+    --main-blue-color:#2196F3;
+    --links-color:#757575;
+    --background-color: #2196F3;
+}
 
 /* ###################   body     #################### */
 
@@ -25,6 +31,13 @@ body *{
 
 .container{
     width:1536px
+}
+
+#logo{
+    font-size:2em ;
+    font-weight: 700;
+    color: var(--main-blue-color);
+    text-decoration: none;
 }
 
 
@@ -50,12 +63,7 @@ header nav{
     grid-template-columns: 1fr 4fr 2fr;
 }
 
-#logo{
-    font-size:2em ;
-    font-weight: 700;
-    color: #2196F3;
-    text-decoration: none;
-}
+
 
 header ul{
     width:400px;
@@ -65,7 +73,7 @@ header ul{
 }
 
 header div>ul:nth-child(2) a{
-    color: #757575;
+    color: ;
 }
 
 
@@ -79,7 +87,7 @@ header  a{
     color: black;
 }
 header a:hover{
-    color: #2196F3;
+    color: var(--main-blue-color);
 }
 
 /*  ################### footer #####################  */
@@ -112,5 +120,9 @@ footer a{
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
-    color:  rgba(255, 255, 255, 0.6);
+    color:  var(--links-color);
+}
+
+footer a:hover,footer a:focus{
+    color: var(--main-blue-color);
 }

@@ -1,3 +1,16 @@
+/* 
+header nav ul:nth-child(2) li:nth-child(1) a{
+    color: #2196F3;
+} */
+/* ###############variable#################### */
+
+:root {
+    --font-backgroundcolor:#2F303A;
+    --h1-front-color:#FFFFFF;
+    --main-blue-color:#2196F3;
+    --text-color:#757575;
+    --team-backgroundcolor: #F5F4FA
+  }
 
 
 /*      ############      main        ###########      */
@@ -27,7 +40,7 @@ section h2{
 }
 /* ########front######*/
 .front{
-    background-color:  #2F303A;
+    background-color:  var(--font-backgroundcolor);
     width: 100%;
     height: 600px;
     align-items: center;
@@ -52,7 +65,7 @@ section h2{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--h1-front-color);
 }
 .front button{
 
@@ -65,7 +78,7 @@ section h2{
     text-align: center;
     letter-spacing: 0.06em;
     color: white;
-    background-color: #2196F3;
+    background-color: var(--main-blue-color);
     height:fit-content;
     border:none;
     padding: 8px;;
@@ -112,7 +125,7 @@ section h2{
 
 .activity p{
     float:right;
-    color: #757575;
+    color: var(--text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
@@ -153,7 +166,7 @@ section h2{
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color:  #F5F4FA;;
+    background-color: var(--team-backgroundcolor);
     padding-bottom: 100px;
     margin-bottom: 0;
 }
