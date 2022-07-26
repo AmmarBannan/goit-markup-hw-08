@@ -90,8 +90,8 @@ section{
     display: block;
     align-items: flex-start;
 }
-.item h3{font-size: 18px;font-weight: 700;line-height: 36px;}
-.item p{font-weight: 400;font-size: 16px;line-height: 30px;}
+.item h3{font-size: 18px;font-weight: 700;line-height: 36px;color: #212121;}
+.item p{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: var(--category-title);}
 
 
 .filter:hover{
@@ -111,21 +111,4 @@ section{
     align-items: center;
     display: flex;
     flex-direction: column;
-}
-
-.type{
-    font-size: 18px;
-    line-height: 36px;
-    /* identical to box height, or 200% */
-    color: #212121;
-    font-weight: 600;
-}
-
-.category-title{
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 30px;
-    /* identical to box height, or 188% */
-    letter-spacing: 0.03em;
-    color: var(--category-title);
 }
