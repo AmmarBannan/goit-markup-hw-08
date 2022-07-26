@@ -14,16 +14,6 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 
 
 /*      ############      main        ###########      */
-main{
-    width: 100%;
-    justify-content: center;
-    padding: 0%;
-    margin: 0px;
-}
-main *{
-    padding: 0%;
-    margin: 0%;
-}
 section{
     margin-top: 50px;
     margin-bottom: 100px;
@@ -129,7 +119,6 @@ section h2{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    /* or 171% */
     letter-spacing: 0.03em;
 }
 
@@ -208,7 +197,6 @@ section h2{
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
 }
@@ -218,8 +206,6 @@ section h2{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
-    /* identical to box height */
-
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;

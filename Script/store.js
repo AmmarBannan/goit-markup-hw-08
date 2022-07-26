@@ -31,7 +31,7 @@ category.innerHTML=itemList ;
 
 
 const tapList=tap.map((val,index)=>
-    `<li><button class="filter" value=${val.name}>${val.name}</button></li>`
+    `<li><button class="filter filter-current" value=${val.name}>${val.name}</button></li>`
 ).join("")
 
 

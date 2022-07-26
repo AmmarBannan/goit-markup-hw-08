@@ -28,36 +28,21 @@ section{
 .tapes{
     list-style-type: none;
     display: flex;
-    column-gap: 25px;
-    width:fit-content;
-    font-weight: 700;
 }
 .filter{
     border: none;
     background-color: var(--button-backgroundcolor);
-    width:100px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 45px;
-    width:fit-content;
-    padding: 0 20px 0 20px;
-    border-radius: 3px;
-    width: 100%;
-
+    padding: 6px 25px;
+    border-radius: 4px;
     font-weight: 700;
     font-size: 16px;
     letter-spacing: 0.03em;
     color: #212121;
-
+    cursor: pointer;
 }
-
-
-.tapes li:nth-child(n+2){
-    width: 130px;
-    font-size: 1em;
-}
-
 
 .category{
     min-height: 700px;
@@ -75,7 +60,6 @@ section{
 .item{
     width:fit-content;
     height:fit-content;
-    border: #ECECEC solid 1px;
     line-height: 20px;
     display: flex;
     justify-content: center;
@@ -89,17 +73,20 @@ section{
     padding: 20px;
     display: block;
     align-items: flex-start;
+    border: #ECECEC solid 1px;
+    border-top: none;
 }
 .item h3{font-size: 18px;font-weight: 700;line-height: 36px;color: #212121;}
 .item p{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: var(--category-title);}
 
 
-.filter:hover{
+.filter-current:hover{
     background-color: var(--font-hover-focus-backgroundcolor);
     color: var(--font-hover-focus-color);
+    cursor: pointer;
 }
 
-.filter:focus{
+.filter-current:focus{
     background-color: var(--font-hover-focus-backgroundcolor);
     color: var(--font-hover-focus-color);
 }
