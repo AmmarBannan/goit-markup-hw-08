@@ -23,7 +23,7 @@ const category=document.querySelector(".category");
 let itemList=categoryArray.map((value,index)=>
         `<li class="item">
             <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} LQIP"></img>
-            <div><h3 class="type">${value.title}</h3> <p class="category-title">${value.type}</p></div>
+            <div><h3>${value.title}</h3> <p>${value.type}</p></div>
         </li>`
 ).join(" ");
 category.innerHTML=itemList ;
@@ -43,7 +43,7 @@ document.querySelector('[value=All]').addEventListener("click",()=>{
     itemList=categoryArray.map((value,index)=>
             `<li class="item">
                 <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
-                <div><h3 class="type">${value.title}</h3> <p class="category-title">${value.type}</p></div>
+                <div><h3>${value.title}</h3><p>${value.type}</p></div>
             </li>`
     ).join(" ");
     category.innerHTML=itemList ;
@@ -63,7 +63,7 @@ tap.map((val,index)=>{
         itemList=categoryDisplay.map((value,index)=>
             `<li class="item">
                 <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
-                <div><h3 class="type">${value.title}</h3> <p class="category-title">${value.type}</p></div>
+                <div><h3>${value.title}</h3> <p>${value.type}</p></div>
             </li>`
         ).join(" ");}
         else{ itemList=`<div class="empty"><h1 >Nothing To Show!</h1><pre><h3>Please Select form tapes above</h3></div>`};
