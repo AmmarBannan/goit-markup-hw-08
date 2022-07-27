@@ -11,7 +11,8 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     --h1-front-color:#FFFFFF;
     --main-blue-color:#2196F3;
     --text-color:#757575;
-    --team-backgroundcolor: #F5F4FA
+    --team-backgroundcolor: #F5F4FA;
+    --button-hover:#188CE8;
   }
 
 
@@ -74,6 +75,9 @@ section h2{
     font-family: 'Roboto';
     font-style: normal;
     cursor: pointer;
+}
+.front button:hover{
+    background-color: var(--button-hover);
 }
 
 
