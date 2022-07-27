@@ -59,6 +59,7 @@ section h2{
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--h1-front-color);
+    margin-bottom: 30px;
 }
 .front button{
     font-size: 16px;
@@ -68,9 +69,11 @@ section h2{
     color: white;
     background-color: var(--main-blue-color);
     border:none;
-    margin-top: 10px;
     border-radius: 4px;
     padding: 10px 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    cursor: pointer;
 }
 
 
@@ -83,12 +86,11 @@ section h2{
 }
 .activity ul{
     align-items: center;
-    width: 1150px;
     display: inline-flex;
     justify-content: space-between;
     list-style-type: none; 
     align-items:flex-start ;
-    column-gap: 20px;
+    column-gap: 25px;
     margin: 0;
     padding: 0%;
 }
@@ -103,7 +105,6 @@ section h2{
     inset-inline-start: 10px;
     margin-bottom: 8px;
     font-weight: 700;
-    font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -112,7 +113,6 @@ section h2{
 .activity p{
     color: var(--text-color);
     font-weight: 400;
-    font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
 }

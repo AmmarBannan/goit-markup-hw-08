@@ -6,7 +6,7 @@ const categoryObject={
     type:""
 }
 
-const tap=[{name:"Web-site",active:true},{name:"Apps",active:true},{name:"Design",active:true},{name:"Marketing",active:true}];
+const tap=[{name:"All",state:"active"},{name:"Web-site",state:"normal"},{name:"Apps",state:"normal"},{name:"Design",state:"normal"},{name:"Marketing",state:"normal"}];
 
 let categoryArray=[
     {title:"Technoduck",img:imgLocation.concat("1.jpg"),lazy:imgLocation.concat("lazyLoading/1.jpg"),type:"Web-site"},
@@ -20,53 +20,43 @@ let categoryArray=[
     {title:"Growing Business",img:imgLocation.concat("9.jpg"),lazy:imgLocation.concat("lazyLoading/9.jpg"),type:"Apps"}
 ];
 const category=document.querySelector(".category");
-let itemList=categoryArray.map((value,index)=>
-        `<li class="item">
-            <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} LQIP"></img>
-            <div><h3>${value.title}</h3> <p>${value.type}</p></div>
-        </li>`
-).join(" ");
-category.innerHTML=itemList ;
-
 
 
 const tapList=tap.map((val,index)=>
-    `<li><button class="filter filter-current" value=${val.name}>${val.name}</button></li>`
+    `<li><button class="filter filter-current ${val.state}" value=${val.name}>${val.name}</button></li>`
 ).join("")
-
 
 const tapes=document.querySelector(".tapes");
 tapes.innerHTML+=tapList;
 
-
-document.querySelector('[value=All]').addEventListener("click",()=>{
-    itemList=categoryArray.map((value,index)=>
+let firstRender=categoryArray.map((value,index)=>
             `<li class="item">
-                <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
-                <div><h3>${value.title}</h3><p>${value.type}</p></div>
+                <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                <div><h3>${value.title}</h3> <p>${value.type}</p></div>
             </li>`
-    ).join(" ");
-    category.innerHTML=itemList ;
-})
+        ).join(" ");
+
+category.innerHTML=firstRender ;
 
 tap.map((val,index)=>{
     const button = document.querySelector(`[value=${val.name}]`);
+
     button.addEventListener("click", () => {
+        tap.map((but)=>document.querySelector(`[value=${but.name}]`).classList.remove("active"))
+  
+        document.querySelector(`[value=${val.name}]`).classList.add("active");
 
-        tap[index].active?tap[index].active=false:(tap.forEach((val)=>val.active=false),tap[index].active=true)
 
-        const activeTapes=tap.filter((val)=>val.active).map((val)=>val.name);
+        let categoryDisplay=[]
+        val.name==="All"?categoryDisplay=categoryArray:categoryDisplay=categoryArray.filter((value)=>value.type===val.name)
+        
 
-        const categoryDisplay=categoryArray.filter((val)=>activeTapes.includes(val.type));
-
-        if(categoryDisplay.length>0){
-        itemList=categoryDisplay.map((value,index)=>
+        let itemList=categoryDisplay.map((value,index)=>
             `<li class="item">
-                <img loading="lazy" class="blur-up lazyloaded" src="${value.img}"  data-src="${value.lazy}" alt="${value.title} LQIP"></img>
+                <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
                 <div><h3>${value.title}</h3> <p>${value.type}</p></div>
             </li>`
-        ).join(" ");}
-        else{ itemList=`<div class="empty"><h1 >Nothing To Show!</h1><pre><h3>Please Select form tapes above</h3></div>`};
+        ).join(" ");
 
         category.innerHTML=itemList ;
         

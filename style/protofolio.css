@@ -31,7 +31,14 @@ section{
     list-style-type: none;
     display: flex;
     padding: 0;
+    column-gap: 10px;
 }
+
+.tapes li:first-child button::selection{
+    background-color: var(--main-blue-color);
+    color: white;
+}
+
 .filter{
     border: none;
     background-color: var(--button-background-color);
@@ -43,9 +50,16 @@ section{
     letter-spacing: 0.03em;
     color: #212121;
     cursor: pointer;
+    font-family: 'Roboto';
+    font-style: normal;
 }
 
-.filter-current:hover,.filter-current:focus{
+.filter-current:hover{
+    background-color: var(--main-blue-color);
+    color: white;
+}
+
+.active{
     background-color: var(--main-blue-color);
     color: white;
 }
@@ -72,9 +86,6 @@ section{
     flex-direction: column;
 }
 
-.item img{
-    width: 370px;
-}
 .item div{
     padding: 20px;
     display: block;
