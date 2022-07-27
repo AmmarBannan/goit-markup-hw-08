@@ -10,7 +10,6 @@ address { font-style: normal;}
 :root {
     --main-blue-color:#2196F3;
     --links-color:#757575;
-    --background-color: #2196F3;
 }
 
 /* ###################   body     #################### */
@@ -18,14 +17,19 @@ address { font-style: normal;}
 body{
     margin: 0%;
     padding: 0%;
-}
-body *{
     font-family: 'Roboto';
     font-style: normal;
 }
 
 .container{
     width:1536px
+}
+
+.link-current:hover{
+    color: var(--main-blue-color);
+}
+.link-current-footer:hover{
+    color:white;
 }
 
 
@@ -75,9 +79,6 @@ header a{
     text-decoration: none;
     color: black;
 }
-header a:hover{
-    color: var(--main-blue-color);
-}
 
 #logo{
     font-family: 'Raleway';
@@ -105,21 +106,11 @@ footer ul{
     list-style-type: none;
 }
 
-footer address a{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color:#ffffff;
-}
+
 footer a{
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color:  var(--links-color);
-}
-
-footer a:hover,footer a:focus{
-    color: var(--main-blue-color);
 }

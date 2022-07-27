@@ -4,13 +4,15 @@
 /* ###############variable#################### */
 
 :root {
-    --font-hover-focus-backgroundcolor:#2196F3;
-    --font-hover-focus-color:white;
-    --button-backgroundcolor:#F5F4FA;
+    --button-background-color:#F5F4FA;
     --category-title:#757575;
   }
 
 /*      ############      main        ###########      */
+nav ul li:nth-child(2) a{
+    color: var(--main-blue-color)
+}
+
 main{
     width: 100%;
     display: flex;
@@ -32,7 +34,7 @@ section{
 }
 .filter{
     border: none;
-    background-color: var(--button-backgroundcolor);
+    background-color: var(--button-background-color);
 
     padding: 6px 25px;
     border-radius: 4px;
@@ -41,6 +43,11 @@ section{
     letter-spacing: 0.03em;
     color: #212121;
     cursor: pointer;
+}
+
+.filter-current:hover,.filter-current:focus{
+    background-color: var(--main-blue-color);
+    color: white;
 }
 
 .category{
@@ -77,19 +84,6 @@ section{
 }
 .item h3{font-size: 18px;font-weight: 700;line-height: 36px;color: #212121;}
 .item p{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: var(--category-title);}
-
-
-.filter-current:hover{
-    background-color: var(--font-hover-focus-backgroundcolor);
-    color: var(--font-hover-focus-color);
-    cursor: pointer;
-}
-
-.filter-current:focus{
-    background-color: var(--font-hover-focus-backgroundcolor);
-    color: var(--font-hover-focus-color);
-}
-
 
 .empty{
     font-family: cursive;
