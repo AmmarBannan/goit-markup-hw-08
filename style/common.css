@@ -24,7 +24,7 @@ body{
 }
 
 .container{
-    width:1600px;
+    width:1520px;
     padding:15px 0px;
 }
 
@@ -60,13 +60,10 @@ header nav{
     width: 530px;
     display: grid;
     align-items:center;
-    grid-template-columns: 1fr 4fr 2fr;
+    grid-template-columns: 1.8fr 4fr;
     margin-right: 235px;
 }
 
-nav #logo{
-    margin-right: 100px;
-}
 
 header  ul{
     list-style-type: none;
@@ -80,7 +77,7 @@ header li{
 }
 
 header nav li{
-    width: 100px;
+    width: 120px;
    
 }
 
