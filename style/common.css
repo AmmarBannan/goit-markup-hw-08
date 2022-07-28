@@ -82,7 +82,7 @@ header nav li{
 }
 
 .header-contacts{
-    width: 350px;
+    width: 325px;
 }
 
 .header-contacts a{
@@ -111,9 +111,10 @@ header a{
 /*  ################### footer #####################  */
 
 footer{
+    width: 100%;
     background: #2F303A;
     height: 260px;
-    padding: 50px 0px 0px 200px;
+    padding: 60px 215px;
     line-height: 1.8rem;
 }
 footer a{ 
