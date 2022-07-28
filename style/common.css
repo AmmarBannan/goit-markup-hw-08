@@ -12,6 +12,8 @@ address { font-style: normal;}
     --links-color:#757575;
 }
 
+
+
 /* ###################   body     #################### */
 
 body{
@@ -22,7 +24,8 @@ body{
 }
 
 .container{
-    width:1536px
+    width:1600px;
+    padding:15px 0px;
 }
 
 .link-current:hover{
@@ -32,7 +35,11 @@ body{
     color:white;
 }
 
+img{display: block; max-width:100%; height: auto;}
 
+section{
+    padding: 94px 200px;
+}
 
 /*  ###############    header  ####################   */
 
@@ -46,28 +53,46 @@ header{
 }
 header div{
     display: flex;
-    justify-content: space-between;
-    width: 75%;
+    justify-content: center;
+    padding: 0 215px;
 }
 header nav{
-    width: 50%;
+    width: 530px;
     display: grid;
     align-items:center;
     grid-template-columns: 1fr 4fr 2fr;
+    margin-right: 235px;
 }
 
+nav #logo{
+    margin-right: 100px;
+}
 
-
-header ul{
-    width:400px;
+header  ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+header li{
+    width: 50%;
+    text-align-last: right;
 }
 
-header div>ul:nth-child(2) a{
+header nav li{
+    width: 100px;
+   
+}
+
+.header-contacts{
+    width: 350px;
+}
+
+.header-contacts a{
     color: var(--links-color);
 }
+
+
 
 
 header a{
