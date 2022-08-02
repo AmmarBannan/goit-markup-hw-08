@@ -19,20 +19,20 @@ let categoryArray=[
     {title:"Project LAB",img:imgLocation.concat("8.jpg"),lazy:imgLocation.concat("lazyLoading/8.jpg"),type:"Marketing"},
     {title:"Growing Business",img:imgLocation.concat("9.jpg"),lazy:imgLocation.concat("lazyLoading/9.jpg"),type:"Apps"}
 ];
-const category=document.querySelector(".category");
+const category=document.querySelector(".projects");
 
 
 const tapList=tap.map((val,index)=>
-    `<li><button class="filter filter-current ${val.state}" value=${val.name}>${val.name}</button></li>`
+    `<li><button class="filter-button filter-item button-hover ${val.state}" value=${val.name}>${val.name}</button></li>`
 ).join("")
 
-const tapes=document.querySelector(".tapes");
+const tapes=document.querySelector(".filter-list");
 tapes.innerHTML+=tapList;
 
 let firstRender=categoryArray.map((value,index)=>
-            `<li class="item">
-                <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
-                <div><h3>${value.title}</h3> <p>${value.type}</p></div>
+            `<li class="project">
+                <img loading="lazy" class="project-img"" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
             </li>`
         ).join(" ");
 
@@ -52,9 +52,9 @@ tap.map((val,index)=>{
         
 
         let itemList=categoryDisplay.map((value,index)=>
-            `<li class="item">
-                <img loading="lazy" class="blur-up lazyloaded" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
-                <div><h3>${value.title}</h3> <p>${value.type}</p></div>
+            `<li class="project">
+                <img loading="lazy" class="project-img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
             </li>`
         ).join(" ");
 

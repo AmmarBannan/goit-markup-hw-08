@@ -17,46 +17,46 @@
     <link rel="stylesheet" href="./style/common.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <div>
-                <nav>
-                    <a href="./index.html" id="logo">WebStudio</a>
-                    <ul>
-                        <li><a class="link-current" href="./index.html">Studio</a></li>
-                        <li><a class="link-current" href="./portfolio.html">Portfolio</a></li>
-                        <li><a class="link-current" href="/contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-                <ul class="header-contacts">
-                    <li><a  class="link-current" target="_parent" href="mailto:info@devstudion.com" title="email">info@devstudion.com</a></li>
-                    <li><a  class="link-current" title="number" href="tel:+55 3231 32 32" >+55 3231 32 32</a></li>
+    <header>
+        <div class="container header-container"> 
+            <nav>
+                <a href="./index.html" id="logo">WebStudio</a>
+                <ul class="nav-main list">
+                    <li><a class="nav-menu-item link" href="./index.html">Studio</a></li>
+                    <li><a class="nav-menu-item link-current link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="nav-menu-item link" href="/contacts">Contacts</a></li>
                 </ul>
-            </div>
-        </header>
+            </nav>
+            <ul class="header-contacts list">
+                <li><a  class="header-contacts-link link" target="_parent" href="mailto:info@devstudion.com" title="email">info@devstudion.com</a></li>
+                <li><a  class="header-contacts-link link" title="number" href="tel:+55 3231 32 32" >+55 3231 32 32</a></li>
+            </ul>
+        </div>
+    </header>
 
-        <main>
-            <section>
-                <ul class="tapes">
+    <main>
+        <section class="section">
+            <div class="container category-container">
+                <ul class="filter-list list">
                     <!-- <li><button class="filter filter-current" value="All">All</button></li> -->
                 </ul>
-                <ul class="category"></ul>
-            </section>
-        </main>
-
-        <footer>
-            <div>
-                <a id="logo" href="./index.html">WebStudio </a>
-                <address>
-                    <ul>
-                        <li><a class="link-current-footer" href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7687275,-73.9673792,17z/data=!4m5!3m4!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7687275!4d-73.9651798">695 Park Ave, New York,NY 10065,<br> United States</a></li>
-                        <li><a class="link-current-footer" href="mailto:info@example.com">info@example.com</a><br></li>
-                        <li><a class="link-current-footer" href="tel:+1 212-772-4150">+1 212-772-4150</a></li>
-                    </ul> 
-                </address>
+                <ul class="projects"></ul>
             </div>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <a id="logo" href="./index.html">WebStudio </a>
+            <address>
+                <ul class="list footer-list">
+                    <li class="footer-item"><a class="link-footer" href="https://www.google.com/maps/place/695+Park+Ave,+New+York,+NY+10065,+USA/@40.7687275,-73.9673792,17z/data=!4m5!3m4!1s0x89c258ebe8836e8f:0xa007c44e7c4aa0eb!8m2!3d40.7687275!4d-73.9651798">695 Park Ave, New York, NY 10065,<br> United States</a></li>
+                    <li class="footer-item"><a class="link-footer" href="mailto:info@example.com">info@example.com</a><br></li>
+                    <li class="footer-item"><a class="link-footer" href="tel:+1 212-772-4150">+1 212-772-4150</a></li>
+                </ul> 
+            </address>
+        </div>
+    </footer>
 
     <script
         async

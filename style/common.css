@@ -6,6 +6,7 @@ img { display: block; max-width: 100%; height: auto;}
 address { font-style: normal;}
 .link { text-decoration: none; color: inherit;}
 .list { list-style: none; padding: 0; margin: 0;} 
+a{ text-decoration: none;}
 /* ###############variable#################### */
 :root {
     --main-blue-color:#2196F3;
@@ -24,80 +25,102 @@ body{
 }
 
 .container{
-    width:1520px;
-    padding:15px 0px;
+    width:1200px;
+    padding: 0px 15px;
+    margin: 0 auto; 
+    text-align: center;
 }
 
-.link-current:hover{
-    color: var(--main-blue-color);
+.header-container{
+    display:flex;
+    justify-content: space-between;
 }
-.link-current-footer:hover{
+
+
+.link-footer:hover{
     color:white;
 }
 
 img{display: block; max-width:100%; height: auto;}
 
-section{
+.section{
     padding: 94px 200px;
+}
+
+.section-no-padding-top{
+    padding-top:0 ;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 /*  ###############    header  ####################   */
 
 header{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80px;
-    border-bottom: solid .5px rgb(230, 230, 232);
-}
-header div{
-    display: flex;
-    justify-content: center;
-    padding: 0 215px;
-}
-header nav{
-    width: 530px;
-    display: grid;
-    align-items:center;
-    grid-template-columns: 1.8fr 4fr;
-    margin-right: 235px;
+    border-bottom: solid 1px rgb(230, 230, 232);
+    header:0 200px 0 200px
 }
 
+nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav-main{
+    display: flex;
+    margin-left: 93px;
+}
+
+.nav-main li:not(last-child){
+    margin-right: 60px;
+}
 
 header  ul{
     list-style-type: none;
     display: flex;
-    margin: 0;
-    padding: 0;
 }
-header li{
-    width: 50%;
-    text-align-last: right;
-}
-
-header nav li{
-    width: 120px;
-   
-}
-
-.header-contacts{
-    width: 325px;
-}
-
-.header-contacts a{
-    color: var(--links-color);
-}
-
-
-
 
 header a{
+    cursor: pointer;
+}
+
+.link:hover{
+    color: var(--main-blue-color);
+}
+
+.nav-menu-item{
+    padding:32px 0 31px 0;
+    display: block;
     font-weight: 500;
     line-height: 16.41px;
     letter-spacing: 0.02em;
     text-decoration: none;
     color: black;
+}
+.list{
+    display: flex;
+}
+
+.header-contacts{
+    align-items: center;
+}
+
+.header-contacts-items{
+    color: var(--links-color);
+}
+
+.header-contacts-link{
+    display: block;
+    padding: 32px 0 31px 0;
+    color:var(--links-color);
+    font-weight: 500;
+}
+
+.header-contacts li:not(last-child){
+    margin-left: 30px;
 }
 
 #logo{
@@ -106,29 +129,34 @@ header a{
     font-weight: 700;
     color: var(--main-blue-color);
     text-decoration: none;
+    cursor: pointer;
+}
+
+
+.link-current{
+    color: var(--main-blue-color)
 }
 
 /*  ################### footer #####################  */
 
-footer{
-    width: 100%;
+.footer{
     background: #2F303A;
-    height: 260px;
-    padding: 60px 215px;
+    padding: 60px 200px;
     line-height: 1.8rem;
 }
-footer a{ 
-    text-decoration: none;
-    padding: 0;
+.footer-container{
+    text-align: start;
 }
-
-footer ul{
-    padding: 0;
+.footer-list{
     list-style-type: none;
+    display: block;
+    align-items: start;
 }
 
 
-footer a{
+
+
+.footer a{
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
