@@ -23,7 +23,7 @@ const category=document.querySelector(".projects");
 
 
 const tapList=tap.map((val,index)=>
-    `<li><button class="filter-button filter-item button-hover ${val.state}" value=${val.name}>${val.name}</button></li>`
+    `<li class="filter-item"><button class="filter-button button-hover ${val.state}" value=${val.name}>${val.name}</button></li>`
 ).join("")
 
 const tapes=document.querySelector(".filter-list");

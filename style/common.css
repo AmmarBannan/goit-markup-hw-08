@@ -44,7 +44,7 @@ body{
 img{display: block; max-width:100%; height: auto;}
 
 .section{
-    padding: 94px 200px;
+    padding: 94px 0;
 }
 
 .section-no-padding-top{
@@ -74,7 +74,7 @@ nav{
     margin-left: 93px;
 }
 
-.nav-main li:not(last-child){
+.nav-main li:not(:last-child){
     margin-right: 60px;
 }
 
@@ -100,12 +100,10 @@ header a{
     text-decoration: none;
     color: black;
 }
-.list{
-    display: flex;
-}
 
 .header-contacts{
     align-items: center;
+    display: flex;
 }
 
 .header-contacts-items{
@@ -119,8 +117,8 @@ header a{
     font-weight: 500;
 }
 
-.header-contacts li:not(last-child){
-    margin-left: 30px;
+.header-contacts li:not(:last-child){
+    margin-right: 30px;
 }
 
 #logo{
