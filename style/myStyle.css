@@ -31,6 +31,7 @@ section h2{
 /* ########front######*/
 .hero{
     background-color:  var(--font-backgroundcolor);
+    padding: 200px 0;
 }
 
 .hero-title{

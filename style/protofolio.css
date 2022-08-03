@@ -55,6 +55,8 @@
 .projects{
     display:flex;
     flex-wrap: wrap;
+    margin-top: -30px;
+    margin-left: -30px;
 }
 
 .project{
@@ -62,14 +64,10 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    margin-right: 30px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
 
-.project:nth-child(3n){
-    margin-right: 0px;
-    /* please note that the container width is 1200px and has a padding of 15px for left and right which equal=1170,so I added this method which will suit listed item that each ine of them has a 370px width with 30px padding-right equal of 1200*/
-}
 
 .project-wrapper{
     padding: 20px;

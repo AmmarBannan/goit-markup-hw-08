@@ -139,7 +139,7 @@ header a{
 
 .footer{
     background: #2F303A;
-    padding: 60px 200px;
+    padding: 60px 0px;
     line-height: 1.8rem;
 }
 .footer-container{
@@ -150,10 +150,6 @@ header a{
     display: block;
     align-items: start;
 }
-
-
-
-
 .footer a{
     font-weight: 400;
     line-height: 24px;
