@@ -30,7 +30,7 @@ const tapes=document.querySelector(".filter-list");
 tapes.innerHTML+=tapList;
 
 let firstRender=categoryArray.map((value,index)=>
-            `<li class="project">
+            `<li class="project" tabIndex="-1">
                 <img loading="lazy" class="project-img"" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
                 <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
             </li>`
@@ -52,7 +52,7 @@ tap.map((val,index)=>{
         
 
         let itemList=categoryDisplay.map((value,index)=>
-            `<li class="project">
+            `<li class="project" tabIndex="-1">
                 <img loading="lazy" class="project-img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
                 <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
             </li>`

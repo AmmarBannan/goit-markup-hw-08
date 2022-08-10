@@ -12,14 +12,14 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     --main-blue-color:#2196F3;
     --text-color:#757575;
     --team-backgroundcolor: #F5F4FA;
-    --button-hover:#188CE8;
+    --company-border-color:#AFB1B8;
   }
 
 
 /*      ############      main        ###########      */
 
 
-section h2{
+.section-title{
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -30,8 +30,12 @@ section h2{
 
 /* ########front######*/
 .hero{
-    background-color:  var(--font-backgroundcolor);
+    background-image:url("../image/page1/backImage.jpg");
+    background-repeat:no-repeat;
+    background-size:auto;
     padding: 200px 0;
+    background-position: 50% 50%;
+    background-color: var(--font-backgroundcolor);
 }
 
 .hero-title{
@@ -147,7 +151,44 @@ section h2{
     text-align: center;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-bottom: 16px;
 }
 
+.social-media{
+    display: flex;
+    justify-content: center;
+    height: 44;
+}
 
+.social-media .icon{
+    border-radius: 50px;
+    width: 44px;
+    height: 44px;
+}
+.social-media-item{
+    border-radius: 50px;
+}
+.social-media-item:not(:last-child){
+    margin-right: 10px;
+}
 
+/* #################companies##################### */
+.list-companies{
+    display: flex;
+}
+
+.company-item{
+    width: 170px;
+    height: 92px;
+    border: var(--company-border-color) 1px solid;
+    padding: 20px 40px;
+    border-radius: 4px;
+}
+
+.company-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.company-logo{
+    height: 50px;
+}
