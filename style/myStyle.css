@@ -13,6 +13,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     --text-color:#757575;
     --team-backgroundcolor: #F5F4FA;
     --company-border-color:#AFB1B8;
+    --benefits-img-background-color:#F5F4FA;
   }
 
 
@@ -110,6 +111,17 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     margin-right:30px;
 }
 
+.benefits-img-container{
+    height: 120px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--benefits-img-background-color);
+    margin-bottom: 30px;
+    
+}
+
 /* ########Our Team######*/
 .team-list{
     display: flex;
@@ -162,11 +174,23 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 
 .social-media .icon{
     border-radius: 50px;
-    width: 44px;
-    height: 44px;
+    width: 20px;
+    height: 20px;
 }
 .social-media-item{
     border-radius: 50px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+.social-media-item .icon{
+    fill:#AFB1B8;
+}
+
+.icon-hover:hover{
+    fill: white;
 }
 .social-media-item:not(:last-child){
     margin-right: 10px;
@@ -178,11 +202,15 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 }
 
 .company-item{
+    
     width: 170px;
     height: 92px;
     border: var(--company-border-color) 1px solid;
-    padding: 20px 40px;
+    padding: 22px 32px;
     border-radius: 4px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .company-item:not(:last-child){
@@ -190,5 +218,5 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 }
 
 .company-logo{
-    height: 50px;
+    height: 45px;
 }
