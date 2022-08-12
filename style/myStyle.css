@@ -125,7 +125,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     align-items: center;
     background-color: var(--benefits-img-background-color);
     margin-bottom: 30px;
-    
+    border-radius: 4px;
 }
 
 /* ########Our Team######*/
@@ -178,7 +178,8 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     height: 44;
 }
 
-.social-media-item{
+.social-media-link{
+    display: flex;
     border-radius: 50px;
     align-items: center;
     justify-content: center;
@@ -189,6 +190,11 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 }
 .social-media-item:not(:last-child){
     margin-right: 10px;
+}
+
+.social-media-link:hover .icon-social-media,.social-media-link:hover,.social-media-link:focus .icon-social-media,.social-media-link:focus{
+    background-color: #2196F3;
+    fill: white;
 }
 
 

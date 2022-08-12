@@ -26,13 +26,6 @@ a{ text-decoration: none;}
 
 }
 
-.social-media-item:hover .icon-social-media,.social-media-item:hover{
-    background-color: var(--main-blue-color);
-    fill: white;
-}
-
-
-
 /* ###################   body     #################### */
 
 body{
@@ -216,12 +209,18 @@ header a{
 }
 
 .footer-social-media-item{
+    width: fit-content;
+    height: f;
+}
+
+.footer-social-media-link{
     border-radius: 50px;
     align-items: center;
     justify-content: center;
     width: 44px;
     height: 44px;
-    padding: 12px;
+    padding: 11px;
+    display: flex;
     background-color:var(--icon-footer-background-color);
     cursor: pointer;
 }
@@ -230,7 +229,7 @@ header a{
     margin-right: 10px;
 }
 
-.footer-social-media-item:hover .icon-social-media,.footer-social-media-item:hover{
+.footer-social-media-link:hover .icon-social-media,.footer-social-media-link:hover,.footer-social-media-link:focus .icon-social-media,.footer-social-media-link:focus{
     fill: white;
     background-color: var(--main-blue-color);
 }
