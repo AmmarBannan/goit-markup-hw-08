@@ -15,12 +15,15 @@ a{ text-decoration: none;}
     --links-color:#757575;
     --button-hover:#188CE8;
     --icon-footer-background-color:rgba(255, 255, 255, 0.1);
+    --icon-social-media-color: #AFB1B8;
 }
 
 /*        ##########icons#######           */
 .icon-social-media{
     width: 20px;
     height: 20px;
+    fill: var(--icon-social-media-color);
+
 }
 
 .social-media-item:hover .icon-social-media,.social-media-item:hover{
@@ -208,6 +211,10 @@ header a{
     display: flex;
 }
 
+.footer-social-media-item .icon{
+    fill: white;
+}
+
 .footer-social-media-item{
     border-radius: 50px;
     align-items: center;
@@ -226,6 +233,7 @@ header a{
     fill: white;
     background-color: var(--main-blue-color);
 }
+
 
 
 /* which page */
