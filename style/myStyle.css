@@ -189,15 +189,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 .social-media-item:not(:last-child){
     margin-right: 10px;
 }
-.icon-social-media{
-    width: 20px;
-    height: 20px;
-}
 
-.social-media-item:hover .icon-social-media,.social-media-item:hover{
-    background-color: var(--main-blue-color);
-    fill: white;
-}
 
 /* #################companies##################### */
 .list-companies{
