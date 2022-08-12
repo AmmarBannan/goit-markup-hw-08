@@ -185,6 +185,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     width: 44px;
     height: 44px;
     padding: 12px;
+    cursor: pointer;
 }
 .social-media-item:not(:last-child){
     margin-right: 10px;
@@ -200,11 +201,12 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     width: 170px;
     height: 92px;
     border: var(--company-border-color) 1px solid;
-    padding: 16px 32px;
+    padding: 19px 32px;
     border-radius: 4px;
     display: flex;
     text-align: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .company-item:hover .company-icon,.company-item:hover{
@@ -217,7 +219,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 }
 
 .company-icon{
-    height: 60px;
-    width: 106px;
+    height: 50px;
+    width: 90px;
     fill: var(--icon-color);
 }

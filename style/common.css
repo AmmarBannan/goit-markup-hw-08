@@ -223,6 +223,7 @@ header a{
     height: 44px;
     padding: 12px;
     background-color:var(--icon-footer-background-color);
+    cursor: pointer;
 }
 
 .footer-social-media-item:not(:last-child){
