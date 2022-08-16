@@ -34,12 +34,15 @@
     font-family: 'Roboto';
     font-style: normal;
 }
+.button-hover{
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+}
+
 
 .button-hover:hover{
     background-color: var(--main-blue-color);
     color: white;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 .active{
@@ -67,11 +70,7 @@
     cursor: pointer;
 }
 
-.project-link:hover,.project-link:focus,.project-link:hover .overlay{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-    outline: none;
-    transform: translatex(50);
-}
+
 
 .project-wrapper{
     padding: 20px;
@@ -109,10 +108,12 @@
     padding: 63px 24px;
     text-align: start;
 }
-      
-.img-box:hover .overlay {
+  
+.project-link:hover,.project-link:focus,.project-link:hover .overlay,.project-link:focus .overlay{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    outline: none;
     transform: translateX(0);
-  }
+}
 
 .project-description{
     font-weight: 400;

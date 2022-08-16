@@ -12,16 +12,8 @@
 
 </head>
 <body>     
-    <!-- #################### backdrop#################### -->
-    <div class="backdrop is-hidden " data-modal>
-        <div class="modal">
-            <button class="exit-button" type="button" data-modal-close></button>
-        </div>
-    </div>
 
-    <!-- #################### backdrop#################### -->
-    
-
+   
     <header>
         <div class="container header-container"> 
             <nav>
@@ -34,10 +26,12 @@
             </nav>
             <ul class="header-contacts list">
                 <li class="header-contacts-item"><a  class="header-contacts-link link" target="_parent" href="mailto:info@devstudion.com" title="email"><svg class="header-icon" xmlns="http://www.w3.org/2000/svg" ><use xlink:href="./image/icon.svg#icon-envelope" ></use> </svg>  <p>info@devstudion.com</p> </a></li>
-                <li class="header-contacts-item"><a  class="header-contacts-link link" title="number" href="tel:+55 7031 70 70" ><svg class="header-icon" xmlns="http://www.w3.org/2000/svg" ><use href="./image/icon.svg#icon-smartphone" ></use> </svg> <p>+55 7031 70 70</p></a></li>
+                <li class="header-contacts-item"><a  class="header-contacts-link link" title="number" href="tel:+55 7031 70 70" ><svg class="header-icon" xmlns="http://www.w3.org/2000/svg" ><use xlink:href="./image/icon.svg#icon-smartphone" ></use> </svg> <p>+55 7031 70 70</p></a></li>
             </ul>
         </div>
     </header>
+
+  
 
     <main>
 
@@ -62,9 +56,9 @@
             <div class="container">
                 <h2 class="section-title">What we do</h2>
                 <ul class="list what_we_do_list"> 
-                    <li class="what-we-do-item"><img src="./image/page1/1.jpg" alt="what we do image 1" width="370"/><div class="do-div"><p class="do-paragraph">desktop app</p></div> </li>
-                    <li class="what-we-do-item"><img src="./image/page1/2.jpg" alt="what we do image 2" width="370"/><div class="do-div"><p class="do-paragraph">mobile app</p></div> </li>
-                    <li class="what-we-do-item"><img src="./image/page1/3.jpg" alt="what we do image 3" width="370"/><div class="do-div"><p class="do-paragraph">design solution</p></div> </li>
+                    <li class="what-we-do-item"><img src="./image/page1/1.jpg" alt="what we do image 1" width="370"/><p class="do-paragraph">desktop app</p> </li>
+                    <li class="what-we-do-item"><img src="./image/page1/2.jpg" alt="what we do image 2" width="370"/><p class="do-paragraph">mobile app</p> </li>
+                    <li class="what-we-do-item"><img src="./image/page1/3.jpg" alt="what we do image 3" width="370"/><p class="do-paragraph">design solution</p> </li>
                 </ul>
             </div>
         </section>
@@ -160,6 +154,14 @@
             </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden " data-modal>
+        <div class="modal">
+            <svg class="exit-button" ><use xlink:href="./image/icon.svg#icon-exit"></use></svg>
+        </div>
+    </div>
+    
+    
     <script src="./Script/modal.js"></script>
 </body>
 </html>
