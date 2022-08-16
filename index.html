@@ -11,7 +11,17 @@
     <link rel="stylesheet" href="./style/myStyle.css">
 
 </head>
-<body>      
+<body>     
+    <!-- #################### backdrop#################### -->
+    <div class="backdrop is-hidden " data-modal>
+        <div class="modal">
+            <button class="exit-button" type="button" data-modal-close></button>
+        </div>
+    </div>
+
+    <!-- #################### backdrop#################### -->
+    
+
     <header>
         <div class="container header-container"> 
             <nav>
@@ -30,10 +40,11 @@
     </header>
 
     <main>
+
         <section class="hero">
             <div class="container">
                 <h1 class="hero-title">EFFECTIVE SOLUTIONS FOR <br> YOUR BUSINESS</h1>
-                <button type="button" class="hero-button">Request our service</button>
+                <button type="button" class="hero-button" data-modal-open >Request our service</button>
             </div>
         </section>
         <section class="section">
@@ -51,9 +62,9 @@
             <div class="container">
                 <h2 class="section-title">What we do</h2>
                 <ul class="list what_we_do_list"> 
-                    <li class="what-we-do-item"><img src="./image/page1/1.jpg" alt="what we do image 1" width="370"/></li>
-                    <li class="what-we-do-item"><img src="./image/page1/2.jpg" alt="what we do image 2" width="370"/></li>
-                    <li class="what-we-do-item"><img src="./image/page1/3.jpg" alt="what we do image 3" width="370"/></li>
+                    <li class="what-we-do-item"><img src="./image/page1/1.jpg" alt="what we do image 1" width="370"/><div class="do-div"><p class="do-paragraph">desktop app</p></div> </li>
+                    <li class="what-we-do-item"><img src="./image/page1/2.jpg" alt="what we do image 2" width="370"/><div class="do-div"><p class="do-paragraph">mobile app</p></div> </li>
+                    <li class="what-we-do-item"><img src="./image/page1/3.jpg" alt="what we do image 3" width="370"/><div class="do-div"><p class="do-paragraph">design solution</p></div> </li>
                 </ul>
             </div>
         </section>
@@ -149,5 +160,6 @@
             </div>
         </div>
     </footer>
+    <script src="./Script/modal.js"></script>
 </body>
 </html>

@@ -9,15 +9,15 @@ const categoryObject={
 const tap=[{name:"All",state:"active"},{name:"Web-site",state:"normal"},{name:"Apps",state:"normal"},{name:"Design",state:"normal"},{name:"Marketing",state:"normal"}];
 
 let categoryArray=[
-    {title:"Technoduck",img:imgLocation.concat("1.jpg"),lazy:imgLocation.concat("lazyLoading/1.jpg"),type:"Web-site"},
-    {title:"Poster New Orlean vs Golden Star",img:imgLocation.concat("2.jpg"),lazy:imgLocation.concat("lazyLoading/2.jpg"),type:"Design"},
-    {title:"Seafood Restaurant ",img:imgLocation.concat("3.jpg"),lazy:imgLocation.concat("lazyLoading/3.jpg"),type:"Apps"},
-    {title:"Project Prime",img:imgLocation.concat("4.jpg"),lazy:imgLocation.concat("lazyLoading/4.jpg"),type:"Marketing"},
-    {title:"Project Boxes",img:imgLocation.concat("5.jpg"),lazy:imgLocation.concat("lazyLoading/5.jpg"),type:"Apps"},
-    {title:"Inspiration has no Borders",img:imgLocation.concat("6.jpg"),lazy:imgLocation.concat("lazyLoading/6.jpg"),type:"Web-site"},
-    {title:"Limited Edition",img:imgLocation.concat("7.jpg"),lazy:imgLocation.concat("lazyLoading/7.jpg"),type:"Design"},
-    {title:"Project LAB",img:imgLocation.concat("8.jpg"),lazy:imgLocation.concat("lazyLoading/8.jpg"),type:"Marketing"},
-    {title:"Growing Business",img:imgLocation.concat("9.jpg"),lazy:imgLocation.concat("lazyLoading/9.jpg"),type:"Apps"}
+    {title:"Technoduck",img:imgLocation.concat("1.jpg"),lazy:imgLocation.concat("lazyLoading/1.jpg"),type:"Web-site",description:"Technoduck is a state-of-the-art coronavirus distribution platform. Companies use this platform for digital espionage and attacks on competitors' secure servers."},
+    {title:"Poster New Orlean vs Golden Star",img:imgLocation.concat("2.jpg"),lazy:imgLocation.concat("lazyLoading/2.jpg"),type:"Design",description:"description for :"},
+    {title:"Seafood Restaurant ",img:imgLocation.concat("3.jpg"),lazy:imgLocation.concat("lazyLoading/3.jpg"),type:"Apps",description:"description for :"},
+    {title:"Project Prime",img:imgLocation.concat("4.jpg"),lazy:imgLocation.concat("lazyLoading/4.jpg"),type:"Marketing",description:"description for :"},
+    {title:"Project Boxes",img:imgLocation.concat("5.jpg"),lazy:imgLocation.concat("lazyLoading/5.jpg"),type:"Apps",description:"description for :"},
+    {title:"Inspiration has no Borders",img:imgLocation.concat("6.jpg"),lazy:imgLocation.concat("lazyLoading/6.jpg"),type:"Web-site",description:"description for :"},
+    {title:"Limited Edition",img:imgLocation.concat("7.jpg"),lazy:imgLocation.concat("lazyLoading/7.jpg"),type:"Design",description:"description for :"},
+    {title:"Project LAB",img:imgLocation.concat("8.jpg"),lazy:imgLocation.concat("lazyLoading/8.jpg"),type:"Marketing",description:"description for :"},
+    {title:"Growing Business",img:imgLocation.concat("9.jpg"),lazy:imgLocation.concat("lazyLoading/9.jpg"),type:"Apps",description:"description for :"}
 ];
 const category=document.querySelector(".projects");
 
@@ -31,10 +31,12 @@ tapes.innerHTML+=tapList;
 
 let firstRender=categoryArray.map((value,index)=>
             `<li class="project" tabIndex="-1">
-                <a class="project-link" href="#">
-                    <img loading="lazy" class="project-img"" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
-                    <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
-                </a>
+            <a class="project-link" href="#">
+                <div class="img-box">
+                    <img loading="lazy" class="project-img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                    <div class="overlay"><p class="project-description">${value.description} ${value.title}</p></div>                </div>
+                <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
+            </a>
             </li>`
         ).join(" ");
 
@@ -56,7 +58,10 @@ tap.map((val,index)=>{
         let itemList=categoryDisplay.map((value,index)=>
             `<li class="project" tabIndex="-1">
                 <a class="project-link" href="#">
-                    <img loading="lazy" class="project-img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                    <div class="img-box">
+                        <img loading="lazy" class="project-img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                        <div class="overlay"><p class="project-description">${value.description} ${value.title}</p></div>
+                    </div>
                     <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
                 </a>
             </li>`

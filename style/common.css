@@ -160,6 +160,8 @@ header a{
 
 
 
+
+
 /*  ################### footer #####################  */
 
 .footer{
@@ -239,5 +241,20 @@ header a{
 /* which page */
 
 .link-current{
-    color: var(--main-blue-color)
+    color: var(--main-blue-color);
+    position: relative; 
+
 }
+
+.link-current::after{
+    position: absolute;
+        content: '';
+        height: 4px;
+        width: auto;
+        border-radius: 4px;
+        bottom: -32px; 
+		left: 0;
+        right: 0;
+        background: var(--main-blue-color);
+}
+

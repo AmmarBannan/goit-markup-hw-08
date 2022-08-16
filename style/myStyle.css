@@ -66,6 +66,8 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 }
 .hero-button:hover{
     background-color: var(--button-hover);
+    transition: 250ms;
+    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
 }
 
 
@@ -105,18 +107,6 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     width: 70px;
     height: 70px;
 }
-
-/* ########What we Do######*/
-.what_we_do_list{
-    display: flex;
-}
-.what-we-do-title{
-    text-align: center;
-}
-.what-we-do-item:not(:last-child){
-    margin-right:30px;
-}
-
 .benefits-img-container{
     height: 120px;
     width: 270px;
@@ -126,6 +116,44 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     background-color: var(--benefits-img-background-color);
     margin-bottom: 30px;
     border-radius: 4px;
+    padding: 27px 0;
+
+}
+
+/* ########What we Do######*/
+.what_we_do_list{
+    display: flex;
+}
+.what-we-do-title{
+    text-align: center;
+}
+
+.what-we-do-item{
+    position: relative;
+}
+
+.what-we-do-item:not(:last-child){
+    margin-right:30px;
+}
+
+
+.do-div{
+    background: rgba(47, 48, 58, 0.8);
+    padding: 27px 0;
+    width: 100%;
+    position: absolute;
+    left: 0px;
+    top: 224px;    
+    z-index: 0;
+}
+
+.do-paragraph{
+    font-weight: 700;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 /* ########Our Team######*/
@@ -229,3 +257,54 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     width: 90px;
     fill: var(--icon-color);
 }
+
+
+
+/* ####################### dropback ####################### */
+.backdrop{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ##### modal ##### */
+
+.modal{
+    width: 528px;
+    height: 581px;
+    background-color: white;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    position: relative;
+}
+.exit-button{
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    width: 30px;
+    height: 30px;
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    font-size: 20px;
+}
+.exit-button::before{
+    content: "\2716";
+    cursor: pointer;
+    
+}
+.exit-button:hover{
+    background-color: var(--icon-color);
+    transition: 250ms;
+}
+
+.is-hidden{
+    display: none;
+}
+
