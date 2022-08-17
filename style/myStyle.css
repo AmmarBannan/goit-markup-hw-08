@@ -217,17 +217,19 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     justify-content: center;
     cursor: pointer;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .company-icon{
+     fill:currentColor;
+    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--icon-color);
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .company-item:hover .company-icon,.company-item:hover{
     border-color: var(--main-blue-color);
-    color:var(--main-blue-color);
+     color:var(--main-blue-color);
 }
 
 .company-item:not(:last-child){
@@ -282,6 +284,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     font-size: 20px;
     padding: 3px;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    fill: currentColor;
 
 }
 .exit-button:hover{
