@@ -22,8 +22,8 @@ a{ text-decoration: none;}
 .icon-social-media{
     width: 20px;
     height: 20px;
-    fill: var(--icon-social-media-color);
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--icon-social-media-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link{
@@ -38,7 +38,7 @@ a{ text-decoration: none;}
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-media-link:hover .icon-social-media,.social-media-link:focus .icon-social-media{ fill: white;}
+.social-media-link:hover .icon-social-media,.social-media-link:focus .icon-social-media{ color: white;}
 .social-media-link:hover,.social-media-link:focus{background-color: #2196F3;}
 
 /* ###################   body     #################### */
@@ -159,7 +159,7 @@ header  ul{
 
 .header-icon{
     margin-right: 10px;
-    fill: currentColor;
+    color: currentColor;
 }
 
 .header-contacts li:not(:last-child){
@@ -219,7 +219,7 @@ header  ul{
 }
 
 .footer-social-media-item .icon{
-    fill: white;
+    color: white;
 }
 
 .footer-social-media-item{
@@ -245,7 +245,7 @@ header  ul{
 }
 
 
-.footer-social-media-link:hover .icon-social-media,.footer-social-media-link:focus .icon-social-media{fill: white;}
+.footer-social-media-link:hover .icon-social-media,.footer-social-media-link:focus .icon-social-media{color: white;}
 .footer-social-media-link:hover,.footer-social-media-link:focus{ background-color: var(--main-blue-color);}
 
 /* which page */
