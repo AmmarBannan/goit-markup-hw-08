@@ -4,7 +4,7 @@ html { box-sizing: border-box;}
 *,*::after,*::before { box-sizing: inherit;}
 img { display: block; max-width: 100%; height: auto;object-fit: cover;}
 address { font-style: normal;}
-.link { text-decoration: none; color: inherit;}
+.link { text-decoration: none; color: inherit;transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1); cursor: pointer;height: fit-content;}
 .list { list-style: none; padding: 0; margin: 0;} 
 a{ text-decoration: none;}
 
@@ -23,8 +23,23 @@ a{ text-decoration: none;}
     width: 20px;
     height: 20px;
     fill: var(--icon-social-media-color);
-
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.social-media-link{
+    display: flex;
+    border-radius: 50px;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    padding: 12px;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-media-link:hover .icon-social-media,.social-media-link:focus .icon-social-media{ fill: white;}
+.social-media-link:hover,.social-media-link:focus{background-color: #2196F3;}
 
 /* ###################   body     #################### */
 
@@ -99,15 +114,6 @@ header  ul{
     display: flex;
 }
 
-header a{
-    cursor: pointer;
-    height: fit-content;
-}
-
-.link{
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-}
 
 .link:hover{
     color: var(--main-blue-color);
@@ -141,7 +147,7 @@ header a{
     color:var(--links-color);
     font-weight: 500;
     display: flex;
-    text-align: center;
+    text-align: center;    
 }
 
 
@@ -152,8 +158,6 @@ header a{
 
 
 .header-icon{
-    height: 16px;
-    width: 16px;
     margin-right: 10px;
     fill: currentColor;
 }
@@ -188,16 +192,14 @@ header a{
     display: block;
     align-items: start;
 }
-.footer a{
+.link-footer{
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.03em;
     color:  var(--links-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.link-footer{
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-}
+
 .link-footer:hover{
     color:white;
     
@@ -235,16 +237,13 @@ header a{
     display: flex;
     background-color:var(--icon-footer-background-color);
     cursor: pointer;
+    transition:background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-social-media-item:not(:last-child){
     margin-right: 10px;
 }
 
-.footer-social-media-link,.icon-social-media{
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
-}
 
 .footer-social-media-link:hover .icon-social-media,.footer-social-media-link:focus .icon-social-media{fill: white;}
 .footer-social-media-link:hover,.footer-social-media-link:focus{ background-color: var(--main-blue-color);}
