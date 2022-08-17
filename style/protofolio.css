@@ -48,7 +48,7 @@
     color: white;
 }
 
-.projects{
+.project-list{
     display:flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -56,18 +56,17 @@
 }
 
 .project{
-    line-height: 20px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
     margin-top: 30px;
     margin-left: 30px;
 }
 
 .project-link{
+    line-height: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     cursor: pointer;
-    transition:box-shadow 500ms cubic-bezier(0.4, 0, 0.2, 1);
-
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-wrapper{
@@ -109,6 +108,7 @@
 .project-link:hover,.project-link:focus,.project-link:hover .overlay,.project-link:focus .overlay{
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     outline: none;
+    top: 0;
 }
 
 .project-description{

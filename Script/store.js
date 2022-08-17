@@ -19,7 +19,7 @@ let categoryArray=[
     {title:"Project LAB",img:imgLocation.concat("8.jpg"),lazy:imgLocation.concat("lazyLoading/8.jpg"),type:"Marketing",description:"description for :"},
     {title:"Growing Business",img:imgLocation.concat("9.jpg"),lazy:imgLocation.concat("lazyLoading/9.jpg"),type:"Apps",description:"description for :"}
 ];
-const category=document.querySelector(".projects");
+const category=document.querySelector(".project-list");
 
 
 const tapList=tap.map((val,index)=>

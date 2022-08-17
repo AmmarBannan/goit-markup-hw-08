@@ -63,8 +63,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     font-family: 'Roboto';
     font-style: normal;
     cursor: pointer;
-    transition: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero-button:hover{
     background-color: var(--button-hover);
@@ -205,8 +204,10 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 .list-companies{
     display: flex;
 }
-
-.company-item{
+.company-item:not(:last-child){
+    margin-right: 30px;
+}
+.company-link{
     width: 170px;
     height: 92px;
     border: var(--company-border-color) 1px solid;
@@ -216,27 +217,18 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     text-align: center;
     justify-content: center;
     cursor: pointer;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    
+    color: var(--icon-color);  
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
 .company-icon{
-     fill:currentColor;
-    transition:color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    color: var(--icon-color);
+    fill:currentColor;
 }
 
 
-.company-item:hover .company-icon,.company-item:hover{
+.company-link:hover{
     border-color: var(--main-blue-color);
-     color:var(--main-blue-color);
+    color:var(--main-blue-color);
 }
-
-.company-item:not(:last-child){
-    margin-right: 30px;
-}
-
-
 
 
 /* ####################### dropback ####################### */
@@ -250,13 +242,21 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     align-items: center;
     top: 0;
     background-color: rgba(0, 0, 0,.4);
-    animation-name: one;
-    animation-duration: 1s;
+    /* animation-name: one;
+    animation-duration: 1s; */
+    visibility: visible;
+    opacity: 1;
+    transition: visibility 2500ms cubic-bezier(0.4, 0, 0.2, 1),opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @keyframes one {
     from{background-color: rgba(0, 0, 0,0);}
     to{background-color: rgba(0, 0, 0,.4);}
   }
+
+  .is-hidden{
+    visibility: hidden;
+    opacity: 0;
+}
 /* ##### modal ##### */
 
 .modal{
@@ -282,19 +282,25 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 50px;
     font-size: 20px;
-    padding: 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+}
+
+.exit-icon{
     fill: currentColor;
-
 }
+
+
 .exit-button:hover{
-    background-color: var(--icon-color);
-    color: white;
+    border-color: var(--main-blue-color);
+    color:var(--main-blue-color);
 }
 
-.is-hidden{
-    display: none;
-}
+
 
 .form-title{
     font-weight: 700;
