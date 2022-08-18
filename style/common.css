@@ -181,7 +181,7 @@ header  ul{
     margin-right: 70px;
 }
 .footer-div:last-child{
-    margin-left: 30px;
+    margin-left: 14px;
 }
 
 .footer-list{
@@ -248,6 +248,12 @@ header  ul{
 
 .subs-div{
     display: flex;
+    width: fit-content;
+}
+
+.subs-index{
+    width: min-content;
+    margin-right: 12px;
 }
 
 .footer .subs-title{
@@ -263,26 +269,23 @@ header  ul{
 .footer .subs-email{
     width: 360px;
     height: 50px;
-    font-size: 18px;
+    font-size: 16px;
     background-color: transparent;
     border:solid 1px;
     border-color: var(--links-color);
     border-radius: 4px;
-    margin-right: 12px;
     padding: 16px;
     color: white;
     outline: none;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer .subs-button{
+    margin-top: 37px;
     background-color: var(--main-blue-color);
     border: none;
     border-radius: 4px;
-    height: 50px;
-    width: 200px;
     color: white;
     padding: 10px 43px;
-    justify-content: space-between;
     cursor: pointer;
     /*   font   */
     font-weight: 700;
@@ -290,15 +293,21 @@ header  ul{
     line-height: 30px;
     display: flex;
     align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+.subs-button:hover{
+    background-color: var(--button-hover);
+}
+
 .footer .subs-button svg{
     fill: currentColor;
+    margin-left: 10px;
 }
 
 .subs-email:hover,.subs-email:focus{
-    border:var(--main-blue-color) 1px solid;
+    border: 1px solid white;
 }
 
 

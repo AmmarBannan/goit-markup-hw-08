@@ -46,7 +46,7 @@
                 <ul class="list benefits-list">
                     <li class="benefits-item"> <div class="benefits-img-container"><svg width="65.4" height="70" class="benefits-icon" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="./image/icon.svg#icon-antenna"></use></svg>   </div> <h3 class="benefits-title ">ATTENTION TO DETAILS</h3> <p class="benefits-description">We go into all the details and processes of your business to develop a customized solution.</p></li>
                     <li class="benefits-item"> <div class="benefits-img-container"><svg width="67" height="70" class="benefits-icon" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="./image/icon.svg#icon-clock"></use></svg>   </div> <h3 class="benefits-title">PUNCTUALITY</h3> <p class="benefits-description">With us, you can feel safe and secure. An important principle of the company: respect your time and respect the agreed deadlines.</p> </li>
-                    <li class="benefits-item"> <div class="benefits-img-container"><svg width="70" height="54" class="benefits-icon" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="./image/icon.svg#icon-diagram"></use></svg>   </div> <h3 class="benefits-title">PLANNING</h3> <p class="benefits-description">You will be able to observe and participate in every phase of solution development and implementation.</p></li>
+                    <li class="benefits-item"> <div class="benefits-img-container"><svg width="70" height="70" class="benefits-icon" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="./image/icon.svg#icon-diagram"></use></svg>   </div> <h3 class="benefits-title">PLANNING</h3> <p class="benefits-description">You will be able to observe and participate in every phase of solution development and implementation.</p></li>
                     <li class="benefits-item"> <div class="benefits-img-container"><svg width="70" height="70" class="benefits-icon" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="./image/icon.svg#icon-astronaut"></use></svg>   </div> <h3 class="benefits-title">MODERN TECHNOLOGIES</h3> <p class="benefits-description">We use innovative tools to solve assigned tasks. It's time to simplify work processes.</p></li>
                 </ul>
             </div>
@@ -153,13 +153,15 @@
                 </ul>
             </div>
             <div class="footer-div">
-                <h3 class="subs-title">Subscribe to the newsletter</h3>
-                <div class="subs-div">
-                    <input type="email" placeholder="E-mail" class="subs-email">
+                <form class="subs-div" >
+                    <label class="subs-index">
+                        <h3 class="subs-title">Subscribe to the newsletter</h3>
+                        <input type="email" placeholder="E-mail" class="subs-email">
+                    </label>
                     <button class="subs-button">Subscribe
                         <svg width="20" height="20" class="icon icon-social-media" xmlns="http://www.w3.org/2000/svg"><use xlink:href="./image/icon.svg#icon-send"></use></svg>
                     </button>
-                </div>
+                </form>
             </div>
         </div>
     </footer>
@@ -167,39 +169,39 @@
     <div class="backdrop is-hidden " data-modal>
         <div class="modal">
             <button type="button" class="exit-button"><svg width="20" height="20" class="exit-icon" ><use xlink:href="./image/icon.svg#icon-exit"></use></svg></button>
-            
-            <form class="form" name="signup_form" autocomplete="on" novalidate >
-                <h3 class="form-title">Leave your information and we'll call you back</h3>
-                <label class="label-form" for="name">Name<br>
-                    <div class="input-container">
-                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-person"></use></svg>
-                        <input class="input" type="text" name="name" minlength="3" autofocus required>
-                    </div>
-                </label><br>
-                
-                <label class="label-form" for="Telephone">Telephone<br>
-                    <div class="input-container">
-                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-phone"></use></svg>
-                        <input class="input" type="tel" name="Telephone" minlength="9"  required>
-                    </div>
-                </label><br>
-                
-                <label class="label-form" for="email">E-mil<br>
-                    <div class="input-container">
-                        <svg width="20" height="20" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-email"></use></svg>
-                        <input class="input" type="email" name="email" minlength="10"  required>
-                    </div>
-                </label><br>
-                
-                <label class="label-form" for="Comments">Comments<br>
-                    <textarea id="w3review" name="w3review" rows="5" class="textarea" placeholder=" Enter the text"></textarea>
-                </label><br>
-                
-                <label class="label-form check-box-label">
-                    <input type="checkbox" class="checkbox-button"></input>
-                    I agree with the newsletter and accept the Terms and Conditions
+            <h3 class="form-title">Leave your information and we'll call you back</h3>
+            <form class="form-modal" name="signup_form" autocomplete="on" novalidate >
+                <label class="label-form" for="name">
+                    <span>Name</span> 
+                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-person"></use></svg>
+                    <input class="input-modal" type="text" name="name" minlength="3" autofocus required>
                 </label>
-                <button type="submit" class="submit-button" name="submit" value="submit">send</button>
+                
+                <label class="label-form" for="Telephone">
+                    <span>Telephone</span> 
+                    <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-phone"></use></svg>
+                    <input class="input-modal" type="tel" name="Telephone" minlength="9"  required>
+                </label>
+                
+                <label class="label-form" for="email">
+                    <span>E-mil</span> 
+                    <svg width="15" height="12" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-email"></use></svg>
+                    <input class="input-modal" type="email" name="email" minlength="10"  required>
+                </label>
+                
+                <label class="label-form" for="Comments">
+                    <span>Comments</span> 
+                    <textarea id="w3review" name="w3review" rows="7" class="textarea" placeholder=" Enter the text"></textarea>
+                </label>
+                
+                <label class="check-box-label">
+                    <div tabindex="-1" class="checkbox-button">
+                        <svg  width="11" height="8" xmlns="http://www.w3.org/2000/svg"><use href="./image/icon.svg#icon-Vector"></use></svg>
+                    </div>
+                    <p>I agree with the newsletter and accept the Terms and Conditions</p> 
+                </label>
+                
+                <button type="submit" class="submit-button" name="submit" value="submit">Send</button>
             </form>
         </div>
     </div>
