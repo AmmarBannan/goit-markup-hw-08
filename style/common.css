@@ -265,7 +265,8 @@ header  ul{
     height: 50px;
     font-size: 18px;
     background-color: transparent;
-    border: var(--links-color) solid 1px;
+    border:solid 1px;
+    border-color: var(--links-color);
     border-radius: 4px;
     margin-right: 12px;
     padding: 16px;
@@ -283,6 +284,7 @@ header  ul{
     padding: 10px 43px;
     justify-content: space-between;
     cursor: pointer;
+    /*   font   */
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
@@ -295,8 +297,8 @@ header  ul{
     fill: currentColor;
 }
 
-.subs-email:hover,.subs-email:active{
-    border-color: var(--button-hover);
+.subs-email:hover,.subs-email:focus{
+    border:var(--main-blue-color) 1px solid;
 }
 
 
