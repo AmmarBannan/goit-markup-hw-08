@@ -180,6 +180,10 @@ header  ul{
 .footer-div:not(:last-child){
     margin-right: 70px;
 }
+.footer-div:last-child{
+    margin-left: 30px;
+}
+
 .footer-list{
     list-style-type: none;
     display: block;
@@ -240,6 +244,63 @@ header  ul{
 
 .footer-social-media-link:hover .icon-social-media,.footer-social-media-link:focus .icon-social-media{color: white;}
 .footer-social-media-link:hover,.footer-social-media-link:focus{ background-color: var(--main-blue-color);}
+
+
+.subs-div{
+    display: flex;
+}
+
+.footer .subs-title{
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer .subs-email{
+    width: 360px;
+    height: 50px;
+    font-size: 18px;
+    background-color: transparent;
+    border: var(--links-color) solid 1px;
+    border-radius: 4px;
+    margin-right: 12px;
+    padding: 16px;
+    color: white;
+    outline: none;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer .subs-button{
+    background-color: var(--main-blue-color);
+    border: none;
+    border-radius: 4px;
+    height: 50px;
+    width: 200px;
+    color: white;
+    padding: 10px 43px;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.footer .subs-button svg{
+    fill: currentColor;
+}
+
+.subs-email:hover,.subs-email:active{
+    border-color: var(--button-hover);
+}
+
+
+
 
 /* which page */
 
