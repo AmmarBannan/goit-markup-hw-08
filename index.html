@@ -127,8 +127,6 @@
                 </ul>
             </div>
         </section>
-
-    
     </main>
 
     <footer class="footer">
@@ -166,6 +164,8 @@
         </div>
     </footer>
 
+    <!--################ modal ############### -->
+
     <div class="backdrop is-hidden " data-modal>
         <div class="modal">
             <button type="button" class="exit-button"><svg width="20" height="20" class="exit-icon" ><use xlink:href="./image/icon.svg#icon-exit"></use></svg></button>
@@ -173,30 +173,31 @@
             <form class="form-modal" name="signup_form" autocomplete="on" novalidate >
                 <label class="label-form" for="name">
                     <span>Name</span> 
-                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-person"></use></svg>
+                    <svg class="label-svg" width="12" height="12" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-person"></use></svg>
                     <input class="input-modal" type="text" name="name" minlength="3" autofocus required>
                 </label>
                 
                 <label class="label-form" for="Telephone">
                     <span>Telephone</span> 
-                    <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-phone"></use></svg>
+                    <svg class="label-svg" width="13" height="15" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-phone"></use></svg>
                     <input class="input-modal" type="tel" name="Telephone" minlength="9"  required>
                 </label>
                 
                 <label class="label-form" for="email">
-                    <span>E-mil</span> 
-                    <svg width="15" height="12" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-email"></use></svg>
+                    <span>E-mail</span> 
+                    <svg class="label-svg" width="15" height="15" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-email"></use></svg>
                     <input class="input-modal" type="email" name="email" minlength="10"  required>
                 </label>
                 
-                <label class="label-form" for="Comments">
+                <label class="label-form label-textarea" for="Comments">
                     <span>Comments</span> 
-                    <textarea id="w3review" name="w3review" rows="7" class="textarea" placeholder=" Enter the text"></textarea>
+                    <textarea id="w3review" name="Comments" rows="7" class="textarea" placeholder=" Enter the text"></textarea>
                 </label>
                 
-                <label class="check-box-label">
+                <label class="label-form check-box-label">
+                    <input type="checkbox">
                     <div tabindex="-1" class="checkbox-button">
-                        <svg  width="11" height="8" xmlns="http://www.w3.org/2000/svg"><use href="./image/icon.svg#icon-Vector"></use></svg>
+                        <svg  width="11" height="8"><use href="./image/icon.svg#icon-Vector"></use></svg>
                     </div>
                     <p>I agree with the newsletter and accept the Terms and Conditions</p> 
                 </label>
