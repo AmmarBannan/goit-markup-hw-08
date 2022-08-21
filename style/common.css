@@ -23,8 +23,7 @@ a{ text-decoration: none;}
     width: 20px;
     height: 20px;
     fill: currentColor;
-   
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-media-link{
@@ -36,12 +35,11 @@ a{ text-decoration: none;}
     height: 44px;
     padding: 12px;
     cursor: pointer;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--icon-social-media-color);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.social-media-link:hover .icon-social-media,.social-media-link:focus .icon-social-media{ color: white;}
-.social-media-link:hover,.social-media-link:focus{background-color: #2196F3;}
+.social-media-link:hover,.social-media-link:focus{background-color: #2196F3; color: white;}
 
 /* ###################   body     #################### */
 
@@ -129,6 +127,7 @@ header  ul{
     letter-spacing: 0.02em;
     text-decoration: none;
     color: black;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-contacts{
@@ -150,7 +149,8 @@ header  ul{
     color:var(--links-color);
     font-weight: 500;
     display: flex;
-    text-align: center;    
+    text-align: center;  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);  
 }
 
 .header-icon{
