@@ -2,7 +2,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  color: getColor("main-blue");
+  color: #2196F3;
   text-decoration: none;
   cursor: pointer;
 }
@@ -19,7 +19,7 @@ html {
   box-sizing: inherit;
 }
 
-img {
+img, .projects .project__link__box img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -40,7 +40,7 @@ address {
   height: fit-content;
 }
 .link:hover, .projects .project__link:hover {
-  color: var(--main-blue-color);
+  color: #2196F3;
 }
 
 .list, .projects, .filters {
@@ -77,13 +77,29 @@ body {
   margin-bottom: 50px;
 }
 
+.link-current {
+  color: #2196F3 !important;
+  position: relative;
+}
+.link-current::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: auto;
+  border-radius: 4px;
+  bottom: -32px;
+  left: 0;
+  right: 0;
+  background: #2196F3;
+}
+
 .filters {
   display: flex;
   justify-content: center;
   margin-bottom: 50px !important;
 }
-.filters .active {
-  background-color: var(--main-blue-color);
+.filters .filter .active {
+  background-color: #2196F3;
   color: white;
 }
 .filters .filter:not(:last-child) {
@@ -91,7 +107,7 @@ body {
 }
 .filters .filter__button {
   border: none;
-  background-color: var(--button-background-color);
+  background-color: #F5F4FA;
   padding: 6px 25px;
   border-radius: 4px;
   font-weight: 700;
@@ -126,6 +142,11 @@ body {
   cursor: pointer;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.projects .project__link:hover, .projects .project__link:focus, .projects .project__link:hover .project__link__box__overlay, .projects .project__link:focus .project__link__box__overlay {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  outline: none;
+  top: 0;
+}
 .projects .project__link__box {
   position: relative;
   overflow: hidden;
@@ -154,18 +175,23 @@ body {
   line-height: 36px;
   color: #212121;
 }
-.projects .project__link__box__wrapper {
+.projects .project__link__wrapper {
   padding: 20px;
   display: block;
-  border: #ECECEC solid 1px;
+  border: 1px solid #ECECEC;
   border-top: none;
   text-align: start;
 }
-.projects .project__link__box__wrapper h3 {
-  font-weight: 400;
+.projects .project__link__wrapper h3 {
   font-size: 18px;
-  line-height: 28px;
-  /* or 156% */
+  font-weight: 700;
+  line-height: 36px;
+  color: black;
+}
+.projects .project__link__wrapper p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 30px;
   letter-spacing: 0.03em;
-  color: #FFFFFF;
+  color: #757575;
 }/*# sourceMappingURL=protofolio.css.map */

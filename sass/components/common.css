@@ -2,7 +2,7 @@
   font-family: "Raleway", sans-serif;
   font-size: 26px;
   font-weight: 700;
-  color: getColor("main-blue");
+  color: #2196F3;
   text-decoration: none;
   cursor: pointer;
 }
@@ -40,7 +40,7 @@ address {
   height: fit-content;
 }
 .link:hover {
-  color: var(--main-blue-color);
+  color: #2196F3;
 }
 
 .list {
@@ -75,4 +75,20 @@ body {
   font-size: 36px;
   letter-spacing: 0.03em;
   margin-bottom: 50px;
+}
+
+.link-current {
+  color: #2196F3 !important;
+  position: relative;
+}
+.link-current::after {
+  position: absolute;
+  content: "";
+  height: 4px;
+  width: auto;
+  border-radius: 4px;
+  bottom: -32px;
+  left: 0;
+  right: 0;
+  background: #2196F3;
 }/*# sourceMappingURL=common.css.map */

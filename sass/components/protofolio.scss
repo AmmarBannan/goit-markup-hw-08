@@ -1,20 +1,23 @@
-@import './common.scss';
+@import "../utils/vars.scss";
+@import "./common.scss";
+
+
 .filters{
     display: flex;
     justify-content: center;
     margin-bottom: 50px !important; 
     @extend .list;
-    .active{
-        background-color: var(--main-blue-color);
-        color: white;
-    }
     .filter{
+        .active{
+            background-color: getColor('blue-main');
+            color: white;
+        }
         &:not(:last-child){
             margin-right: 10px;
         }
         &__button{
             border: none;
-            background-color: var(--button-background-color);
+            background-color: getColor('background-team');
             padding: 6px 25px;
             border-radius: 4px;
             font-weight: 700;
@@ -49,11 +52,16 @@
             flex-direction: column;
             cursor: pointer;
             transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover,&:focus,&:hover .project__link__box__overlay,&:focus .project__link__box__overlay{
+                box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+                outline: none;
+                top: 0;
+            }
             &__box{
                 position: relative;
                 overflow: hidden;
-                &__img{
-
+                img{
+                    @extend img;
                 }
                 &__overlay{
                     position: absolute;
@@ -68,20 +76,26 @@
                     .type{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: var(--category-title);}
                     .title{font-size: 18px;font-weight: 700;line-height: 36px;color: #212121;}
                 }
-                &__wrapper{
-                    padding: 20px;
-                    display: block;
-                    border: #ECECEC solid 1px;
-                    border-top: none;
-                    text-align: start;
-                    h3{
-                        font-weight: 400;
-                        font-size: 18px;
-                        line-height: 28px;
-                        /* or 156% */
-                        letter-spacing: 0.03em;
-                        color: #FFFFFF;
-                    }
+            }
+            
+            &__wrapper{
+                padding: 20px;
+                display: block;
+                border:1px solid #ECECEC;
+                border-top: none;
+                text-align: start;
+                h3{
+                    font-size: 18px;
+                    font-weight: 700;
+                    line-height: 36px;
+                    color: black;
+                }
+                p{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 30px;
+                    letter-spacing: 0.03em;
+                    color: getColor('links');
                 }
             }
         }

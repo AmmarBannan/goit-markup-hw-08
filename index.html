@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,200&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&family=Yellowtail&display=swap" rel="stylesheet">    
     <!-- <link rel="stylesheet" href="./style/common.css">
     <link rel="stylesheet" href="./style/myStyle.css"> -->
-    <link rel="stylesheet" href="./sass/components/style.css">
+    <link rel="stylesheet" href="./sass/components/main.css">
 
 </head>
 <body>     
@@ -19,8 +19,8 @@
             <nav class="nav">
                 <a href="./index.html" id="logo">WebStudio</a>
                 <ul class="nav__list">
-                    <li><a class="nav__list__item" href="./index.html">Studio</a></li>
-                    <li><a class="nav__list__item link-current link" href="./portfolio.html">Portfolio</a></li>
+                    <li><a class="nav__list__item link-current" href="./index.html">Studio</a></li>
+                    <li><a class="nav__list__item" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav__list__item" href="/contacts">Contacts</a></li>
                 </ul>
             </nav>
@@ -164,30 +164,30 @@
 
     <div class="backdrop is-hidden " data-modal>
         <div class="modal">
-            <button type="button" class="exit-button"><svg width="20" height="20" class="exit-icon" ><use xlink:href="./image/icon.svg#icon-exit"></use></svg></button>
-            <h3 class="form-title">Leave your information and we'll call you back</h3>
-            <form class="form-modal" name="signup_form" autocomplete="on" novalidate >
-                <label class="label-form">
+            <button type="button" class="exit-button"><svg width="20" height="20"><use xlink:href="./image/icon.svg#icon-exit"></use></svg></button>
+            <h3 class="modal__title">Leave your information and we'll call you back</h3>
+            <form class="modal__form" name="signup_form" autocomplete="on" novalidate >
+                <label class="modal__form__label">
                     <span>Name</span> 
-                    <svg class="label-svg" width="12" height="12" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-team__member__photo"></use></svg>
-                    <input class="input-modal" type="text" name="name" minlength="3" autofocus required>
+                    <svg width="12" height="12" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-person"></use></svg>
+                    <input type="text" name="name" minlength="3" autofocus required>
                 </label>
                 
-                <label class="label-form">
+                <label class="modal__form__label">
                     <span>Telephone</span> 
-                    <svg class="label-svg" width="15" height="15" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-phone"></use></svg>
-                    <input class="input-modal" type="tel" name="Telephone" minlength="9"  required>
+                    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-phone"></use></svg>
+                    <input type="tel" name="Telephone" minlength="9"  required>
                 </label>
                 
-                <label class="label-form">
+                <label class="modal__form__label">
                     <span>E-mail</span> 
-                    <svg class="label-svg" width="15" height="15" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-email"></use></svg>
-                    <input class="input-modal" type="email" name="email" minlength="10"  required>
+                    <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg"> <use href="./image/icon.svg#icon-email"></use></svg>
+                    <input type="email" name="email" minlength="10"  required>
                 </label>
                 
-                <label class="label-form label-textarea">
+                <label class="modal__form__label textarea">
                     <span>Comments</span> 
-                    <textarea id="w3review" name="Comments" rows="7" class="textarea" placeholder=" Enter the text"></textarea>
+                    <textarea name="Comments" rows="7" placeholder=" Enter the text"></textarea>
                 </label>
                 
                 <label class="check-box-label">

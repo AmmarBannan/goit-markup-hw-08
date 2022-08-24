@@ -30,15 +30,16 @@ const filters=document.querySelector(".filters");
 filters.innerHTML+=tapList;
 
 let firstRender=categoryArray.map((value,index)=>
-            `<li class="project" tabIndex="-1">
-            <a class="project-link" href="#">
-                <div class="img-box">
-                    <img loading="lazy" class="project-img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
-                    <div class="overlay"><p class="project-description">${value.description} ${value.title}</p></div>                </div>
-                <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
-            </a>
-            </li>`
-        ).join(" ");
+    `<li class="project" tabIndex="-1">
+    <a class="project__link" href="#">
+        <div class="project__link__box">
+            <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+            <div class="project__link__box__overlay"><p class="type">${value.description}</p><p class="title">${value.title}</p></div>
+        </div>
+        <div class="project__link__wrapper"><h3>${value.title}</h3> <p class="project-type">${value.type}</p></div>
+    </a>
+    </li>`
+    ).join(" ");
 
 category.innerHTML=firstRender ;
 
@@ -59,10 +60,10 @@ tap.map((val,index)=>{
             `<li class="project" tabIndex="-1">
                 <a class="project__link" href="#">
                     <div class="project__link__box">
-                        <img loading="lazy" class="project__link__box__img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                        <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
                         <div class="project__link__box__overlay"><p class="type">${value.description}</p><p class="title">${value.title}</p></div>
                     </div>
-                    <div class="project__link__box__wrapper"><h3>${value.title}</h3> <p class="project-type">${value.type}</p></div>
+                    <div class="project__link__wrapper"><h3>${value.title}</h3> <p class="project-type">${value.type}</p></div>
                 </a>
             </li>`
         ).join(" ");

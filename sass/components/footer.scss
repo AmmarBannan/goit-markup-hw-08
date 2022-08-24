@@ -1,4 +1,5 @@
 @import "../utils/vars.scss";
+@import './common.scss';
 
 .footer{
     background: #2F303A;
@@ -7,7 +8,7 @@
     &__container{
         @extend .container;
         display: flex;
-        text-align: start;
+        text-align: start !important;
         .footer-div{
             &:not(:last-child){
                 margin-right: 70px;
@@ -46,7 +47,7 @@
 
 
 .footer-social-media{
-    @include social-media(white,getColor('background-icon-footer')) 
+    @include social-media(white,getColor('background-footer-icon')) 
 }
 
 .footer-form{
@@ -68,13 +69,12 @@
             height: 50px;
             font-size: 16px;
             background-color: transparent;
-            border:solid 1px;
-            border-color: getColor('main-blue');
+            border:1px solid getColor('links');
             border-radius: 4px;
             padding: 16px;
             color: white;
             outline: none;
-            transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
             &:hover,&:focus{
                 border: 1px solid white;
             }
@@ -82,7 +82,7 @@
     }
     &__button{
         margin-top: 37px;
-        background-color:getColor('main-blue');
+        background-color:getColor('blue-main');
         border: none;
         border-radius: 4px;
         color: white;
@@ -97,7 +97,7 @@
         letter-spacing: 0.06em;
         transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         &:hover{
-            background-color: var(--button-hover);
+            background-color:getColor('blue-hover');
         }
         svg{
             fill: currentColor;

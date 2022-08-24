@@ -1,15 +1,23 @@
 $color:(
-    'front':#2F303A,
-    'main-blue':#2196F3,
+    
+    'blue-main':#2196F3,
+    'blue-hover':#188CE8,
     // --text-color
     'links':#757575, 
-    'button-hover':#188CE8,
-    'background-icon-footer':rgba(255, 255, 255, 0.1),
+    'front':#2F303A,
+
+    'background-footer-icon':rgba(255, 255, 255, 0.1),
+    'background-team': #F5F4FA,
     // --icon-color
     'icon-social-media': #AFB1B8,
     // benefits-img-background-color
-    'background-team': #F5F4FA,
+    
     'company-border':#AFB1B8,
+
     'modal-input-border':rgba(33, 33, 33, 0.2),
     'modal-textarea-font':#75757580,
 );
+
+@function getColor($key) {
+    @return map-get($color, $key);
+  }

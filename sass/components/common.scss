@@ -1,8 +1,11 @@
+
+@import "../utils/vars.scss";
+
 #logo{
     font-family: 'Raleway', sans-serif;
     font-size: 26px;
     font-weight: 700;
-    color: getColor('main-blue');
+    color: getColor('blue-main');
     text-decoration: none;
     cursor: pointer;
 }
@@ -14,19 +17,12 @@ address { font-style: normal;}
 .link {
     text-decoration: none; color: inherit; cursor: pointer;height: fit-content;
     &:hover{
-        color: var(--main-blue-color);
+        color: getColor('blue-main');
     }
 }
 
 .list { list-style: none; padding: 0; margin: 0;} 
 a{ text-decoration: none;}
-
-
-
-// @function getColor($key) {
-//     @return getColor(  $key);
-//   }
-
 
 @mixin social-media($color ,$background){
     @extend .list;
@@ -48,12 +44,16 @@ a{ text-decoration: none;}
             cursor: pointer;
             color: $color;
             background-color:$background;
-            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             svg{
                 width: 20px;
                 height: 20px;
                 fill: currentColor;
-                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            &:hover{
+                background-color:getColor('blue-main');
+                color:white;
             }
         }
     }
@@ -80,6 +80,22 @@ body{
         font-size: 36px;
         letter-spacing: 0.03em;
         margin-bottom: 50px;
+    }
+}
+
+.link-current{
+    color: getColor('blue-main') !important;
+    position: relative; 
+    &::after{
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: auto;
+        border-radius: 4px;
+        bottom: -32px; 
+        left: 0;
+        right: 0;
+        background: getColor('blue-main') ;
     }
 }
 
