@@ -19,15 +19,15 @@ let categoryArray=[
     {title:"Project LAB",img:imgLocation.concat("8.jpg"),lazy:imgLocation.concat("lazyLoading/8.jpg"),type:"Marketing",description:"description for :"},
     {title:"Growing Business",img:imgLocation.concat("9.jpg"),lazy:imgLocation.concat("lazyLoading/9.jpg"),type:"Apps",description:"description for :"}
 ];
-const category=document.querySelector(".project-list");
+const category=document.querySelector(".projects");
 
 
 const tapList=tap.map((val,index)=>
-    `<li class="filter-item"><button class="filter-button button-hover ${val.state}" value=${val.name}>${val.name}</button></li>`
+    `<li class="filter"><button class="filter__button ${val.state}" value=${val.name}>${val.name}</button></li>`
 ).join("")
 
-const tapes=document.querySelector(".filter-list");
-tapes.innerHTML+=tapList;
+const filters=document.querySelector(".filters");
+filters.innerHTML+=tapList;
 
 let firstRender=categoryArray.map((value,index)=>
             `<li class="project" tabIndex="-1">
@@ -57,12 +57,12 @@ tap.map((val,index)=>{
 
         let itemList=categoryDisplay.map((value,index)=>
             `<li class="project" tabIndex="-1">
-                <a class="project-link" href="#">
-                    <div class="img-box">
-                        <img loading="lazy" class="project-img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
-                        <div class="overlay"><p class="project-description">${value.description} ${value.title}</p></div>
+                <a class="project__link" href="#">
+                    <div class="project__link__box">
+                        <img loading="lazy" class="project__link__box__img" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                        <div class="project__link__box__overlay"><p class="type">${value.description}</p><p class="title">${value.title}</p></div>
                     </div>
-                    <div class="project-wrapper"><h3 class="project-title">${value.title}</h3> <p class="project-type">${value.type}</p></div>
+                    <div class="project__link__box__wrapper"><h3>${value.title}</h3> <p class="project-type">${value.type}</p></div>
                 </a>
             </li>`
         ).join(" ");

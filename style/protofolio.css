@@ -48,7 +48,7 @@
     color: white;
 }
 
-.project-list{
+.projects{
     display:flex;
     flex-wrap: wrap;
     margin-top: -30px;
