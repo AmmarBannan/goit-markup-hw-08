@@ -8,8 +8,6 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 
 :root {
     --font-backgroundcolor:#2F303A;
-    --h1-front-color:#FFFFFF;
-    --main-blue-color:#2196F3;
     --text-color:#757575;
     --team-backgroundcolor: #F5F4FA;
     --company-border-color:#AFB1B8;
@@ -24,7 +22,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
 /*      ############      main        ###########      */
 
 
-.section-title{
+.section__title{
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -43,7 +41,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     background-color: var(--font-backgroundcolor);
 }
 
-.hero-title{
+.hero__title{
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -53,7 +51,7 @@ header nav ul:nth-child(2) li:nth-child(1) a{
     color: var(--h1-front-color);
     margin-bottom: 30px;
 }
-.hero-button{
+.hero__button{
     font-size: 16px;
     line-height: 30px;
     font-weight: 700;

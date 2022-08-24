@@ -1,0 +1,53 @@
+@import "../utils/vars.scss";
+
+.header{
+    border-bottom: solid 1px rgb(230, 230, 232);
+    &__container{
+        @extend .container;
+        display:flex;
+        justify-content: space-between;
+        .nav{
+            display: flex;
+            align-items: center;
+            &__list{
+                @extend .list;
+                display: flex;
+                margin-left: 93px;
+                & li:not(:last-child){
+                    margin-right: 60px;
+                }
+                &__item{
+                    @extend .link;
+                    display: block;
+                    font-weight: 500;
+                    line-height: 16.41px;
+                    letter-spacing: 0.02em;
+                    text-decoration: none;
+                    color: black;
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+                }
+            }
+        }
+        .contacts{
+            @extend .list;
+            align-items: center;
+            display: flex;
+            & li:not(:last-child){
+                margin-right: 30px;
+            }
+            &__item{
+                padding:32px 0 31px 0;
+                color: getColor('links');
+                &__link{
+                    @extend .link;
+                    color: getColor('links');
+                    font-weight: 500;
+                    display: flex;
+                    text-align: center;  
+                    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+                }
+            }
+            
+        }
+    }
+}
