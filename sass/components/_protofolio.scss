@@ -29,7 +29,7 @@
             font-style: normal;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             &:hover{
-                background-color: var(--main-blue-color);
+                background-color: getColor('blue-main');
                 color: white;
             }
         }
@@ -73,8 +73,8 @@
                     transition: top 250ms cubic-bezier(0.4, 0, 0.2, 0.1);
                     padding: 63px 24px;
                     text-align: start;
-                    .type{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: var(--category-title);}
-                    .title{font-size: 18px;font-weight: 700;line-height: 36px;color: #212121;}
+                    .type{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: black;}
+                    .title{font-size: 18px;font-weight: 700;line-height: 36px;color: black;}
                 }
             }
             

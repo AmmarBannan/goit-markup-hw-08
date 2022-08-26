@@ -1,12 +1,3 @@
-#logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #2196F3;
-  text-decoration: none;
-  cursor: pointer;
-}
-
 h1, h2, h3, h4, h5, h6, p {
   margin: 0;
 }
@@ -186,6 +177,15 @@ body {
   left: 0;
   right: 0;
   background: #2196F3;
+}
+
+#logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #2196F3;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .footer {
@@ -253,7 +253,7 @@ body {
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-media__item__link:hover {
+.footer-social-media__item__link:hover, .footer-social-media__item__link:focus {
   background-color: #2196F3;
   color: white;
 }
@@ -567,18 +567,9 @@ main {
   fill: currentColor;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-social-media__item__link:hover {
+.main-social-media__item__link:hover, .main-social-media__item__link:focus {
   background-color: #2196F3;
   color: white;
-}
-
-#logo {
-  font-family: "Raleway", sans-serif;
-  font-size: 26px;
-  font-weight: 700;
-  color: #2196F3;
-  text-decoration: none;
-  cursor: pointer;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -667,6 +658,15 @@ body {
   background: #2196F3;
 }
 
+#logo {
+  font-family: "Raleway", sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  color: #2196F3;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .filters {
   display: flex;
   justify-content: center;
@@ -694,7 +694,7 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filters .filter__button:hover {
-  background-color: var(--main-blue-color);
+  background-color: #2196F3;
   color: white;
 }
 
@@ -741,13 +741,13 @@ body {
   font-size: 16px;
   line-height: 30px;
   letter-spacing: 0.03em;
-  color: var(--category-title);
+  color: black;
 }
 .projects .project__link__box__overlay .title {
   font-size: 18px;
   font-weight: 700;
   line-height: 36px;
-  color: #212121;
+  color: black;
 }
 .projects .project__link__wrapper {
   padding: 20px;
@@ -903,21 +903,21 @@ body {
   border: 1px solid rgba(117, 117, 117, 0.5019607843);
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal__form .check-box-label {
+.modal__form .checkbox-label {
   display: flex;
   align-items: baseline;
   cursor: pointer;
   margin-bottom: 10px;
 }
-.modal__form .check-box-label input {
-  visibility: hidden;
-}
-.modal__form .check-box-label input:checked + .checkbox-button {
+.modal__form .checkbox-label input:checked + .checkbox-button {
   background-color: #2196F3;
   color: white;
   border-color: #2196F3;
 }
-.modal__form .check-box-label .checkbox-button {
+.modal__form .checkbox-label input {
+  visibility: hidden;
+}
+.modal__form .checkbox-label .checkbox-button {
   width: 16px;
   height: 15px;
   cursor: pointer;
@@ -931,10 +931,10 @@ body {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 2px;
 }
-.modal__form .check-box-label .checkbox-button svg {
+.modal__form .checkbox-label .checkbox-button svg {
   fill: currentColor;
 }
-.modal__form .check-box-label p {
+.modal__form .checkbox-label p {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;

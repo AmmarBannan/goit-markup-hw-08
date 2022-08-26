@@ -20,4 +20,4 @@ $color:(
 
 @function getColor($key) {
     @return map-get($color, $key);
-  }
+}
