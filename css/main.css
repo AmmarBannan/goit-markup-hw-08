@@ -542,7 +542,7 @@ header .header-container {
 }
 
 .hero {
-  background-image: url("../../../image/page1/backImage.jpg");
+  background-image: url("../image/page1/backImage.jpg");
   background-repeat: no-repeat;
   background-size: auto;
   padding: 200px 0;
