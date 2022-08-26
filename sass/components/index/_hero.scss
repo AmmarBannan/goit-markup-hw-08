@@ -1,0 +1,41 @@
+@import '../../utils/vars.scss';
+
+
+.hero{
+    background-image:url("../../image/page1/backImage.jpg");
+    background-repeat:no-repeat;
+    background-size:auto;
+    padding: 200px 0;
+    background-position: 50% 50%;
+    background-color: map-get($color,'front');
+}
+
+.hero-title{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.hero-button{
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    color: white;
+    background-color:map-get($color,'blue-main');;
+    border:none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    cursor: pointer;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover{
+        background-color:map-get($color,'blue-hover');
+    }
+}

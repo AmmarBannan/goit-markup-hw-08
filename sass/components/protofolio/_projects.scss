@@ -1,42 +1,4 @@
-@import "../utils/vars.scss";
-@import "./common.scss";
-
-
-.filters{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px !important; 
-    @extend .list;
-    .filter{
-        .active{
-            background-color: getColor('blue-main');
-            color: white;
-        }
-        &:not(:last-child){
-            margin-right: 10px;
-        }
-        &__button{
-            border: none;
-            background-color: getColor('background-team');
-            padding: 6px 25px;
-            border-radius: 4px;
-            font-weight: 700;
-            font-size: 16px;
-            letter-spacing: 0.03em;
-            color: #212121;
-            cursor: pointer;
-            font-family: 'Roboto';
-            font-style: normal;
-            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-            &:hover{
-                background-color: getColor('blue-main');
-                color: white;
-            }
-        }
-    }
-}
 .projects{
-    @extend .list;
     display:flex;
     flex-wrap: wrap;
     margin-top: -30px;
@@ -45,7 +7,6 @@
         margin-top: 30px;
         margin-left: 30px;
         &__link{
-            @extend .link;
             line-height: 20px;
             display: flex;
             justify-content: center;
@@ -60,9 +21,6 @@
             &__box{
                 position: relative;
                 overflow: hidden;
-                img{
-                    @extend img;
-                }
                 &__overlay{
                     position: absolute;
                     top: 100%;
@@ -73,8 +31,8 @@
                     transition: top 250ms cubic-bezier(0.4, 0, 0.2, 0.1);
                     padding: 63px 24px;
                     text-align: start;
-                    .type{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: black;}
-                    .title{font-size: 18px;font-weight: 700;line-height: 36px;color: black;}
+                    .type{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: white;}
+                    .title{font-size: 18px;font-weight: 700;line-height: 36px;color: white;}
                 }
             }
             
@@ -95,7 +53,7 @@
                     font-size: 16px;
                     line-height: 30px;
                     letter-spacing: 0.03em;
-                    color: getColor('links');
+                    color: map-get($color,'links');
                 }
             }
         }

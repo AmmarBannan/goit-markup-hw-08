@@ -31,7 +31,7 @@ filters.innerHTML+=tapList;
 
 let firstRender=categoryArray.map((value,index)=>
     `<li class="project" tabIndex="-1">
-    <a class="project__link" href="#">
+    <a class="project__link link" href="#">
         <div class="project__link__box">
             <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
             <div class="project__link__box__overlay"><p class="type">${value.description}</p><p class="title">${value.title}</p></div>
@@ -58,7 +58,7 @@ tap.map((val,index)=>{
 
         let itemList=categoryDisplay.map((value,index)=>
             `<li class="project" tabIndex="-1">
-                <a class="project__link" href="#">
+                <a class="project__link link" href="#">
                     <div class="project__link__box">
                         <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
                         <div class="project__link__box__overlay"><p class="type">${value.description}</p><p class="title">${value.title}</p></div>

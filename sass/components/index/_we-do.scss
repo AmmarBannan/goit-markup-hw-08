@@ -1,0 +1,24 @@
+@import '../../utils/vars.scss';
+
+.what_we_do_list{
+    display: flex;
+    .what-we-do-item{
+        &:not(:last-child){
+            margin-right:30px;
+        }
+        position: relative;
+        .do-paragraph{
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            background: rgba(47, 48, 58, 0.8);
+            padding: 27px 0;
+            width: 100%;
+            position: absolute;   
+            z-index: 0;
+            bottom: 0;
+        }
+    }
+}

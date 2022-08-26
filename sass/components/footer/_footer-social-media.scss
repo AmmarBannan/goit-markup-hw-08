@@ -1,0 +1,16 @@
+@import '../../utils/vars.scss';
+@import '../../utils/social-media';
+
+.footer-social-media-title{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.footer-social-media{
+    @include social-media(white , map-get($color,'background-footer-icon')) 
+}

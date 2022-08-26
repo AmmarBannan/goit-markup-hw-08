@@ -1,0 +1,41 @@
+@import '../../utils/vars.scss';
+
+
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container{
+    width:1200px;
+    padding: 0px 15px;
+    margin: 0 auto; 
+    text-align: center;
+}
+
+.section-no-padding-top{
+    padding-top: 0 !important;
+}
+
+.section-gray{
+    @extend .section;
+    background-color:map-get($color,'background-team');
+}
+
+.section{
+    padding: 94px 0;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+}

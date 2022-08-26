@@ -1,0 +1,17 @@
+@import '../../utils/vars.scss';
+
+.footer{
+    background: #2F303A;
+    padding: 60px 0px;
+    line-height: 1.8rem;
+    &__container{
+        @extend .container;
+        display: flex;
+        text-align: start !important;
+        .footer-div{
+            &:not(:last-child){
+                margin-right: 70px;
+            }
+        }
+    }
+}

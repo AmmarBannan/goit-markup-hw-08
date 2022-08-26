@@ -1,0 +1,38 @@
+@import '../../utils/vars.scss';
+
+.benefits-list{
+    text-align: start;
+    display: flex;
+    & li:not(:last-child){
+        margin-right: 30px;
+    }    
+    .benefit-item{
+        width: 270px;
+        &__img{
+            height: 120px;
+            width: 270px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color:map-get($color,'background-team');            
+            margin-bottom: 30px;
+            border-radius: 4px;
+            padding: 27px 0;
+        }
+        &__title{
+            margin-bottom: 10px;
+            font-weight: 700;
+            line-height: 16px;
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+        }
+        &__description{
+            color:map-get($color,'links');
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0.03em;
+        }
+
+    }
+}

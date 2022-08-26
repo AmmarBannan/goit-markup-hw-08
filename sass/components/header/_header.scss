@@ -1,0 +1,12 @@
+@import '../../utils/vars.scss';
+
+
+header{
+    border-bottom:1px solid  rgb(230, 230, 232);
+    .header-container{
+        @extend .container;
+        display:flex;
+        justify-content: space-between;
+        
+    }
+}

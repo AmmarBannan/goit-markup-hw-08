@@ -1,0 +1,11 @@
+@import '../../utils/vars.scss';
+
+
+#logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: map-get($color,'blue-main');
+    text-decoration: none;
+    cursor: pointer;
+}

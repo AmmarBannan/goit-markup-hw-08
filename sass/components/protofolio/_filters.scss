@@ -1,0 +1,32 @@
+.filters{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px !important; 
+    .filter{
+        .active{
+            background-color: map-get($color,'blue-main');
+            color: white;
+        }
+        &:not(:last-child){
+            margin-right: 10px;
+        }
+        &__button{
+            border: none;
+            background-color: map-get($color,'background-team');
+            padding: 6px 25px;
+            border-radius: 4px;
+            font-weight: 700;
+            font-size: 16px;
+            letter-spacing: 0.03em;
+            color: #212121;
+            cursor: pointer;
+            font-family: 'Roboto';
+            font-style: normal;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            &:hover{
+                background-color: map-get($color,'blue-main');
+                color: white;
+            }
+        }
+    }
+}

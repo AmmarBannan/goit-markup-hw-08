@@ -1,5 +1,4 @@
 $color:(
-    
     'blue-main':#2196F3,
     'blue-hover':#188CE8,
     // --text-color
@@ -17,7 +16,3 @@ $color:(
     'modal-input-border':rgba(33, 33, 33, 0.2),
     'modal-textarea-font':#75757580,
 );
-
-@function getColor($key) {
-    @return map-get($color, $key);
-}
