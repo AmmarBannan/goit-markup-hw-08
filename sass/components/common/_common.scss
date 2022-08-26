@@ -14,7 +14,7 @@ a{ text-decoration: none;}
         color: map-get($color,'blue-main');
     }
 }
-.link-current{
+.link--current{
     color: map-get($color,'blue-main') !important;
     position: relative; 
     &::after{

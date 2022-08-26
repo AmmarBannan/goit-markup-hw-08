@@ -44,11 +44,11 @@ a {
   color: #2196F3;
 }
 
-.link-current {
+.link--current {
   color: #2196F3 !important;
   position: relative;
 }
-.link-current::after {
+.link--current::after {
   position: absolute;
   content: "";
   height: 4px;
