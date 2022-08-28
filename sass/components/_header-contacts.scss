@@ -1,7 +1,7 @@
-@import '../../utils/vars.scss';
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
 
 .contacts{
-    @extend .list;
     align-items: center;
     display: flex;
     & li:not(:last-child){
@@ -9,10 +9,9 @@
     }
     &__item{
         padding:32px 0 31px 0;
-        color: map-get($color,'links');
+        color: $color-links;
         &__link{
-            @extend .link;
-            color: map-get($color,'links');
+            color: $color-links;
             font-weight: 500;
             display: flex;
             text-align: center;  

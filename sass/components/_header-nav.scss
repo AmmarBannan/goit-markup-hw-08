@@ -1,9 +1,10 @@
-@import '../../utils/vars.scss';
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
 
 .nav{
     display: flex;
     align-items: center;
-    &__list{
+    .nav-list{
         @extend .list;
         display: flex;
         margin-left:93px !important;

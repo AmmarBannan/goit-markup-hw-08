@@ -1,0 +1,22 @@
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
+
+.section-no-padding-top{
+    padding-top: 0 !important;
+}
+
+.section-gray{
+    @extend .section;
+    background-color:$color-background-team;
+}
+
+.section{
+    padding: 94px 0;
+    &__title{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        letter-spacing: 0.03em;
+        margin-bottom: 50px;
+    }
+}

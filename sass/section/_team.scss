@@ -1,5 +1,5 @@
-@import '../../utils/vars.scss';
-@import '../../utils/social-media';
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
 
 .team-list{
     display: flex;
@@ -28,11 +28,11 @@
             line-height: 19px;
             text-align: center;
             letter-spacing: 0.03em;
-            color: map-get($color,'links');
+            color: $color-links;
             margin-bottom: 16px;
         }
-        .main-social-media{
-            @include social-media(map-get($color,'company-border'),white) 
+        .social{
+            @include social-media($color-company-border,white) 
         }
     }
 }

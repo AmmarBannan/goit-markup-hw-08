@@ -1,8 +1,9 @@
-@import '../../utils/vars.scss';
-
+@import '../utils/_vars.scss';
+@import '../utils/color';
+@import '../utils/_mixin';
 
 header{
-    border-bottom:1px solid  rgb(230, 230, 232);
+    border-bottom:1px solid $color-header-bottom;
     .header-container{
         @extend .container;
         display:flex;

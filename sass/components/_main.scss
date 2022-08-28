@@ -1,0 +1,8 @@
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

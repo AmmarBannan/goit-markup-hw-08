@@ -1,4 +1,6 @@
-@import '../../utils/vars.scss';
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
+
 
 .footer{
     background: #2F303A;

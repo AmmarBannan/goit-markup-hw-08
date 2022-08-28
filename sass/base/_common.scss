@@ -1,0 +1,48 @@
+@import '../utils/_vars.scss';
+@import '../utils/_color.scss';
+@import '../utils/_mixin';
+
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 14px;
+}
+
+h1,h2,h3,h4,h5,h6,p { margin: 0;}
+html { box-sizing: border-box;}
+*,*::after,*::before { box-sizing: inherit;}
+img { display: block; max-width: 100%; height: auto;object-fit: cover;}
+address { font-style: normal;}
+a{ text-decoration: none;}
+.list { list-style: none; padding: 0; margin: 0;} 
+.link {
+    text-decoration: none; color: inherit; cursor: pointer;height: fit-content;
+    &:hover{
+        color: $color-blue-main;
+    }
+}
+.link--current{
+    color: $color-blue-main !important;
+    position: relative; 
+    &::after{
+        position: absolute;
+        content: '';
+        height: 4px;
+        width: auto;
+        border-radius: 4px;
+        bottom: -32px; 
+        left: 0;
+        right: 0;
+        background: $color-blue-main ;
+    }
+}
+
+
+#logo{
+    font-family: 'Raleway', sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    color: $color-blue-main;
+    text-decoration: none;
+    cursor: pointer;
+}

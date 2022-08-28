@@ -1,8 +1,10 @@
-@import '../../utils/vars.scss';
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
 
-.what_we_do_list{
+.what-we-do{
     display: flex;
-    .what-we-do-item{
+    
+    &__item{
         &:not(:last-child){
             margin-right:30px;
         }

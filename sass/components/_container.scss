@@ -1,0 +1,9 @@
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
+
+.container{
+    width:1200px;
+    padding: 0px 15px;
+    margin: 0 auto; 
+    text-align: center;
+}

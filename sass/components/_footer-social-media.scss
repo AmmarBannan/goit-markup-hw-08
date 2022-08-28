@@ -1,0 +1,16 @@
+@import '../utils/_vars.scss';@import '../utils/_color.scss';
+@import '../utils/_mixin';
+
+.footer-social-title{
+    margin-bottom: 20px;
+    color: white;
+    font-weight: 700;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+
+.footer-social{
+    @include social-media(white , $color-background-footer-icon) 
+}
