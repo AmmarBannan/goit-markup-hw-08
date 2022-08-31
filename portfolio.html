@@ -2,36 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebStudio</title>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,200&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&family=Yellowtail&display=swap" rel="stylesheet">    <link rel="stylesheet" href="./style/common.css">
     
-    <link rel="stylesheet" href="./css/main.min.css">
-
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
     
     <header>
-        <div class="header-container"> 
+        <div class="header-container container"> 
             <nav class="nav">
                 <a href="./index.html" id="logo">WebStudio</a>
-                <ul class="nav-list list">
-                    <li><a class="nav-list__item link" href="./index.html">Studio</a></li>
+                <ul class="nav-list list hide">
+                    <li><a class="nav-list__item link " href="./index.html">Studio</a></li>
                     <li><a class="nav-list__item link link--current" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-list__item link" href="/contacts">Contacts</a></li>
                 </ul>
+                
             </nav>
-            <ul class="contacts list">
+            <ul class="contacts list hide">
                 <li class="contacts__item"><a  class="contacts__item__link link" target="_parent" href="mailto:info@devstudion.com" title="email"><svg width="16" height="16" class="header-icon" xmlns="http://www.w3.org/2000/svg" ><use xlink:href="./image/icon.svg#icon-envelope" ></use> </svg>  <p>info@devstudion.com</p> </a></li>
                 <li class="contacts__item"><a  class="contacts__item__link link" title="number" href="tel:+55 7031 70 70" ><svg width="16" height="16" class="header-icon" xmlns="http://www.w3.org/2000/svg" ><use xlink:href="./image/icon.svg#icon-smartphone" ></use> </svg> <p>+55 7031 70 70</p></a></li>
             </ul>
+            <div class="setting-button" tabindex="-1"></div>
         </div>
+       
     </header>
 
     <main>
@@ -48,7 +50,7 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container container">
             <div class="footer-div">
                 <a id="logo" href="./index.html">WebStudio </a>
                 <address>
@@ -81,7 +83,8 @@
             </div>
         </div>
     </footer>
-    <p style="font-size: 3px;">please ignore this                    V4.2</p>
+    <script async src="./Script/mobile-menu.js"></script>
+
     <script async src="./Script/store.js"></script>
 </body>
 </html>

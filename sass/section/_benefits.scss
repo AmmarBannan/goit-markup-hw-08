@@ -3,14 +3,15 @@
 .benefits{
     text-align: start;
     display: flex;
-    & li:not(:last-child){
-        margin-right: 30px;
-    }    
+    flex-wrap: wrap;
+    justify-content: space-around;
+    
     .benefit-item{
+        margin-bottom: 30px;
         width: 270px;
         &__img{
             height: 120px;
-            width: 270px;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;

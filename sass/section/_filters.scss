@@ -5,15 +5,19 @@
     display: flex;
     justify-content: center;
     margin-bottom: 50px !important; 
+    flex-wrap: wrap;
+    margin-bottom: -15px;
     .filter{
+        
         .active{
             background-color: $color-blue-main;
             color: white;
         }
         &:not(:last-child){
-            margin-right: 10px;
+            margin-right: 8px;
         }
         &__button{
+            margin-bottom: 15px;
             border: none;
             background-color: $color-background-team;
             padding: 6px 25px;

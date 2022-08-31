@@ -2,12 +2,13 @@
 @import '../utils/_mixin';
 .companies{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     &__item{
-        &:not(:last-child){
-            margin-right: 30px;
-        }
+        width: 170px;
+        margin-bottom: 30px;
         .company-link{
-            width: 170px;
+            width: 100%;
             height: 92px;
             border:1px solid $color-company-border;
             padding: 23.5px 32px;

@@ -4,6 +4,7 @@
 .contacts{
     align-items: center;
     display: flex;
+    width: min-content;
     & li:not(:last-child){
         margin-right: 30px;
     }

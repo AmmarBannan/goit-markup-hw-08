@@ -5,9 +5,7 @@
 header{
     border-bottom:1px solid $color-header-bottom;
     .header-container{
-        @extend .container;
         display:flex;
-        justify-content: space-between;
-        
+        justify-content: space-around;
     }
 }

@@ -33,7 +33,7 @@ let firstRender=categoryArray.map((value,index)=>
     `<li class="project" tabIndex="-1">
     <a class="project__link link" href="#">
         <div class="project__link__box">
-            <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+            <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title}"></img>
             <div class="project__link__box__overlay"><p class="type">${value.description}</p><p class="title">${value.title}</p></div>
         </div>
         <div class="project__link__wrapper"><h3>${value.title}</h3> <p class="project-type">${value.type}</p></div>
@@ -60,7 +60,7 @@ tap.map((val,index)=>{
             `<li class="project" tabIndex="-1">
                 <a class="project__link link" href="#">
                     <div class="project__link__box">
-                        <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title} width="370""></img>
+                        <img loading="lazy" data-src="${value.lazy}" src="${value.img}" alt="${value.title}"></img>
                         <div class="project__link__box__overlay"><p class="type">${value.description}</p><p class="title">${value.title}</p></div>
                     </div>
                     <div class="project__link__wrapper"><h3>${value.title}</h3> <p class="project-type">${value.type}</p></div>

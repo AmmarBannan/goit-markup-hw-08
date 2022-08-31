@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>WebStudio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"/>
 
@@ -9,26 +10,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,200&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,100&family=Yellowtail&display=swap" rel="stylesheet">    
     
-    <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./style/style.css">
 
 
 </head>
 <body> 
     <header>
-        <div class="header-container"> 
+        <div class="header-container container"> 
             <nav class="nav">
                 <a href="./index.html" id="logo">WebStudio</a>
-                <ul class="nav-list list">
+                <ul class="nav-list list hide">
                     <li><a class="nav-list__item link link--current" href="./index.html">Studio</a></li>
                     <li><a class="nav-list__item link" href="./portfolio.html">Portfolio</a></li>
                     <li><a class="nav-list__item link" href="/contacts">Contacts</a></li>
                 </ul>
+                
             </nav>
-            <ul class="contacts list">
+            <ul class="contacts list hide">
                 <li class="contacts__item"><a  class="contacts__item__link link" target="_parent" href="mailto:info@devstudion.com" title="email"><svg width="16" height="16" class="header-icon" xmlns="http://www.w3.org/2000/svg" ><use xlink:href="./image/icon.svg#icon-envelope" ></use> </svg>  <p>info@devstudion.com</p> </a></li>
                 <li class="contacts__item"><a  class="contacts__item__link link" title="number" href="tel:+55 7031 70 70" ><svg width="16" height="16" class="header-icon" xmlns="http://www.w3.org/2000/svg" ><use xlink:href="./image/icon.svg#icon-smartphone" ></use> </svg> <p>+55 7031 70 70</p></a></li>
             </ul>
+            <div class="setting-button" tabindex="-1"></div>
         </div>
+       
     </header>
     <main>
         <section class="hero">
@@ -38,7 +43,7 @@
             </div>
         </section>
         <section class="section">
-            <div class="container">
+            <div class="container ">
                 <ul class="benefits list">
                     <li class="benefit-item"> <div class="benefit-item__img"><svg width="65.4" height="70" class="benefit-item__icon" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="./image/icon.svg#icon-antenna"></use></svg>   </div> <h3 class="benefit-item__title ">ATTENTION TO DETAILS</h3> <p class="benefit-item__description">We go into all the details and processes of your business to develop a customized solution.</p></li>
                     <li class="benefit-item"> <div class="benefit-item__img"><svg width="67" height="70" class="benefit-item__icon" xmlns="http://www.w3.org/2000/svg"> <use xlink:href="./image/icon.svg#icon-clock"></use></svg>   </div> <h3 class="benefit-item__title">PUNCTUALITY</h3> <p class="benefit-item__description">With us, you can feel safe and secure. An important principle of the company-item: respect your time and respect the agreed deadlines.</p> </li>
@@ -48,7 +53,7 @@
             </div>
         </section>
 
-        <section class="section section-no-padding-top">
+        <section class="section section-no-padding-top hide-760">
             <div class="container">
                 <h2 class="section__title">What we do</h2>
                 <ul class="what-we-do list"> 
@@ -59,7 +64,7 @@
             </div>
         </section>
 
-        <section class="section-gray">
+        <section class="section-gray section">
             <div class="container">
                 <h2 class="section__title">Our Team</h2>
                 <ul class="team-list list" >
@@ -126,7 +131,7 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container container">
             <div class="footer-div">
                 <a id="logo" href="./index.html">WebStudio </a>
                 <address>
@@ -202,8 +207,30 @@
             </form>
         </div>
     </div>
+
+    <!-- mobile setting -->
+
+    <div class="setting-bar is-hidden">
+        <button type="button" class="exit-setting"><svg width="20" height="20"><use xlink:href="./image/icon.svg#icon-exit"></use></svg></button>
+
+        <ul class="list">
+            <li><a class="nav-list__item link link--current" href="./index.html">Studio</a></li>
+            <li><a class="nav-list__item link" href="./portfolio.html">Portfolio</a></li>
+            <li><a class="nav-list__item link" href="/contacts">Contacts</a></li>
+        </ul>
+        <ul class="list">
+            <li>+38 096 111 11 11</li>
+            <li>info@devstudio.com</li>
+        </ul>
+        <ul class="list setting-link-list">
+            <li><a class="link">Instegram</a> <p>|</p>&nbsp;</li>
+            <li><a class="link">Twitter</a> &nbsp;<p>|</p>&nbsp;</li>
+            <li><a class="link">Facebook</a> &nbsp;<p>|</p>&nbsp;</li>
+            <li><a class="link">Linkedin</a></li>
+        </ul>
+    </div>
     
-    
+    <script src="./Script/mobile-menu.js"></script>
     <script src="./Script/modal.js"></script>
 </body>
 </html>
