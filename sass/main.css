@@ -18,7 +18,7 @@ html {
 
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
@@ -585,7 +585,7 @@ main .container ul {
   margin-bottom: 15px;
   border: none;
   background-color: #F5F4FA;
-  padding: 6px 25px;
+  padding: 6px 28px;
   border-radius: 4px;
   font-weight: 700;
   font-size: 16px;
@@ -668,8 +668,12 @@ main .container ul {
   top: 0;
 }
 .projects .project__link__box {
+  width: 100%;
   position: relative;
   overflow: hidden;
+}
+.projects .project__link__box img {
+  width: 100% !important;
 }
 .projects .project__link__box__overlay {
   position: absolute;

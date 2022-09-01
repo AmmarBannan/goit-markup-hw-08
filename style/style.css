@@ -31,16 +31,61 @@
 
 .setting-bar{
     position:fixed;
+    padding:48px 40px;
     width: 100%;
     height: 100%;
     z-index: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
     top: 0;
     background-color: white;
     display: flex;
     flex-direction: column;
+    justify-content: start;
+}
+
+.mobile-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 95%;
+}
+.mobile-nav a{
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 74px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+
+.mobile-nav .link--current::after{
+    display: none;
+}
+
+.mobile-contacts {
+    margin-bottom:30px ;
+}
+
+.mobile-contacts .contacts__item{
+    padding: 0;
+    margin-bottom: 32px;
+}
+
+.mobile-contacts a{
+    font-weight: 500;
+    font-size: 34px;
+    letter-spacing: 0.02em;
+}
+
+.mobile-social{color:gray ;}
+.mobile-social a{
+    color: #2196F3;
+    margin: 0 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    /* identical to box height, or 122% */
+
+    letter-spacing: 0.02em;
 }
 
 .exit-setting{
@@ -109,12 +154,24 @@
     .header-container{
         justify-content: space-between !important;
         width: 90%;
+        padding: 16px 15px;
+    }
+    .filters{
+        justify-content: start ;
+        padding: 0 15px 0 30px;
+    }
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+    }
+    .footer-contacts:first-child{
+        width: max-content;
     }
 }
-@media screen and (max-width: 768px) and (min-width: 481px)  {
+@media screen and (max-width: 768px) and (min-width: 482px)  {
     
     body{
-        width: 481px !important;
+        width: 768px !important;
     }
     .hide-760{
         display: none !important;
@@ -147,7 +204,6 @@
     .section{
         padding: 60px 0;
     }
-   
     .footer-div{
         display: flex;
         flex-direction: column;

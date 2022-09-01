@@ -24,8 +24,12 @@
                 top: 0;
             }
             &__box{
+                width: 100%;
                 position: relative;
                 overflow: hidden;
+                img{
+                    width: 100% !important;
+                }
                 &__overlay{
                     position: absolute;
                     top: 100%;
