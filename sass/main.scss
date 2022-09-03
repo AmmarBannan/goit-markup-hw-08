@@ -14,6 +14,7 @@
 @import './components/header';
 @import './components/main';
 @import './components/section';
+@import './components/mobile-button';
 
 @import './section/backdrop';
 @import './section/benefits';
@@ -23,3 +24,7 @@
 @import './section/projects';
 @import './section/team';
 @import './section/we-do';
+@import './section/mobile-header';
+
+@import './adaptive/768';
+@import './adaptive/480';

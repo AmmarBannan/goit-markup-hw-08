@@ -1,8 +1,8 @@
 (() => {
     const refs = {
       openSetting: document.querySelector(".setting-button"),
-      bar: document.querySelector(".setting-bar"),
-      closeSetting: document.querySelector(".exit-setting"),
+      bar: document.querySelector(".mobile"),
+      closeSetting: document.querySelector(".mobile__exit"),
     };
   
     refs.openSetting.addEventListener("click", toggleSetting);

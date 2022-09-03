@@ -1,0 +1,52 @@
+@media screen and (max-width: 768px) and (min-width: 482px)  {
+    
+    body{
+        width: 768px !important;
+    }
+    .hide-760{
+        display: none !important;
+    }
+    .contacts{
+        flex-wrap: wrap;
+        width: min-content;
+    }
+    .container ul{
+        width: min-content;
+    }
+    .team-item,.benefit-item,.project{
+        width: 354px !important;
+    }
+    .companies__item{
+        width: 226px !important;
+    }
+    .contacts{
+        padding: 15px 0;
+        padding:5px 0;
+    }
+    .contacts__item{
+        padding:9px 0 ;
+    }
+    .container{
+        padding: 0;
+        padding-left:auto 15px;
+        width: 100%;
+    }
+    .section{
+        padding: 60px 0;
+    }
+    .footer-div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: max-content;
+    }
+    .footer-div *{
+        text-align: center;
+    }
+    .footer-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}

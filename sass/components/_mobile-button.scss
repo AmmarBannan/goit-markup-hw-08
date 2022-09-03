@@ -1,0 +1,30 @@
+@import '../utils/_color.scss';
+.setting-button{
+    cursor: pointer;
+    width: 24px;
+    height: 2.67px;
+    background-color: $color-blue-main;
+    position: relative;
+    top: 15px;
+    &::before{
+        width: auto;
+        content:'';
+        height: 2.67px;
+        background-color: $color-blue-main;
+        bottom: 5px; 
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+    &::after{
+        width: auto;
+        content:'';
+        height: 2.67px;
+        background-color: $color-blue-main;
+        bottom: -5px; 
+        left: 0;
+        right: 0;
+        position: absolute;
+    }
+    
+}
