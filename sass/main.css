@@ -964,6 +964,8 @@ main .container ul {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
+    margin-bottom: 50px;
+    margin-right: 70px;
   }
   .footer-div * {
     text-align: center;
@@ -1041,6 +1043,8 @@ main .container ul {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin-bottom: 50px;
+    margin-right: 70px;
   }
   .footer-contacts:first-child {
     width: -webkit-max-content;
@@ -1055,11 +1059,5 @@ main .container ul {
   }
   .footer-form__index {
     width: 100%;
-  }
-}
-@media screen and (max-width: 1200px) {
-  .footer-div {
-    margin-right: 70px;
-    margin-bottom: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
