@@ -10,13 +10,11 @@
     justify-content: center;
     &__container{
         display:flex;
-        justify-content: center;
+        justify-content: space-between;
         flex-wrap: wrap;
-        width: fit-content;
+        padding: 0 15px;
         .footer-div{
-            
-            margin-right: 70px;
-            margin-bottom: 50px;
+            width: fit-content;
         }
     }
     div{

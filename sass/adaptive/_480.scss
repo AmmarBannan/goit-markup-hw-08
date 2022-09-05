@@ -1,9 +1,12 @@
-@media screen and (min-width: 481px) {
+@media screen and (min-width: 767px) {
     .setting-button{
         display:none;
     }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 767px){
+    body{
+        width: 100%;
+    }
     .hide-760{
         display: none !important;
     }
@@ -11,7 +14,7 @@
         display: none !important;
     }
     .team-item,.benefit-item,.project{
-        width:450px !important;
+        width:95% !important;
     }
     .container{
         padding: 0;
@@ -37,11 +40,11 @@
     }
     .footer-div{
         margin-right: 0 !important;
+        width: 100%;
     }
     .footer-div *{
         text-align: center;
         justify-content: center;
-        
     }
     .header-container{
         justify-content: space-between !important;
@@ -55,8 +58,18 @@
     .footer-div{
         display: flex;
         flex-direction: column;
+        width: 100%;
     }
     .footer-contacts:first-child{
         width: max-content;
+    }
+    .footer-form__index{
+        margin-right: 0;
+        input{
+            width: 80%;
+        }
+    }
+    .footer-form__index{
+        width: 100%;
     }
 }
