@@ -955,7 +955,7 @@ main .container ul {
     padding: 60px 0;
   }
   .footer__container {
-    justify-content: space-around;
+    justify-content: space-evenly;
   }
   .footer-div {
     display: flex;
