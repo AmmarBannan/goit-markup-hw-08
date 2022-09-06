@@ -7,6 +7,7 @@
     margin-top: -30px;
     margin-left: -30px;
     width: fit-content;
+    justify-content: center;
     .project{
         margin-top: 30px;
         margin-left: 30px;
@@ -38,9 +39,9 @@
                     height: 100%;
                     background: rgba(33, 150, 243, 0.9);
                     transition: top 250ms cubic-bezier(0.4, 0, 0.2, 0.1);
-                    padding: 63px 24px;
+                    padding: 10% 24px;
                     text-align: start;
-                    .type{font-weight: 400;font-size: 16px;line-height: 30px;letter-spacing: 0.03em;color: white;}
+                    .type{font-weight: 400;font-size: 1em;line-height: 1.5em;letter-spacing: 0.03em;color: white;}
                     .title{font-size: 18px;font-weight: 700;line-height: 36px;color: white;}
                 }
             }

@@ -6,12 +6,28 @@
     .hide-760{
         display: none !important;
     }
+    .container{
+        padding: 0;
+        padding-left:auto 15px;
+        width: 100%;
+    }
+    .header-container {
+        justify-content: space-between !important;
+        padding:0 15px;
+        width: 100%;
+    }
+    .contacts{
+        width: min-content !important;
+    }
+    
     .contacts{
         flex-wrap: wrap;
         width: min-content;
     }
+
     .container ul{
-        width: min-content;
+        justify-content:center ;
+        margin-right: -30px;    
     }
     .team-item,.benefit-item,.project{
         width: 354px !important;
@@ -26,30 +42,12 @@
     .contacts__item{
         padding:9px 0 ;
     }
-    .container{
-        padding: 0;
-        padding-left:auto 15px;
-        width: 100%;
-    }
+    
     .section{
         padding: 60px 0;
     }
-    .footer__container{
-        justify-content: space-evenly;
-
-    }
-    .footer-div{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: max-content;
-        margin-bottom: 50px;
-        margin-right: 70px;
-
-    }
-    .footer-div *{
-        text-align: center;
-    }
+    
+    
     .footer-form{
         display: flex;
         flex-direction: column;
@@ -58,6 +56,30 @@
     }
     .footer-form__index input{
         width: 450px;
+    }
+    .footer__container{
+        width: 100%;
+        padding: 0 15px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        div,label{
+            display: flex;
+            width: fit-content;
+            flex-direction: column;    
+        }
+        .footer-div{
+            align-items: center;
+            margin-bottom: 50px;
+            width: max-content;
+        }
+        label{
+            align-items: center;
+        }
+       
+        .footer-contacts{
+            text-align: center;
+        }
+        ul{margin-right: 0;width:max-content;}
     }
 
 }
