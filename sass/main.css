@@ -941,9 +941,9 @@ main .container ul {
     width: 100%;
   }
   .contacts {
-    width: -webkit-min-content !important;
-    width: -moz-min-content !important;
-    width: min-content !important;
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
   }
   .contacts {
     flex-wrap: wrap;
@@ -1028,7 +1028,7 @@ main .container ul {
     display: none !important;
   }
   .team-item, .benefit-item, .project {
-    width: 95% !important;
+    width: 450px !important;
   }
   .container {
     padding: 0;
