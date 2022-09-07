@@ -1,30 +1,19 @@
 @import '../utils/_color.scss';
 .setting-button{
     cursor: pointer;
-    width: 24px;
-    height: 2.67px;
-    background-color: $color-blue-main;
-    position: relative;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
     top: 15px;
-    &::before{
-        width: auto;
-        content:'';
-        height: 2.67px;
-        background-color: $color-blue-main;
-        bottom: 5px; 
-        left: 0;
-        right: 0;
-        position: absolute;
+    transition:color $transition; 
+    &:hover{
+        color: $color-blue-main;;
     }
-    &::after{
-        width: auto;
-        content:'';
-        height: 2.67px;
-        background-color: $color-blue-main;
-        bottom: -5px; 
-        left: 0;
-        right: 0;
-        position: absolute;
+    svg{
+        fill: currentColor;
     }
     
 }

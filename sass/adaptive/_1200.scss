@@ -1,9 +1,24 @@
+
 @media screen and (min-width: 1200px){
     .container{
         width: 1230px !important;
+        align-items: center;
+
+    }
+    .section{
+        padding: 94px 0;
+    }
+    .hide-760{
+        display: flex;
+    }
+    .filters{
+        margin-bottom: 50px;
     }
     .team-item,.benefit-item{
         width: 270px !important;
+    }
+    .projects{
+        justify-content: first baseline;
     }
     .project{
         width: 370px !important;
@@ -14,7 +29,7 @@
     .footer__container {
         justify-content: space-between !important;
     }
-    .footer-div,label{
+    .footer-div,.footer-div label{
         align-items: start !important;
         height: min-content;
         margin: 0 !important;
@@ -36,4 +51,11 @@
     .footer-form__index input{
         width: 350px !important;
     }
+    .filters{
+        justify-content: center;
+    }
+    .backdrop{
+        position: fixed;
+    }
+    .modal{position: relative;}
 }

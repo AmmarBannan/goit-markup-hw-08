@@ -1,0 +1,15 @@
+@media screen and (max-height:500px) {
+    .mobile{padding-top:4% 7%;}
+    .mobile__header {
+        .mobile-nav{
+            flex-direction: row;
+        }
+    }
+}
+@media screen and (max-height:430px) {
+    .mobile__header {
+        .mobile-contacts {
+            flex-direction: row;
+        }
+    }
+}

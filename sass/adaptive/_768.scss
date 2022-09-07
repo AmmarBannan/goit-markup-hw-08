@@ -1,12 +1,16 @@
-@media screen and (max-width:898px){
+@media screen  and (min-width: 768px) and (max-width:898.6px){
     .header-container{
         padding: 0 15px !important;
     }
+    .header-container .contacts{width: 170px;}
 }
 
 @media screen and (min-width: 768px)  {
     .header-container .contacts{
-        justify-content: end;
+        justify-content: start;
+        flex-wrap: wrap;
+        max-width: 350px;
+        float: right;
     }
     .nav .hide, .hide{
         display: flex ;
@@ -18,13 +22,10 @@
         justify-content: space-between ;
         padding:0;
     }
-    .contacts{
-        width: fit-content !important;
-    }
-    
-    .contacts{
-        flex-wrap: wrap;
-        width: min-content;
+    .projects{
+        width: max-content;
+        max-width: 800px;
+        margin-right: -30px;
     }
     .team-item,.benefit-item,.project{
         width: 354px !important;
@@ -59,15 +60,18 @@
         padding: 0 15px;
         justify-content: space-evenly;
         flex-wrap: wrap;
+
         div,label{
             display: flex;
             width: fit-content;
             flex-direction: column;    
         }
+        
         .footer-div{
             align-items: center;
-            margin-bottom: 50px;
+            margin-right: 50px;
             width: max-content;
+           
         }
         label{
             align-items: center;
@@ -77,6 +81,12 @@
             text-align: center;
         }
         ul{margin-right: 0;width:max-content;}
+    }
+    .filters{
+        justify-content: center;
+    }
+    .hero{
+        padding-top:20% ;
     }
 
 }

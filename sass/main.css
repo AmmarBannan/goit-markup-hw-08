@@ -3,6 +3,7 @@ body {
   font-style: normal;
   font-size: 14px;
   width: 100%;
+  position: relative;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -94,7 +95,6 @@ a {
 
 .container ul {
   width: 100%;
-  justify-content: center;
 }
 
 .footer-contacts {
@@ -245,10 +245,9 @@ a {
   align-items: center;
   width: 100%;
   flex-direction: column;
-  margin-bottom: 50px;
 }
 .footer__container .footer-div {
-  margin-right: 50px;
+  margin-bottom: 50px;
 }
 
 .contacts {
@@ -336,35 +335,23 @@ main {
 
 .setting-button {
   cursor: pointer;
-  width: 24px;
-  height: 2.67px;
-  background-color: #2196F3;
-  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
   top: 15px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.setting-button::before {
-  width: auto;
-  content: "";
-  height: 2.67px;
-  background-color: #2196F3;
-  bottom: 5px;
-  left: 0;
-  right: 0;
-  position: absolute;
+.setting-button:hover {
+  color: #2196F3;
 }
-.setting-button::after {
-  width: auto;
-  content: "";
-  height: 2.67px;
-  background-color: #2196F3;
-  bottom: -5px;
-  left: 0;
-  right: 0;
-  position: absolute;
+.setting-button svg {
+  fill: currentColor;
 }
 
 .backdrop {
-  position: fixed;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -376,6 +363,7 @@ main {
   visibility: visible;
   opacity: 1;
   transition: visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
 }
 
 .is-hidden {
@@ -384,11 +372,12 @@ main {
 }
 
 .modal {
+  position: absolute;
+  top: 0;
   width: 528px;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  position: relative;
   display: flex;
   flex-direction: column;
   padding: 40px;
@@ -555,7 +544,7 @@ main {
   text-align: start;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-right: -30px;
 }
 .benefits .benefit-item {
@@ -623,7 +612,7 @@ main {
 
 .filters {
   display: flex;
-  margin-bottom: 50px !important;
+  margin-bottom: 30px !important;
   flex-wrap: wrap;
   margin-bottom: -15px;
   justify-content: start;
@@ -663,6 +652,7 @@ main {
   padding: 200px 0;
   background-position: 50% 50%;
   background-color: #2F303A;
+  max-height: 600px;
 }
 
 .hero-title {
@@ -703,7 +693,6 @@ main {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
-  justify-content: center;
 }
 .projects .project {
   margin-top: 30px;
@@ -779,7 +768,7 @@ main {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   margin-right: -30px;
 }
 .team-list .team-item {
@@ -871,7 +860,8 @@ main {
 
 .mobile {
   position: fixed;
-  padding: 10% 7%;
+  padding: 5% 4%;
+  font-size: 2rem;
   width: 100%;
   height: 100%;
   z-index: 1;
@@ -901,7 +891,19 @@ main {
   justify-content: space-between;
   height: 95%;
 }
-.mobile__header .mobile-nav a {
+.mobile__header .mobile-nav {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.mobile__header .mobile-nav li {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  height: 60px;
+  margin-right: 30px;
+}
+.mobile__header .mobile-nav li a {
   font-weight: 500;
   font-size: 40px;
   line-height: 74px;
@@ -913,12 +915,15 @@ main {
 }
 .mobile__header .mobile-contacts {
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
 }
 .mobile__header .mobile-contacts .contacts__item {
+  margin-right: 30px;
   padding: 0;
   margin-bottom: 32px;
 }
-.mobile__header .mobile-contacts a {
+.mobile__header .mobile-contacts .contacts__item a {
   font-weight: 500;
   font-size: 34px;
   letter-spacing: 0.02em;
@@ -946,14 +951,20 @@ main {
   display: none;
 }
 
-@media screen and (max-width: 898px) {
+@media screen and (min-width: 768px) and (max-width: 898.6px) {
   .header-container {
     padding: 0 15px !important;
+  }
+  .header-container .contacts {
+    width: 170px;
   }
 }
 @media screen and (min-width: 768px) {
   .header-container .contacts {
-    justify-content: end;
+    justify-content: start;
+    flex-wrap: wrap;
+    max-width: 350px;
+    float: right;
   }
   .nav .hide, .hide {
     display: flex;
@@ -965,16 +976,12 @@ main {
     justify-content: space-between;
     padding: 0;
   }
-  .contacts {
-    width: -webkit-fit-content !important;
-    width: -moz-fit-content !important;
-    width: fit-content !important;
-  }
-  .contacts {
-    flex-wrap: wrap;
-    width: -webkit-min-content;
-    width: -moz-min-content;
-    width: min-content;
+  .projects {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    max-width: 800px;
+    margin-right: -30px;
   }
   .team-item, .benefit-item, .project {
     width: 354px !important;
@@ -1015,7 +1022,7 @@ main {
   }
   .footer__container .footer-div {
     align-items: center;
-    margin-bottom: 50px;
+    margin-right: 50px;
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
@@ -1032,13 +1039,32 @@ main {
     width: -moz-max-content;
     width: max-content;
   }
+  .filters {
+    justify-content: center;
+  }
+  .hero {
+    padding-top: 20%;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
     width: 1230px !important;
+    align-items: center;
+  }
+  .section {
+    padding: 94px 0;
+  }
+  .hide-760 {
+    display: flex;
+  }
+  .filters {
+    margin-bottom: 50px;
   }
   .team-item, .benefit-item {
     width: 270px !important;
+  }
+  .projects {
+    justify-content: first baseline;
   }
   .project {
     width: 370px !important;
@@ -1049,7 +1075,7 @@ main {
   .footer__container {
     justify-content: space-between !important;
   }
-  .footer-div, label {
+  .footer-div, .footer-div label {
     align-items: start !important;
     height: -webkit-min-content;
     height: -moz-min-content;
@@ -1074,5 +1100,27 @@ main {
   }
   .footer-form__index input {
     width: 350px !important;
+  }
+  .filters {
+    justify-content: center;
+  }
+  .backdrop {
+    position: fixed;
+  }
+  .modal {
+    position: relative;
+  }
+}
+@media screen and (max-height: 500px) {
+  .mobile {
+    padding-top: 4% 7%;
+  }
+  .mobile__header .mobile-nav {
+    flex-direction: row;
+  }
+}
+@media screen and (max-height: 430px) {
+  .mobile__header .mobile-contacts {
+    flex-direction: row;
   }
 }/*# sourceMappingURL=main.css.map */

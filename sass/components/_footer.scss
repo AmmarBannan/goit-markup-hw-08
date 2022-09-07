@@ -20,15 +20,16 @@
         flex-wrap: wrap;
         padding: 0 15px;
         margin-bottom: -50px;
+        
         .footer-div,form{
             display: flex;
             align-items: center;
             width: 100%;
             flex-direction: column;
-            margin-bottom: 50px;
         }
         .footer-div{
-            margin-right: 50px;
+            
+            margin-bottom: 50px;
         }
     }
 }
