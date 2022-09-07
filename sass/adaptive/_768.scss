@@ -1,6 +1,6 @@
-@media screen and (max-width:816px){
+@media screen and (max-width:898px){
     .header-container{
-        padding: 15px 0  !important;
+        padding: 0 15px !important;
     }
 }
 
@@ -11,12 +11,9 @@
     .setting-button{
         display: none;
     }
-    .container{
-        padding-left:auto 15px;
-    }
     .header-container {
         justify-content: space-between ;
-        padding:0 15px;
+        padding:0;
     }
     .contacts{
         width: fit-content !important;
