@@ -1,10 +1,8 @@
-@media screen and (max-width:898px){
+
+@media screen and (min-width: 768px)  {
     .header-container{
         padding: 15px 0  !important;
     }
-}
-
-@media screen and (min-width: 768px)  {
     .nav .hide, .hide{
         display: flex ;
     }
