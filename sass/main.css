@@ -952,6 +952,9 @@ main {
   }
 }
 @media screen and (min-width: 768px) {
+  .header-container .contacts {
+    justify-content: end;
+  }
   .nav .hide, .hide {
     display: flex;
   }
