@@ -948,7 +948,7 @@ main {
 
 @media screen and (max-width: 898px) {
   .header-container {
-    padding: 0 15px !important;
+    padding: 15px 0 !important;
   }
 }
 @media screen and (min-width: 768px) {
