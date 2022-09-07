@@ -6,6 +6,9 @@
     list-style-type: none;
     display: block;
     align-items: start;
+    &:first-child{
+        width: max-content;
+    }
     &__item{
         .link-footer{
             font-weight: 400;

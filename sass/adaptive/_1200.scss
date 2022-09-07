@@ -1,0 +1,39 @@
+@media screen and (min-width: 1200px){
+    .container{
+        width: 1230px !important;
+    }
+    .team-item,.benefit-item{
+        width: 270px !important;
+    }
+    .project{
+        width: 370px !important;
+    }
+    .companies__item{
+        width: 170px !important;
+    }
+    .footer__container {
+        justify-content: space-between !important;
+    }
+    .footer-div,label{
+        align-items: start !important;
+        height: min-content;
+        margin: 0 !important;
+    }
+    .footer-div:last-child{
+        flex-direction: row !important;
+    }
+    .footer-div *{
+        text-align: start !important;
+    }
+    .footer-form{
+        width: max-content !important;
+        width: 560px !important;
+        justify-content: space-between !important;
+        align-items: end !important;
+        flex-direction: row !important;
+        flex-wrap: nowrap !important;
+    }
+    .footer-form__index input{
+        width: 350px !important;
+    }
+}

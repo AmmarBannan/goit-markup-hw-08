@@ -5,7 +5,8 @@
     align-items: center;
     display: flex;
     width: min-content;
-    & li:not(:last-child){
+    justify-content: end;
+    & li{
         margin-right: 30px;
     }
     &__item{

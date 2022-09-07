@@ -2,12 +2,13 @@
 @import '../utils/_mixin';
 
 .container{
-    width:1230px;
+    width: 100%;
     margin: 0 auto; 
     text-align: center;
     padding: 0 15px;
 }
 
 .container ul{
-    width: fit-content;
+    width: 100%;
+    justify-content: center;
 }

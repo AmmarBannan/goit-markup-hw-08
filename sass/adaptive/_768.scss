@@ -1,20 +1,22 @@
-@media screen and (min-width: 768px) and (max-width: 1200px)  {
-    
-    body{
-        width: 100% !important;
+@media screen and (max-width:898px){
+    .header-container{
+        padding: 0 15px  !important;
     }
-    .hide-760{
-        display: none !important;
+}
+
+@media screen and (min-width: 768px)  {
+    .nav .hide, .hide{
+        display: flex ;
+    }
+    .setting-button{
+        display: none;
     }
     .container{
-        padding: 0;
         padding-left:auto 15px;
-        width: 100%;
     }
     .header-container {
-        justify-content: space-between !important;
+        justify-content: space-between ;
         padding:0 15px;
-        width: 100%;
     }
     .contacts{
         width: fit-content !important;
@@ -23,11 +25,6 @@
     .contacts{
         flex-wrap: wrap;
         width: min-content;
-    }
-
-    .container ul{
-        justify-content:center ;
-        margin-right: -30px;    
     }
     .team-item,.benefit-item,.project{
         width: 354px !important;

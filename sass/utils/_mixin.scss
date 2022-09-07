@@ -9,7 +9,7 @@
 @mixin social-media($color ,$background){
     display: flex;
     justify-content: center;
-    height: 44;
+    width: 100%;
     &__item{
         &:not(:last-child){
             margin-right: 10px;

@@ -5,11 +5,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    margin-right: -30px;
     .benefit-item{
         margin-right: 30px;
         margin-bottom: 30px;
-        width: 270px;
+        width: 450px;
         &__img{
             height: 120px;
             width: 100%;

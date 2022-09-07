@@ -3,10 +3,12 @@
 
 .filters{
     display: flex;
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 50px !important; 
     flex-wrap: wrap;
     margin-bottom: -15px;
+    justify-content: start ;
+    padding: 0 15px 0 30px;
     .filter{
         
         .active{

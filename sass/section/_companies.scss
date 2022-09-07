@@ -3,9 +3,10 @@
 .companies{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    margin-right: -30px;
     &__item{
-        width: 170px;
+        width: 210px;
         margin-bottom: 30px;
         margin-right: 30px;
         .company-link{
