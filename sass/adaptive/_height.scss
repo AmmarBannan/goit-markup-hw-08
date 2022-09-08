@@ -9,6 +9,11 @@
 @media screen and (min-height:575px) {
     .backdrop{
         position: fixed;
+        .modal{
+            height: fit-content;
+            position: absolute;
+            top: auto;
+        }
     }
 }
 

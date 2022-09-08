@@ -21,6 +21,9 @@
     
 }
 @media screen and (min-width: 768px)  {
+    .benefit-item__title{
+        text-align: start !important;
+    }
     .header-container .contacts{
         justify-content: start;
         flex-wrap: wrap;

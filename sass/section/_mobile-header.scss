@@ -63,7 +63,7 @@
                 margin-bottom: 32px;
                 a{
                     font-weight: 500;
-                    font-size: 34px;
+                    font-size: 30px;
                     letter-spacing: 0.02em;
                 }
             }
@@ -73,9 +73,15 @@
     .mobile-social{
         color:$color-links ;
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        a{
+        align-items: start;
+        li{
+            display: flex;
+            align-items: center;
+            height: 15px;
+            &:not(:last-child){
+                border-right:1px solid $color-phone-border;
+            }
+            a{
             color: $color-blue-main;
             margin: 0 10px;
             font-weight: 500;
@@ -85,5 +91,7 @@
         
             letter-spacing: 0.02em;
         }
+        }
+        
     }
 }
