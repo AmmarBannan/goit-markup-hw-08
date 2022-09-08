@@ -9,6 +9,17 @@
 //         justify-content: center;
 //     }
 // }
+@media screen and (min-width:600px){
+    .modal{
+        width: 528px;
+    }
+}
+@media screen and (max-width:232px){
+    .hero{
+        padding: 0;
+    }
+    
+}
 @media screen and (min-width: 768px)  {
     .header-container .contacts{
         justify-content: start;
@@ -16,6 +27,7 @@
         max-width: 350px;
         float: right;
     }
+    
     .nav .hide, .hide{
         display: flex ;
     }
@@ -28,7 +40,7 @@
     }
     .projects{
         width: max-content;
-        max-width: 800px;
+        
         margin-right: -30px;
     }
     .team-item,.benefit-item,.project{
@@ -89,8 +101,4 @@
     .filters{
         justify-content: center;
     }
-    .hero{
-        padding-top:20% ;
-    }
-
 }

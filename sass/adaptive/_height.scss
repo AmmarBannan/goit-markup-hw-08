@@ -6,6 +6,12 @@
         }
     }
 }
+@media screen and (min-height:575px) {
+    .backdrop{
+        position: fixed;
+    }
+}
+
 @media screen and (max-height:430px) {
     .mobile__header {
         .mobile-contacts {

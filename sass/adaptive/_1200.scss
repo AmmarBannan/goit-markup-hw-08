@@ -1,9 +1,14 @@
+@media screen and (max-width:1200px){
+    .projects{
+        max-width: 800px;
+    }
+}
+
 
 @media screen and (min-width: 1200px){
     .container{
         width: 1230px !important;
         align-items: center;
-
     }
     .section{
         padding: 94px 0;

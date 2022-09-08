@@ -18,17 +18,14 @@
         display:flex;
         justify-content: center;
         flex-wrap: wrap;
-        padding: 0 15px;
-        margin-bottom: -50px;
-        
+        padding: 0 15px; 
         .footer-div,form{
             display: flex;
             align-items: center;
             width: 100%;
             flex-direction: column;
         }
-        .footer-div{
-            
+        .footer-div:not(:last-child){
             margin-bottom: 50px;
         }
     }

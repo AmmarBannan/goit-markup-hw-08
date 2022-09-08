@@ -238,7 +238,6 @@ a {
   justify-content: center;
   flex-wrap: wrap;
   padding: 0 15px;
-  margin-bottom: -50px;
 }
 .footer__container .footer-div, .footer__container form {
   display: flex;
@@ -246,7 +245,7 @@ a {
   width: 100%;
   flex-direction: column;
 }
-.footer__container .footer-div {
+.footer__container .footer-div:not(:last-child) {
   margin-bottom: 50px;
 }
 
@@ -374,7 +373,7 @@ main {
 .modal {
   position: absolute;
   top: 0;
-  width: 528px;
+  width: 90%;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -652,7 +651,7 @@ main {
   padding: 200px 0;
   background-position: 50% 50%;
   background-color: #2F303A;
-  max-height: 600px;
+  height: 600px;
 }
 
 .hero-title {
@@ -960,6 +959,16 @@ main {
     width: 170px;
   }
 }
+@media screen and (min-width: 600px) {
+  .modal {
+    width: 528px;
+  }
+}
+@media screen and (max-width: 232px) {
+  .hero {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 768px) {
   .header-container .contacts {
     justify-content: start;
@@ -981,7 +990,6 @@ main {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    max-width: 800px;
     margin-right: -30px;
   }
   .team-item, .benefit-item, .project {
@@ -1043,8 +1051,10 @@ main {
   .filters {
     justify-content: center;
   }
-  .hero {
-    padding-top: 20%;
+}
+@media screen and (max-width: 1200px) {
+  .projects {
+    max-width: 800px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1118,6 +1128,11 @@ main {
   }
   .mobile__header .mobile-nav {
     flex-direction: row;
+  }
+}
+@media screen and (min-height: 575px) {
+  .backdrop {
+    position: fixed;
   }
 }
 @media screen and (max-height: 430px) {
