@@ -2,10 +2,10 @@
 @import '../utils/_mixin';
 
 .container{
-    width: 100%;
-    margin: 0 auto; 
+    max-width: 480px;
     text-align: center;
     padding: 0 15px;
+    width: 100%;
 }
 
 .container ul{

@@ -9,7 +9,8 @@
     .benefit-item{
         margin-right: 30px;
         margin-bottom: 30px;
-        width: 450px;
+        max-width: 450px;
+        min-width: 210px;
         &__img{
             height: 120px;
             width: 100%;

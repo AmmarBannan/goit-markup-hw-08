@@ -1,14 +1,5 @@
-@media screen  and (min-width: 768px) and (max-width:898.6px){
-    .header-container{
-        padding: 0 15px !important;
-    }
-    .header-container .contacts{width: 170px;}
-}
-// @media screen and (min-width: 500px)  {
-//     .projects{
-//         justify-content: center;
-//     }
-// }
+
+
 @media screen and (min-width:600px){
     .modal{
         width: 528px;
@@ -16,7 +7,7 @@
 }
 @media screen and (max-width:232px){
     .hero{
-        padding: 0;
+        padding: 50px;
     }
     
 }
@@ -27,8 +18,9 @@
     .header-container .contacts{
         justify-content: start;
         flex-wrap: wrap;
-        max-width: 350px;
+        width: 350px;
         float: right;
+        width: 167px;
     }
     
     .nav .hide, .hide{
@@ -37,27 +29,29 @@
     .setting-button{
         display: none;
     }
+    header{
+        padding: 0;
+    }
     .header-container {
         justify-content: space-between ;
-        padding:0;
+
     }
     .projects{
-        width: max-content;
-        
-        margin-right: -30px;
+        width: 100%;
     }
     .team-item,.benefit-item,.project{
-        width: 354px !important;
+        max-width: 354px !important;
     }
     .companies__item{
         width: 226px !important;
     }
+    
     .contacts{
         padding: 15px 0;
         padding:5px 0;
-    }
-    .contacts__item{
-        padding:9px 0 ;
+        .contacts__item{
+            padding:9px 0 ;
+        }
     }
     
     .section{
@@ -65,15 +59,8 @@
     }
     
     
-    .footer-form{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-
-    }
-    .footer-form__index input{
-        width: 450px;
-    }
+    
+    
     .footer__container{
         width: 100%;
         padding: 0 15px;
@@ -90,16 +77,24 @@
             align-items: center;
             margin-right: 50px;
             width: max-content;
-           
         }
         label{
             align-items: center;
         }
-       
         .footer-contacts{
             text-align: center;
         }
         ul{margin-right: 0;width:max-content;}
+        .footer-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .footer-form__index input{
+                width: 450px;
+            }
+        }
+        
+
     }
     .filters{
         justify-content: center;

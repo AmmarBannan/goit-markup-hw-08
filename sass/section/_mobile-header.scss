@@ -11,7 +11,6 @@
     background-color: white;
     display: flex;
     flex-direction: column;
-    justify-content: start;
     &__exit{
         position: absolute;
         top: 10px;
@@ -46,7 +45,6 @@
                     letter-spacing: 0.02em;
                 }
             }
-            
             .link--current::after{
                 display: none;
             }
@@ -73,13 +71,14 @@
     .mobile-social{
         color:$color-links ;
         display: flex;
-        align-items: start;
+        flex-wrap: wrap;
         li{
             display: flex;
             align-items: center;
             height: 15px;
             &:not(:last-child){
                 border-right:1px solid $color-phone-border;
+                margin-bottom: 10px;
             }
             a{
             color: $color-blue-main;

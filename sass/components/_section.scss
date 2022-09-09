@@ -12,6 +12,8 @@
 
 .section{
     padding: 60px 0;
+    display: flex;
+    justify-content: center;
     &__title{
         font-style: normal;
         font-weight: 700;

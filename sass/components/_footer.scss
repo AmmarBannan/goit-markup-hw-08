@@ -11,7 +11,8 @@
     flex-direction: column;
     align-items: center;
     #logo{
-        margin-bottom: 13px
+        margin-bottom: 8px;
+        margin-top:-10px;
     }
     
     &__container{
@@ -22,7 +23,7 @@
         .footer-div,form{
             display: flex;
             align-items: center;
-            width: 100%;
+            width: 90%;
             flex-direction: column;
         }
         .footer-div:not(:last-child){
