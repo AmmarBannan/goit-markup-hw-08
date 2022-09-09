@@ -1167,6 +1167,7 @@ main {
     height: fit-content;
     position: absolute;
     top: auto;
+    overflow-y: hidden;
   }
 }
 @media screen and (max-height: 430px) {
