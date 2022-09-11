@@ -5,10 +5,10 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-right: -30px;
+    column-gap: 30px;
+    row-gap: 30px;
     .benefit-item{
-        margin-right: 30px;
-        margin-bottom: 30px;
+
         max-width: 450px;
         min-width: 210px;
         &__img{

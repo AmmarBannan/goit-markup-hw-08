@@ -552,11 +552,11 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
 }
 .benefits .benefit-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
   max-width: 450px;
   min-width: 210px;
 }
@@ -591,12 +591,12 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
 }
 .companies__item {
   width: 210px;
-  margin-bottom: 30px;
-  margin-right: 30px;
 }
 .companies__item .company-link {
   width: 100%;
@@ -623,7 +623,6 @@ main {
   display: flex;
   margin-bottom: 30px !important;
   flex-wrap: wrap;
-  margin-bottom: -15px;
   justify-content: start;
   padding: 0 15px 0 30px;
 }
@@ -658,7 +657,7 @@ main {
   background-image: url("../image/page1/backImage.jpg");
   background-repeat: no-repeat;
   background-size: auto;
-  padding: 200px 0;
+  padding: 118px 60px;
   background-position: 50% 50%;
   background-color: #2F303A;
   height: 600px;
@@ -699,14 +698,14 @@ main {
 .projects {
   display: flex;
   flex-wrap: wrap;
-  margin-top: -30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .projects .project {
-  margin-top: 30px;
-  margin-left: 30px;
   max-width: 450px;
   min-width: 210px;
 }
@@ -780,13 +779,13 @@ main {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: -30px;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+  row-gap: 30px;
 }
 .team-list .team-item {
   max-width: 450px;
   min-width: 210px;
-  margin-bottom: 30px;
-  margin-right: 30px;
   padding-bottom: 30px;
   background-color: white;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -976,9 +975,9 @@ main {
     width: 528px;
   }
 }
-@media screen and (max-width: 232px) {
+@media screen and (max-width: 420px) {
   .hero {
-    padding: 50px;
+    padding: 100px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1003,6 +1002,9 @@ main {
   }
   .header-container {
     justify-content: space-between;
+  }
+  .hero {
+    padding: 118px 204px;
   }
   .projects {
     width: 100%;
@@ -1094,6 +1096,9 @@ main {
   }
   .hide-760 {
     display: flex;
+  }
+  .hero {
+    padding: 200px 0;
   }
   .filters {
     margin-bottom: 50px;

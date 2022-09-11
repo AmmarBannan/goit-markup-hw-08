@@ -4,11 +4,10 @@
 .projects{
     display:flex;
     flex-wrap: wrap;
-    margin-top: -30px;
+    column-gap: 30px;
+    row-gap: 30px;
     width: fit-content;
     .project{
-        margin-top: 30px;
-        margin-left: 30px;
         max-width: 450px;
         min-width: 210px;
         &__link{
